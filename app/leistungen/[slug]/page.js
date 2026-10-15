@@ -46,6 +46,7 @@ export default async function ServicePage({ params }) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalProcedure',
+    '@id': `https://praxis-altstetten.ch/leistungen/${slug}#procedure`,
     name: service.title,
     description: service.full,
     url: `https://praxis-altstetten.ch/leistungen/${slug}`,
@@ -53,8 +54,8 @@ export default async function ServicePage({ params }) {
     procedureType: 'http://schema.org/NoninvasiveProcedure',
     howPerformed: service.full,
     provider: {
-      '@type': 'MedicalBusiness',
-      '@id': 'https://praxis-altstetten.ch/#organization',
+      '@type': ['MedicalClinic', 'MedicalBusiness'],
+      '@id': 'https://praxis-altstetten.ch/#clinic',
       name: 'Hausarztpraxis Zürich Altstetten',
       url: 'https://praxis-altstetten.ch',
     },
@@ -65,11 +66,42 @@ export default async function ServicePage({ params }) {
     },
   };
 
+  /* BreadcrumbList Schema for service detail */
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    '@id': `https://praxis-altstetten.ch/leistungen/${slug}#breadcrumb`,
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Startseite',
+        item: 'https://praxis-altstetten.ch',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Leistungen',
+        item: 'https://praxis-altstetten.ch/#services',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: service.title,
+        item: `https://praxis-altstetten.ch/leistungen/${slug}`,
+      },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       <div className="legalPage">

@@ -14,9 +14,33 @@ export const metadata = {
   },
 };
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  '@id': 'https://praxis-altstetten.ch/impressum#breadcrumb',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Startseite',
+      item: 'https://praxis-altstetten.ch',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Impressum',
+      item: 'https://praxis-altstetten.ch/impressum',
+    },
+  ],
+};
+
 export default function Impressum() {
   return (
     <div className="legalPage">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <style>{`
         .legalPage { font-family: var(--f-body); color: var(--text); background: var(--warm-white); min-height: 100vh; }
         .legalHero { background: linear-gradient(135deg, var(--navy), var(--navy-dark)); padding: clamp(36px, 6vw, 48px) clamp(16px, 4vw, 24px) clamp(32px, 5vw, 44px); text-align: center; }

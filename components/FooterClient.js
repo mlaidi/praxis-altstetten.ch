@@ -13,7 +13,7 @@ export default function FooterClient() {
   };
 
   return (
-    <footer className="footer">
+    <footer className="footer" role="contentinfo">
       <div className="footerInner">
         <div className="footerGrid">
           {/* Col 1 – Logo & partner */}

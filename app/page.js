@@ -84,7 +84,7 @@ export default function HomePage() {
   return (
     <>
       {/* ══════════ TOP BAR (Server-rendered) ══════════ */}
-      <div className="topBar">
+      <div className="topBar" role="banner">
         <div className="topBarInner">
           <div className="topBarLeft">
             <span className="topBarItem"><ClockIcon size={16} /> {SITE.hours}</span>
@@ -101,7 +101,7 @@ export default function HomePage() {
       {/* ══════════ NAVBAR (Client Island) ══════════ */}
       <Navbar />
 
-      <main>
+      <main role="main">
 
       {/* ══════════ HERO (Client Island) ══════════ */}
       <HeroSection />

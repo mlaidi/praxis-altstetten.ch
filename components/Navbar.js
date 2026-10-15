@@ -10,7 +10,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const h = () => setScrolled(window.scrollY > 60);
-    window.addEventListener('scroll', h);
+    window.addEventListener('scroll', h, { passive: true });
     return () => window.removeEventListener('scroll', h);
   }, []);
 
@@ -20,7 +20,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`navbar ${scrolled ? 'navbarScrolled' : ''}`}>
+    <nav className={`navbar ${scrolled ? 'navbarScrolled' : ''}`} role="navigation" aria-label="Hauptnavigation">
       <div className="navInner">
         <div className="navLogo" onClick={() => scrollTo('hero')}>
           <Image
@@ -39,7 +39,7 @@ export default function Navbar() {
           ))}
           <a href={SITE.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btnPrimary" style={{ padding: '10px 24px', fontSize: 14 }}>Termin buchen</a>
         </div>
-        <button className="mobileMenuBtn" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Menü schliessen' : 'Menü öffnen'}>{menuOpen ? <CloseIcon /> : <MenuIcon />}</button>
+        <button className="mobileMenuBtn" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-label={menuOpen ? 'Menü schliessen' : 'Menü öffnen'}>{menuOpen ? <CloseIcon /> : <MenuIcon />}</button>
       </div>
       {menuOpen && (
         <div className="mobileMenu">

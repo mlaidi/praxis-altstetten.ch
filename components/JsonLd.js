@@ -8,7 +8,7 @@ const CANONICAL = 'https://praxis-altstetten.ch';
 /* ── MedicalClinic Schema ── */
 const medicalBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "MedicalClinic",
+  "@type": ["MedicalClinic", "MedicalBusiness", "Physician"],
   "@id": `${CANONICAL}/#clinic`,
   "name": "Hausarztpraxis Zürich Altstetten",
   "alternateName": [
@@ -21,6 +21,7 @@ const medicalBusinessSchema = {
     "Altstetten Arztpraxis", "PGA Altstetten"
   ],
   "url": CANONICAL,
+  "mainEntityOfPage": CANONICAL,
   "logo": `${CANONICAL}/logo.png`,
   "image": `${CANONICAL}/og-image.jpg`,
   "description": "Ihre Hausarztpraxis und medizinisches Zentrum an der Badenerstrasse in Zürich-Altstetten (8048). Ihr Doktor und Arzt in der Nähe für Allgemeinmedizin und Notfälle. Samstags geöffnet.",
@@ -36,33 +37,51 @@ const medicalBusinessSchema = {
   "employee": [
     {
       "@type": "Physician",
+      "@id": `${CANONICAL}/#physician-awad-abuawad`,
+      "name": "Dipl. Arzt Awad Abuawad",
+      "jobTitle": "Praktischer Arzt für Allgemeinmedizin (Leitung Jerumed)",
+      "url": `${CANONICAL}/#team`,
+      "worksFor": { "@id": `${CANONICAL}/#clinic` }
+    },
+    {
+      "@type": "Physician",
+      "@id": `${CANONICAL}/#physician-saskia-rodriguez`,
       "name": "Dr. med. Saskia Rodriguez",
       "jobTitle": "Praktische Ärztin für Allgemeinmedizin",
-      "url": `${CANONICAL}/#team`
+      "url": `${CANONICAL}/#team`,
+      "worksFor": { "@id": `${CANONICAL}/#clinic` }
     },
     {
       "@type": "Physician",
+      "@id": `${CANONICAL}/#physician-amin-zahran`,
       "name": "Dr. med. Amin Zahran",
       "jobTitle": "Facharzt für Allgemeinmedizin (Lehrarzt)",
-      "url": `${CANONICAL}/#team`
+      "url": `${CANONICAL}/#team`,
+      "worksFor": { "@id": `${CANONICAL}/#clinic` }
     },
     {
       "@type": "Physician",
+      "@id": `${CANONICAL}/#physician-mohammad-kassar`,
       "name": "PD Dr. med. Mohammad Kassar",
       "jobTitle": "Facharzt für Kardiologie & Allgemeine Innere Medizin FMH",
-      "url": `${CANONICAL}/#team`
+      "url": `${CANONICAL}/#team`,
+      "worksFor": { "@id": `${CANONICAL}/#clinic` }
     },
     {
       "@type": "Physician",
+      "@id": `${CANONICAL}/#physician-jamil-alsaaydeh`,
       "name": "Dr. med. Jamil Alsaaydeh",
       "jobTitle": "Facharzt für Urologie",
-      "url": `${CANONICAL}/#team`
+      "url": `${CANONICAL}/#team`,
+      "worksFor": { "@id": `${CANONICAL}/#clinic` }
     },
     {
       "@type": "Physician",
+      "@id": `${CANONICAL}/#physician-christos-bachtsetzis`,
       "name": "Christos Bachtsetzis",
       "jobTitle": "Allgemeinmedizin & Prävention",
-      "url": `${CANONICAL}/#team`
+      "url": `${CANONICAL}/#team`,
+      "worksFor": { "@id": `${CANONICAL}/#clinic` }
     }
   ],
   "geo": {
@@ -131,14 +150,14 @@ const medicalBusinessSchema = {
     "name": "Praxen Jerumed"
   },
   "medicalService": [
-    { "@type": "MedicalProcedure", "name": "EKG Zürich Altstetten" },
-    { "@type": "MedicalProcedure", "name": "Labordiagnostik Zürich" },
-    { "@type": "MedicalProcedure", "name": "Spirometrie / Lungentest" },
-    { "@type": "MedicalProcedure", "name": "Fahreignungsabklärung Zürich" },
-    { "@type": "MedicalTherapy", "name": "NAD+ Infusion Zürich" },
-    { "@type": "MedicalTherapy", "name": "Vitamin Infusion Zürich" },
-    { "@type": "MedicalTherapy", "name": "Eiseninfusion Zürich" },
-    { "@type": "MedicalTherapy", "name": "PRP Therapie Zürich" }
+    { "@type": "MedicalProcedure", "@id": `${CANONICAL}/#service-ekg`, "name": "EKG Zürich Altstetten" },
+    { "@type": "MedicalProcedure", "@id": `${CANONICAL}/#service-labor`, "name": "Labordiagnostik Zürich" },
+    { "@type": "MedicalProcedure", "@id": `${CANONICAL}/#service-spirometrie`, "name": "Spirometrie / Lungentest" },
+    { "@type": "MedicalProcedure", "@id": `${CANONICAL}/#service-fahreignung`, "name": "Fahreignungsabklärung Zürich" },
+    { "@type": "MedicalTherapy", "@id": `${CANONICAL}/#service-nad`, "name": "NAD+ Infusion Zürich" },
+    { "@type": "MedicalTherapy", "@id": `${CANONICAL}/#service-vitamin`, "name": "Vitamin Infusion Zürich" },
+    { "@type": "MedicalTherapy", "@id": `${CANONICAL}/#service-eisen`, "name": "Eiseninfusion Zürich" },
+    { "@type": "MedicalTherapy", "@id": `${CANONICAL}/#service-prp`, "name": "PRP Therapie Zürich" }
   ]
 };
 
@@ -157,6 +176,7 @@ const webSiteSchema = {
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${CANONICAL}/#breadcrumb`,
   itemListElement: [
     {
       '@type': 'ListItem',
@@ -171,6 +191,8 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": `${CANONICAL}/#faq`,
+  "mainEntityOfPage": CANONICAL,
   "mainEntity": [
     {
       "@type": "Question",
