@@ -1,10 +1,6 @@
 /**
- * Dynamic Sitemap Generator
- * 
- * Next.js App Router convention: exporting a default function from
- * app/sitemap.js automatically generates /sitemap.xml
- * 
- * @see https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap
+ * Dynamic Sitemap Generator – Hausarztpraxis Zürich Altstetten
+ * Generates /sitemap.xml automatically with current lastmod.
  */
 
 import { SERVICES } from '@/data/siteData';
@@ -12,28 +8,42 @@ import { SERVICES } from '@/data/siteData';
 const BASE_URL = 'https://praxis-altstetten.ch';
 
 export default function sitemap() {
+  const currentDate = new Date();
+
   /* ── Static pages ── */
   const staticPages = [
     {
       url: BASE_URL,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 1.0,
     },
     {
       url: `${BASE_URL}/impressum`,
-      lastModified: new Date('2025-05-01'),
-      changeFrequency: 'yearly',
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.4,
+    },
+    {
+      url: `${BASE_URL}/datenschutz`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.4,
+    },
+    {
+      url: `${BASE_URL}/cookies`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
       priority: 0.3,
     },
   ];
 
-  /* ── Dynamic service pages ── */
+  /* ── Dynamic service pages (all 12 rewritten services) ── */
   const servicePages = SERVICES.map((service) => ({
     url: `${BASE_URL}/leistungen/${service.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly',
-    priority: 0.8,
+    lastModified: currentDate,
+    changeFrequency: 'weekly',
+    priority: 0.9,
   }));
 
   return [...staticPages, ...servicePages];
