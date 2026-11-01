@@ -142,7 +142,12 @@ const medicalBusinessSchema = {
   "currenciesAccepted": "CHF",
   "paymentAccepted": "Krankenkasse, Barzahlung, Kreditkarte",
   "sameAs": [
-    "https://praxen-jerumed.ch"
+    "https://praxen-jerumed.ch",
+    "https://hausarztpraxis-duebendorf.ch/",
+    "https://hausarztpraxis-winterthur.ch/",
+    "https://praxis-seefeld.ch/",
+    "https://spitex-jerumed.ch/",
+    "https://www.med-esthec.ch"
   ],
   "parentOrganization": {
     "@type": "MedicalOrganization",

@@ -204,6 +204,8 @@ export const FOOTER_PARTNERS = [
   { label: "Hausarztpraxis am Seefeld", link: "https://praxis-seefeld.ch/" },
   { label: "Hausarztpraxis Winterthur", link: "https://hausarztpraxis-winterthur.ch/" },
   { label: "Hausarztpraxis Duebendorf", link: "https://hausarztpraxis-duebendorf.ch/" },
+  { label: "Spitex Jerumed", link: "https://spitex-jerumed.ch" },
+  { label: "Jerumed Nexus", link: "https://jerumed-nexus.ch" },
   { label: "Praxis Felsnau", link: "https://praxis-felsenau.ch/" },
   { label: "Labor Team Wyss", link: "https://www.laborteam.ch" },
 ];

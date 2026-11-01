@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${service.title} – Hausarztpraxis Zürich Altstetten`,
-    description: service.metaDesc || `${service.full.slice(0, 155)}…`,
+    description: service.metaDesc || service.short,
     alternates: {
       canonical: `https://praxis-altstetten.ch/leistungen/${slug}`,
     },

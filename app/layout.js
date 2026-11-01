@@ -48,11 +48,6 @@ export const metadata = {
   /* ── Twitter Card ── */
   twitter: {
     card: 'summary_large_image',
-    title:
-      "Hausarzt & Arztpraxis Altstetten | Ärztezentrum am Bahnhof | Notfall auch ohne Termin",
-    description:
-      "Suchen Sie einen Arzt oder Hausarzt in Zürich Altstetten (8048)? Unsere Arztpraxis am Bahnhof Altstetten (Badenerstrasse 621) empfängt Sie auch ohne Termin. Ihr Doktor & Ärztezentrum für Allgemeinmedizin, Labor, EKG & Notfallversorgung.",
-    images: ['/images/og-image.webp'],
   },
 
   /* ── Icons / Favicon ── */
