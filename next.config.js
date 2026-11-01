@@ -19,58 +19,9 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/galerie',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/810',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/category/:path*',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/freie-stellen',
-        destination: '/#contact',
-        permanent: true,
-      },
-      {
-        source: '/faqs',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/wp-:path*',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/author/:path*',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/wp-content/themes/:path*',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/wp-login.php',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/wp-admin/:path*',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/galerie/:path*',
-        destination: '/',
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.praxis-altstetten.ch' }],
+        destination: 'https://praxis-altstetten.ch/:path*',
         permanent: true,
       },
       {
@@ -79,12 +30,37 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/home/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/hausaerzte-zuerich-altstetten',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/hausaerzte-zuerich-altstetten/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/service/herzuntersuchung',
+        destination: '/leistungen/herzuntersuchung',
+        permanent: true,
+      },
+      {
         source: '/service/herzuntersuchung/',
         destination: '/leistungen/herzuntersuchung',
         permanent: true,
       },
       {
-        source: '/service/herzuntersuchung',
+        source: '/Service/herzuntersuchung',
+        destination: '/leistungen/herzuntersuchung',
+        permanent: true,
+      },
+      {
+        source: '/Service/herzuntersuchung/',
         destination: '/leistungen/herzuntersuchung',
         permanent: true,
       },
@@ -100,27 +76,47 @@ const nextConfig = {
       },
       {
         source: '/leistungen-alt/:path*',
-        destination: '/leistungen',
+        destination: '/#services',
         permanent: true,
       },
       {
-        source: '/hausaerzte-zuerich-altstetten/:path*',
-        destination: '/',
+        source: '/freie-stellen',
+        destination: '/#contact',
         permanent: true,
       },
       {
-        source: '/neuigkeiten-hausarztpraxis-zuerich-atlstetten',
-        destination: '/',
+        source: '/freie-stellen/',
+        destination: '/#contact',
         permanent: true,
       },
       {
         source: '/make-an-appointment',
-        destination: '/',
+        destination: '/#contact',
+        permanent: true,
+      },
+      {
+        source: '/make-an-appointment/',
+        destination: '/#contact',
         permanent: true,
       },
       {
         source: '/hausarztpraxis-altstetten-zuerich-kontakt',
         destination: '/#contact',
+        permanent: true,
+      },
+      {
+        source: '/hausarztpraxis-altstetten-zuerich-kontakt/',
+        destination: '/#contact',
+        permanent: true,
+      },
+      {
+        source: '/doctor/dr-saskia-rodriguez-hausarztpraxis-zurich-in-altstetten',
+        destination: '/#team',
+        permanent: true,
+      },
+      {
+        source: '/doctor/dr-saskia-rodriguez-hausarztpraxis-zurich-in-altstetten/',
+        destination: '/#team',
         permanent: true,
       },
       {

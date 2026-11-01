@@ -1,11 +1,10 @@
 /**
- * Robots.txt Generator
- * 
- * Next.js App Router convention: exporting a default function from
- * app/robots.js automatically generates /robots.txt
+ * Robots.txt Generator – Hausarztpraxis Zürich Altstetten
  * 
  * @see https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots
  */
+
+const CANONICAL = 'https://praxis-altstetten.ch';
 
 export default function robots() {
   return {
@@ -14,21 +13,11 @@ export default function robots() {
         userAgent: '*',
         allow: '/',
         disallow: [
-          '/_next/', 
+          '/_next/',
           '/api/',
-          '/leistungen-alt/',
-          '/hausaerzte-zuerich-altstetten/3-columns-doctors/',
-          '/galerie/4-columns-gallery',
-          '/galerie/4-columns-gallery/',
-          '/Galerienartikel-Typ/praxis-raeume/',
-          '/wp-*.php',
-          '/author/kensy/',
-          '/wp-admin/',
-          '/feed/',
-          '/*/feed/'
         ],
       },
     ],
-    sitemap: 'https://praxis-altstetten.ch/sitemap.xml',
+    sitemap: `${CANONICAL}/sitemap.xml`,
   };
 }
