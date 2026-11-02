@@ -2,15 +2,23 @@ import { SITE } from '@/data/siteData';
 import { MapPinIcon, PhoneIcon, MailIcon } from '@/components/Icons';
 
 export const metadata = {
-  title: 'Impressum',
+  title: 'Kontakt, Adresse & Impressum | Hausarztpraxis Altstetten',
   description:
-    'Impressum der Hausarztpraxis Zürich Altstetten – Angaben gemäss Art. 3 Abs. 1 Bst. s UWG. Betreiber, Kontakt und rechtliche Informationen.',
+    'Kontakt & Adresse der Hausarztpraxis Zürich Altstetten (Badenerstrasse 621). Telefon: 044 244 09 99, Öffnungszeiten, Sprechstunden & Notfall-Informationen.',
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
     canonical: 'https://praxis-altstetten.ch/impressum',
+  },
+  openGraph: {
+    title: 'Kontakt, Adresse & Impressum | Hausarztpraxis Altstetten',
+    description:
+      'Kontakt & Adresse der Hausarztpraxis Zürich Altstetten (Badenerstrasse 621). Telefon: 044 244 09 99, Öffnungszeiten, Sprechstunden & Notfall-Informationen.',
+    url: 'https://praxis-altstetten.ch/impressum',
+    type: 'website',
+    locale: 'de_CH',
   },
 };
 

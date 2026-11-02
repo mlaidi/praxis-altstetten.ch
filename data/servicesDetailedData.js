@@ -1,798 +1,963 @@
 /* ══════════════════════════════════════════════════════════════════════
    Ausführliche medizinische Inhalte für alle 12 Leistungsseiten
    Hausarztpraxis Zürich Altstetten (Badenerstrasse 621, 8048 Zürich)
-   Entspricht dem SEO-Referenzstandard (600–800 Wörter, H1, H2-Struktur,
+   Entspricht dem SEO-Referenzstandard (650–750 Wörter, H1, H2-Struktur,
    FAQ-Schema, interne Verlinkung, praxiseigene Bilder).
    ══════════════════════════════════════════════════════════════════════ */
 
 export const SERVICES_DETAILED = {
-  roentgenuntersuchung: {
-    slug: "roentgenuntersuchung",
-    title: "Röntgenuntersuchung",
-    h1: "Röntgenuntersuchung in Zürich Altstetten",
-    metaTitle: "Digitales Röntgen Zürich Altstetten | Sofortdiagnostik ohne Wartezeit",
-    metaDesc: "Digitales Röntgen direkt in der Hausarztpraxis Zürich Altstetten an der Badenerstrasse 621. Schnelle Bildgebung für Knochen, Thorax & Gelenke. KVG-anerkannt.",
-    intro: "Eine präzise Röntgenuntersuchung direkt in unserer Hausarztpraxis in Zürich Altstetten ermöglicht die rasche bildgebende Abklärung von Knochen, Gelenken und der Lunge. An der Badenerstrasse 621 führen wir digitale Röntgenaufnahmen ohne mühsame Überweisungswege und ohne lange Wartezeiten für Sie durch.",
-    whenNeededTitle: "Wann ist eine Röntgenuntersuchung nötig?",
-    whenNeededParagraphs: [
-      "Eine Röntgenaufnahme ist eines der bewährtesten diagnostischen Verfahren in der Allgemeinmedizin und Notfallversorgung. Sie kommt immer dann zum Einsatz, wenn der Verdacht auf Verletzungen des Skelettsystems oder akute Veränderungen im Brustkorb besteht.",
-      "Typische Indikationen für ein Röntgen in unserer Praxis umfassen:",
+  "roentgenuntersuchung": {
+    "slug": "roentgenuntersuchung",
+    "title": "Röntgenuntersuchung",
+    "h1": "Röntgenuntersuchung in Zürich Altstetten",
+    "metaTitle": "Digitales Röntgen Zürich Altstetten | Sofortdiagnostik ohne Wartezeit",
+    "metaDesc": "Digitales Röntgen in Zürich Altstetten ohne Wartezeit: Sofortdiagnostik für Knochen, Thorax & Gelenke an der Badenerstrasse 621. KVG-Abrechnung. Jetzt Termin!",
+    "intro": "Eine präzise Röntgenuntersuchung direkt in unserer Hausarztpraxis in Zürich Altstetten ermöglicht die rasche bildgebende Abklärung von Knochen, Gelenken und der Lunge. An der Badenerstrasse 621 führen wir hochauflösende digitale Röntgenaufnahmen ohne zeitraubende Überweisungswege und ohne lange Wartezeiten für Sie durch. Unsere modernen Systeme liefern sofortige diagnostische Klarheit für eine zielgerichtete medizinische Behandlung.",
+    "whenNeededTitle": "Wann ist eine Röntgenuntersuchung nötig?",
+    "whenNeededParagraphs": [
+      "Eine Röntgenaufnahme gehört zu den unverzichtbaren diagnostischen Pfeilern in der modernen Allgemeinmedizin, Traumatologie und Notfallversorgung. Sie kommt immer dann zum Einsatz, wenn der begründete Verdacht auf knöcherne Verletzungen, strukturelle Gelenkschäden oder akute pathologische Veränderungen im Brustkorb besteht.",
+      "In unserer Praxis an der Badenerstrasse 621 in Zürich Altstetten klären wir ein breites Spektrum akuter und chronischer Beschwerdebilder direkt vor Ort ab. Typische Indikationen für eine sofortige Röntgenaufnahme umfassen:"
     ],
-    whenNeededPoints: [
-      "Verdacht auf Knochenbruch (Fraktur) nach Stürzen, Sportunfällen oder Freizeitverletzungen an Hand, Fuss, Arm oder Bein.",
-      "Abklärung von Gelenkschmerzen, Schwellungen und Bewegungseinschränkungen bei Verdacht auf Arthrose, Gelenkverschleiss oder Fehlstellungen.",
-      "Thorax-Röntgen (Röntgen des Brustkorbs) bei anhaltendem starkem Husten, Atemnot, Verdacht auf Lungenentzündung (Pneumonie) oder Rippenprellungen.",
-      "Ausschluss oder Lokalisierung von Fremdkörpern im Weichteilgewebe nach Schnittverletzungen oder Unfällen.",
-      "Verlaufskontrollen nach bereits behandelten Frakturen zur Überprüfung der stabilen Knochenheilung.",
+    "whenNeededPoints": [
+      "Verdacht auf Knochenbruch (Fraktur), Haarriss oder Fissur nach Stürzen, Sportunfällen oder Freizeitverletzungen an Hand, Handgelenk, Fuss, Sprunggelenk, Arm oder Bein.",
+      "Abklärung anhaltender oder zunehmender Gelenkschmerzen, Bewegungseinschränkungen und Schwellungen bei Verdacht auf Arthrose, Knorpelverschleiss, Fehlstellungen oder chronische Entzündungen.",
+      "Thorax-Röntgen (Röntgenaufnahme des Brustkorbs und der Lunge) bei starkem Husten, Atemnot, Verdacht auf Lungenentzündung (Pneumonie), Rippenprellung oder Rippenfraktur.",
+      "Lokalisierung und Ausschluss von röntgendichten Fremdkörpern (z. B. Metall- oder Glassplitter) im Weichteilgewebe nach Schnittverletzungen oder Arbeitsunfällen.",
+      "Verlaufskontrollen nach konservativ oder operativ versorgten Knochenbrüchen zur Beurteilung der korrekten Knochendurchbauung und Stabilität."
     ],
-    procedureTitle: "Wie läuft die Untersuchung ab?",
-    procedureParagraphs: [
-      "Die Röntgenuntersuchung in unserer Praxis in Zürich Altstetten ist vollkommen schmerzfrei und dauert in der Regel nur 5 bis 10 Minuten. Vor der Aufnahme werden Sie von unserem geschulten medizinischen Praxispersonal freundlich empfangen und kurz über den genauen Ablauf aufgeklärt.",
-      "Zunächst legen Sie Schmuck, Uhren oder metallhaltige Kleidungsstücke im zu untersuchenden Bereich ab, da Metall die Röntgenstrahlen reflektiert und das Bild verfälschen könnte. Anschliessend werden Sie je nach Körperregion im Stehen, Sitzen oder Liegen exakt positioniert. Körperpartien, die nicht geröntgt werden müssen, schützen wir zuverlässig mit einer speziellen Bleischürze.",
-      "Die eigentliche Aufnahme dauert nur den Bruchteil einer Sekunde – während dieser kurzen Zeit bitten wir Sie, sich nicht zu bewegen und bei Thorax-Aufnahmen kurz den Atem anzuhalten. Bringen Sie bitte Ihre Schweizer Krankenversicherungskarte sowie falls vorhanden Voraufnahmen oder Arztberichte mit.",
+    "procedureTitle": "Wie läuft die Röntgenuntersuchung in der Praxis ab?",
+    "procedureParagraphs": [
+      "Die Röntgenuntersuchung in der Hausarztpraxis Zürich Altstetten ist völlig schmerzfrei, unkompliziert und nimmt meist nur 5 bis 10 Minuten Ihrer Zeit in Anspruch. Vor der Aufnahme empfängt Sie unser speziell geschultes medizinisches Fachpersonal, nimmt sich Zeit für Ihre Fragen und erläutert Ihnen die einzelnen Schritte verständlich.",
+      "Zunächst werden Sie gebeten, Schmuck, Uhren, Gürtel oder metallhaltige Kleidungsstücke in der betreffenden Körperregion abzulegen, da Metalle die Röntgenstrahlen absorbieren und Artefakte auf den Bildern erzeugen können. Anschliessend positionieren wir Sie je nach Zielregion ergonomisch im Stehen, Sitzen oder Liegen. Alle Körperbereiche, die nicht geröntgt werden müssen, schützen wir zuverlässig mit modernsten Bleischutzschürzen.",
+      "Die Auslösung der Aufnahme dauert lediglich einen winzigen Bruchteil einer Sekunde. Während dieses kurzen Moments bitten wir Sie, kurz vollkommen ruhig zu verharren und bei Thorax-Aufnahmen kurz die Luft anzuhalten. Bringen Sie bitte Ihre Schweizer Krankenversicherungskarte sowie vorhandene Voraufnahmen oder Vorberichte mit in die Praxis."
     ],
-    equipmentTitle: "Digitales Röntgen direkt in der Praxis",
-    equipmentParagraphs: [
-      "In unserer Praxis an der Badenerstrasse 621 setzen wir auf moderne digitale Röntgentechnologie. Im Vergleich zum früheren analogen Röntgen profitieren Sie von einer bis zu 80 % reduzierten Strahlenbelastung bei gleichzeitig herausragender Bildschärfe und Kontrastauflösung.",
-      "Ein entscheidender Vorteil für unsere Patientinnen und Patienten: Die Röntgenbilder liegen unmittelbar nach der Aufnahme digital vor und können direkt im Behandlungszimmer auf hochauflösenden Befundungsmonitoren gemeinsam mit dem behandelnden Arzt besprochen werden. Es entsteht kein tagelanges Warten auf Befunde aus externen Röntgeninstituten, und notwendige Therapien wie Schienenverbände, Wundbehandlungen oder medikamentöse Massnahmen können sofort vor Ort eingeleitet werden.",
+    "equipmentTitle": "Modernes digitales Röntgen direkt vor Ort in Altstetten",
+    "equipmentParagraphs": [
+      "An der Badenerstrasse 621 setzen wir konsequent auf modernste volldigitale Röntgentechnologie. Im Vergleich zu älteren analogen Filmen zeichnet sich das digitale Röntgen durch eine um bis zu 80 Prozent reduzierte Strahlenbelastung bei gleichzeitig herausragender Bildqualität, Detailschärfe und Kontrastdifferenzierung aus.",
+      "Für Sie als Patientin oder Patient bedeutet das einen entscheidenden diagnostischen Zeitgewinn: Die digitalen Bilddaten stehen sofort nach der Exposition zur Verfügung und werden direkt auf hochauflösenden Befundungsmonitoren im Sprechzimmer visualisiert. Unsere erfahrenen Ärztinnen und Ärzte besprechen den Befund unmittelbar gemeinsam mit Ihnen. Notwendige Sofortmassnahmen wie Schienenverbände, Tape-Anlagen, Schmerztherapien oder Wundversorgungen können ohne Zeitverlust direkt in unserer Praxis durchgeführt werden."
     ],
-    costsTitle: "Kosten und Krankenkasse",
-    costsParagraphs: [
-      "Die Kosten für medizinisch notwendige digitale Röntgenuntersuchungen werden in der Schweiz vollumfänglich von der obligatorischen Krankenpflegeversicherung (Grundversicherung nach KVG) übernommen. Die Abrechnung erfolgt transparent nach dem offiziellen Schweizer Arzttarif TARMED bzw. TARDOC.",
-      "Es gelten die gesetzliche Franchise und der reguläre Selbstbehalt von 10 %. Wurde das Röntgen infolge eines Unfalls erforderlich (Berufs- oder Nichtberufsunfall), übernimmt die zuständige Schweizer Unfallversicherung (UVG) die gesamten Behandlungskosten ohne Selbstbehalt.",
+    "costsTitle": "Kostenübernahme und Krankenkassenabrechnung",
+    "costsParagraphs": [
+      "Die Kosten für medizinisch indizierte digitale Röntgenuntersuchungen werden in der Schweiz uneingeschränkt von der obligatorischen Krankenpflegeversicherung (Grundversicherung nach KVG) aller Krankenkassen übernommen. Die Abrechnung erfolgt absolut transparent gemäss dem offiziellen Schweizer Arzttarif TARMED bzw. TARDOC.",
+      "Dabei gelten Ihre individuell vereinbarte Franchise und der gesetzliche Selbstbehalt von 10 Prozent. Handelt es sich um eine Unfallfolge (Berufs- oder Nichtberufsunfall), übernimmt Ihre zuständige Schweizer Unfallversicherung (UVG bzw. Suva) die Gesamtkosten der Abklärung zu 100 Prozent ohne Selbstbehalt."
     ],
-    faqs: [
+    "faqs": [
       {
-        q: "Benötige ich für eine Röntgenaufnahme einen Termin?",
-        a: "Bei akuten Notfällen, Verletzungen und Schmerzen nach Stürzen können Sie während unserer Praxisöffnungszeiten jederzeit ohne Voranmeldung als Walk-in-Patient an die Badenerstrasse 621 kommen. Für planbare Kontrollen oder chronische Gelenkbeschwerden empfehlen wir eine kurze telefonische oder digitale Terminbuchung."
+        "q": "Benötige ich für eine Röntgenaufnahme in Altstetten eine Voranmeldung?",
+        "a": "Bei akuten Schmerzen, Verletzungen und Unfällen können Sie während der Praxisöffnungszeiten jederzeit ohne Voranmeldung als Walk-in-Patient in unsere Praxis an der Badenerstrasse 621 kommen. Für geplante Verlaufskontrollen oder chronische Gelenkschmerzen empfiehlt sich eine vorherige Online-Terminbuchung."
       },
       {
-        q: "Wie hoch ist die Strahlenbelastung beim digitalen Röntgen?",
-        a: "Dank modernster digitaler Sensoren ist die Strahlenbelastung auf ein absolutes Minimum reduziert und vergleichbar mit der natürlichen Umweltstrahlung, der man während eines kurzen Fluges ausgesetzt ist. Wir wenden stets das ALARA-Prinzip (As Low As Reasonably Achievable) an."
+        "q": "Wie hoch ist die Strahlenbelastung beim digitalen Röntgen?",
+        "a": "Durch hochempfindliche digitale Detektoren ist die Strahlenexposition extrem gering. Sie entspricht etwa der natürlichen Hintergrundstrahlung weniger Flugstunden. Wir arbeiten streng nach dem medizinischen ALARA-Prinzip (As Low As Reasonably Achievable), um höchste diagnostische Qualität mit minimaler Strahlenlast zu verbinden."
       },
       {
-        q: "Können die Röntgenbilder an andere Spezialärzte weitergeleitet werden?",
-        a: "Ja, selbstverständlich. Da alle Aufnahmen digital gespeichert werden, können wir Ihnen die Röntgenbilder auf Wunsch als digitale Bilddatei übermitteln oder direkt sicher über das HIN-Netzwerk an nachbehandelnde Orthopäden oder Chirurgen senden."
+        "q": "Können die Röntgenbilder an Spitäler oder Orthopäden übermittelt werden?",
+        "a": "Ja, problemlos. Da alle Aufnahmen volldigital archiviert werden, können wir Ihnen die Bilddaten digital bereitstellen oder sicher über das geschützte Schweizer HIN-Netzwerk an nachbehandelnde Spezialärzte, Orthopäden oder Kliniken im Grossraum Zürich übermitteln."
       },
       {
-        q: "Darf während einer Schwangerschaft geröntgt werden?",
-        a: "Röntgenuntersuchungen während der Schwangerschaft – insbesondere im Becken- und Bauchbereich – werden nur bei zwingender medizinischer Notwendigkeit durchgeführt. Bitte informieren Sie uns vor der Aufnahme immer sofort über eine bestehende oder mögliche Schwangerschaft."
+        "q": "Darf eine Röntgenuntersuchung während der Schwangerschaft erfolgen?",
+        "a": "Während einer Schwangerschaft – insbesondere im Becken- und Bauchbereich – führen wir Röntgenaufnahmen nur bei vitaler Notwendigkeit durch. Bitte informieren Sie uns unbedingt vorab, falls eine Schwangerschaft besteht oder nicht sicher ausgeschlossen werden kann."
       },
       {
-        q: "Wer beurteilt die Röntgenaufnahmen in der Praxis Altstetten?",
-        a: "Die Röntgenbilder werden unmittelbar durch unsere erfahrenen Grundversorger und Notfallmediziner beurteilt. Bei komplexen Fragestellungen ziehen wir telemedizinisch spezialisierte Fachärzte für Radiologie hinzu."
+        "q": "Wer beurteilt die Röntgenaufnahmen in der Hausarztpraxis Altstetten?",
+        "a": "Die Aufnahmen werden unmittelbar durch unsere erfahrenen Grundversorger und Notfallmediziner begutachtet. Bei besonders anspruchsvollen Fragestellungen nutzen wir etablierte telemedizinische Kooperationen mit Fachärzten für Radiologie."
       }
     ],
-    images: [
-      { src: "/images/services/Röntgenuntersuchung.webp", alt: "Digitales Röntgengerät in der Hausarztpraxis Zürich Altstetten" },
-      { src: "/images/praxis/1x.webp", alt: "Moderner Empfangsbereich der Hausarztpraxis Altstetten" },
-      { src: "/images/praxis/3x.webp", alt: "Behandlungs- und Konsultationsraum an der Badenerstrasse 621" },
-    ],
-    relatedSlugs: ["herzuntersuchung", "labor", "notfallpraxis-walk-in", "lungenuntersuchungen"]
-  },
-
-  herzuntersuchung: {
-    slug: "herzuntersuchung",
-    title: "Herzuntersuchung",
-    h1: "Herzuntersuchung in Zürich Altstetten",
-    metaTitle: "Herzuntersuchung & EKG Zürich Altstetten | Kardiologische Diagnostik",
-    metaDesc: "Umfassende kardiologische Diagnostik mit EKG und Langzeit-EKG in Zürich Altstetten. Frühzeitige Erkennung von Herzrhythmusstörungen. Jetzt Termin buchen.",
-    intro: "Eine professionelle Herzuntersuchung in Zürich Altstetten bildet das Fundament für die frühzeitige Erkennung und gezielte Behandlung kardiovaskulärer Erkrankungen. In unserer modern ausgestatteten Praxis an der Badenerstrasse 621 bieten wir Ihnen Ruhe-EKG, Langzeitmessungen und fundierte Herz-Kreislauf-Check-ups unter erfahrener ärztlicher Leitung.",
-    whenNeededTitle: "Wann ist eine Herzuntersuchung nötig?",
-    whenNeededParagraphs: [
-      "Das Herz ist der wichtigste Muskel unseres Körpers, und Beschwerden im Brustbereich verlangen stets eine sorgfältige und zeitnahe ärztliche Abklärung. Viele Herz-Kreislauf-Erkrankungen entwickeln sich schleichend und ohne spürbare Schmerzen.",
-      "Eine fundierte kardiologische Untersuchung in unserer Praxis empfiehlt sich insbesondere bei folgenden Symptomen und Lebenssituationen:",
-    ],
-    whenNeededPoints: [
-      "Druck- oder Engegefühl im Brustkorb, Stechen oder Schmerzen, die in Schulter, Arme oder Kiefer ausstrahlen (bei akuten Ruheschmerzen sofort Notruf 144 wählen).",
-      "Spürbares Herzstolpern, Herzrasen (Tachykardie) oder unregelmässiger Herzschlag im Ruhezustand oder bei alltäglichen Belastungen.",
-      "Unerklärliche Atemnot bei geringer körperlicher Anstrengung, Treppensteigen oder flachem Liegen.",
-      "Schwindelanfälle, plötzliche Benommenheit oder kurzzeitige Ohnmachtsanfälle (Synkopen).",
-      "Vorsorgeuntersuchung bei bekannten kardiovaskulären Risikofaktoren wie Bluthochdruck (Hypertonie), erhöhtem Cholesterin, Diabetes, Rauchen oder familiärer Vorbelastung.",
-    ],
-    procedureTitle: "Wie läuft die Untersuchung ab?",
-    procedureParagraphs: [
-      "Die Herzuntersuchung in der Hausarztpraxis Zürich Altstetten beginnt mit einem ausführlichen Gespräch über Ihre persönliche Krankengeschichte, Vorerkrankungen und Ihren Lebensstil. Anschliessend erfolgt die körperliche Untersuchung mit Abhören von Herz und Lunge sowie der präzisen Blutdruck- und Pulsmessung.",
-      "Das Standard-Ruhe-EKG (Elektrokardiogramm) dauert etwa 5 bis 10 Minuten. Dabei werden kleine Elektroden an Brustkorb, Handgelenken und Knöcheln angebracht, die die elektrischen Herzströme schmerzfrei aufzeichnen. Bei Verdacht auf anfallsweises Herzstolpern statten wir Sie mit einem mobilen Langzeit-EKG aus, das Ihre Herzaktivität über 24 Stunden im gewohnten Alltag aufzeichnet.",
-      "Bringen Sie bitte Ihre Versichertenkarte, Ihre aktuelle Medikamentenliste sowie allfällige frühere kardiologische Befunde mit zum Termin.",
-    ],
-    equipmentTitle: "Moderne kardiologische Diagnostik direkt in der Praxis",
-    equipmentParagraphs: [
-      "In unserer Praxis in Zürich Altstetten verfügen wir über modernste computergestützte 12-Kanal-EKG-Geräte und kompakte Langzeit-Recorder. Die Aufzeichnungen werden unmittelbar digital analysiert und archiviert, sodass Vorbefunde jederzeit sekundenschnell zum Vergleich herangezogen werden können.",
-      "In Kombination mit unserem praxiseigenen Sofortlabor können wir innerhalb von nur 15 Minuten wichtige kardiale Notfallmarker wie Troponin (zum Ausschluss eines Herzinfarkts) oder D-Dimer (zum Ausschluss von Lungenembolien) bestimmen. Diese unmittelbare Diagnostik vor Ort verschafft Ihnen sofortige Gewissheit und spart lebenswichtige Zeit.",
-    ],
-    costsTitle: "Kosten und Krankenkasse",
-    costsParagraphs: [
-      "Medizinisch indizierte Herzuntersuchungen, Ruhe-EKG, Langzeit-EKG und kardiologische Laboranalysen werden in der Schweiz vollständig durch die Grundversicherung (KVG) aller Krankenkassen vergütet.",
-      "Die Abrechnung erfolgt nach TARMED/TARDOC unter Berücksichtigung Ihrer gewählten Jahresfranchise und des Selbstbehalts. Für präventive Sport-Checks oder Tauchtauglichkeitsatteste informieren wir Sie vorab transparent über allfällige Selbstzahlerkosten.",
-    ],
-    faqs: [
+    "images": [
       {
-        q: "Ist das Anbringen der EKG-Elektroden schmerzhaft?",
-        a: "Nein, ein EKG ist vollkommen schmerzfrei und absolut ungefährlich. Es misst lediglich die ohnehin vom Herzen erzeugten elektrischen Impulse und leitet keinen Strom in den Körper weiter."
+        "src": "/images/services/Röntgenuntersuchung.webp",
+        "alt": "Digitales Röntgengerät in der Hausarztpraxis Zürich Altstetten"
       },
       {
-        q: "Wie unterscheidet sich ein Ruhe-EKG von einem Langzeit-EKG?",
-        a: "Ein Ruhe-EKG erfasst eine Momentaufnahme von wenigen Sekunden im Liegen. Ein Langzeit-EKG zeichnet den Herzrhythmus über 24 bis 48 Stunden auf und erfasst so auch Rhythmusstörungen, die nur sporadisch im Schlaf oder bei Stress auftreten."
+        "src": "/images/praxis/1x.webp",
+        "alt": "Moderner Empfangsbereich der Hausarztpraxis Altstetten"
       },
       {
-        q: "Was muss ich vor einer EKG-Untersuchung beachten?",
-        a: "Verzichten Sie unmittelbar vor der Untersuchung auf reichhaltige Mahlzeiten und übermässigen Kaffeekonsum. Cremen Sie den Brustbereich am Tag der Untersuchung bitte nicht ein, damit die Klebeelektroden optimal haften."
-      },
-      {
-        q: "Wie schnell erhalte ich die Ergebnisse meiner Herzuntersuchung?",
-        a: "Das Ergebnis des Ruhe-EKGs und wichtige Herzlaborwerte besprechen wir sofort während der Konsultation mit Ihnen. Bei einem Langzeit-EKG erfolgt die detaillierte Auswertung innerhalb von 1 bis 2 Werktagen."
-      },
-      {
-        q: "Überweisen Sie bei Bedarf an kardiologische Spezialisten?",
-        a: "Ja. Dank unseres engen Netzwerks im Grossraum Zürich überweisen wir Sie bei komplexen Befunden direkt und unkompliziert an erfahrene Kardiologen für Herzultraschall (Echokardiographie) oder Koronarangiographien."
+        "src": "/images/praxis/3x.webp",
+        "alt": "Behandlungs- und Konsultationsraum an der Badenerstrasse 621"
       }
     ],
-    images: [
-      { src: "/images/services/Herzuntersuchung.webp", alt: "Kardiologische Diagnostik und EKG in Zürich Altstetten" },
-      { src: "/images/praxis/4x.webp", alt: "Praxiseigenes Diagnostiklabor für kardiale Sofortmarker" },
-      { src: "/images/praxis/1x.webp", alt: "Empfang der Hausarztpraxis Zürich Altstetten" },
-    ],
-    relatedSlugs: ["lungenuntersuchungen", "labor", "check-ups", "notfallpraxis-walk-in"]
+    "relatedSlugs": [
+      "herzuntersuchung",
+      "labor",
+      "notfallpraxis-walk-in",
+      "lungenuntersuchungen"
+    ]
   },
-
-  lungenuntersuchungen: {
-    slug: "lungenuntersuchungen",
-    title: "Lungenuntersuchungen",
-    h1: "Lungenuntersuchungen in Zürich Altstetten",
-    metaTitle: "Lungenuntersuchung & Spirometrie Zürich Altstetten | Atemwegsdiagnostik",
-    metaDesc: "Lungenfunktionstest (Spirometrie) in Zürich Altstetten. Präzise Abklärung bei Asthma, chronischem Husten und COPD an der Badenerstrasse 621. Jetzt buchen.",
-    intro: "Umfassende Lungenuntersuchungen in Zürich Altstetten ermöglichen die schnelle und verlässliche Diagnose von Erkrankungen der Atemwege und der Lunge. In unserer Praxis an der Badenerstrasse 621 führen wir hochmoderne Spirometrie-Tests und Sauerstoffmessungen durch, um Asthma, COPD und Infektionen frühzeitig zu therapieren.",
-    whenNeededTitle: "Wann ist eine Lungenuntersuchung nötig?",
-    whenNeededParagraphs: [
-      "Atemnot und chronische Atemwegsbeschwerden schränken die Lebensqualität erheblich ein. Eine rechtzeitige lungenfachliche Abklärung verhindert dauerhafte Schäden am Lungengewebe und sorgt für eine spürbare Linderung der Symptome.",
-      "Wir empfehlen einen Lungenfunktionstest in unserer Praxis insbesondere bei folgenden Beschwerden:",
+  "herzuntersuchung": {
+    "slug": "herzuntersuchung",
+    "title": "Herzuntersuchung",
+    "h1": "Herzuntersuchung & EKG in Zürich Altstetten",
+    "metaTitle": "Herzuntersuchung & EKG Zürich Altstetten | Kardiologische Diagnostik",
+    "metaDesc": "Kardiologische Diagnostik in Zürich Altstetten: Ruhe- & Langzeit-EKG, Herz-Kreislauf-Check & Notfall-Biomarker an der Badenerstrasse 621. Jetzt Termin buchen!",
+    "intro": "Eine professionelle Herzuntersuchung in Zürich Altstetten bildet das verlässliche Fundament für die frühzeitige Erkennung, zielgerichtete Prävention und erfolgreiche Behandlung kardiovaskulärer Erkrankungen. In unserer Praxis an der Badenerstrasse 621 nahe dem Bahnhof Altstetten bieten wir Ihnen präzise Ruhe-EKGs, ambulante Langzeit-Messungen und strukturierte Herz-Kreislauf-Check-ups unter erfahrener ärztlicher Leitung.",
+    "whenNeededTitle": "Wann ist eine kardiologische Herzuntersuchung nötig?",
+    "whenNeededParagraphs": [
+      "Das menschliche Herz ist der zentrale Motor unseres Organismus. Herz-Kreislauf-Erkrankungen wie Hypertonie, koronare Herzkrankheit oder Herzrhythmusstörungen entwickeln sich häufig schleichend über Monate und Jahre, ohne dass die Betroffenen zunächst deutliche Schmerzen verspüren.",
+      "Eine zeitnahe kardiologische Abklärung in unserer Praxis in Zürich Altstetten ist dringend angeraten, sobald Warnsignale auftreten oder ein erhöhtes individuelles Risikoprofil vorliegt. Zu den wichtigsten Indikationen zählen:"
     ],
-    whenNeededPoints: [
-      "Anhaltender Husten über mehr als 3 bis 4 Wochen (Reizhusten, morgendlicher Auswurf oder chronische Bronchitis).",
-      "Kurzatmigkeit oder Engegefühl in der Brust bei alltäglichen Aktivitäten wie Treppensteigen oder Spaziergängen.",
-      "Hörbare Atemgeräusche wie Pfeifen, Giemen oder Brummen beim Ausatmen.",
-      "Verdacht auf allergisches Asthma bronchiale, Heuschnupfen-Komplikationen oder berufsbedingte Atemwegsbeschwerden.",
-      "Langjähriger Tabakkonsum (Raucher-Check) zur Früherkennung von chronisch obstruktiver Lungenerkrankung (COPD).",
-      "Nachkontrollen nach schweren viralen Lungeninfektionen (z. B. nach Pneumonie oder Long-COVID-Symptomen).",
+    "whenNeededPoints": [
+      "Druck-, Enge- oder Beklemmungsgefühl im Brustkorb (Angina Pectoris), Stechen hinter dem Brustbein oder Schmerzen, die in Schulter, linken Arm, Rücken oder Unterkiefer ausstrahlen (bei akuten Ruheschmerzen sofort Notruf 144 wählen).",
+      "Spürbares Herzstolpern (Extrasystolen), Herzrasen (Tachykardie) oder unregelmässiger Puls in Ruhe sowie bei gewohnter körperlicher Aktivität.",
+      "Unerklärliche Atemnot oder Kurzatmigkeit bereits bei leichten Alltagstätigkeiten wie Treppensteigen, zügigem Gehen oder beim flachen Liegen im Bett.",
+      "Wiederkehrender Schwindel, Benommenheitsgefühle, plötzliche Kreislaufschwäche oder kurzzeitige Ohnmachtsanfälle (Synkopen).",
+      "Präventiver Herz-Check-up bei bekannten kardiovaskulären Risikofaktoren wie Bluthochdruck, Fettstoffwechselstörungen (hohes LDL-Cholesterin), Diabetes mellitus, Rauchen oder familiärer Häufung von Herzinfarkten."
     ],
-    procedureTitle: "Wie läuft die Untersuchung ab?",
-    procedureParagraphs: [
-      "Die zentrale Methode unserer Lungenuntersuchung ist die Spirometrie (Lungenfunktionstest). Die Untersuchung ist vollkommen schmerzlos, dauert rund 15 bis 20 Minuten und erfordert lediglich Ihre aktive Mitarbeit.",
-      "Sie sitzen aufrecht und atmen über ein spezielles Mundstück mit Bakterienfilter in das Spirometer ein und aus, während eine weiche Nasenklemme die Nasenatmung verhindert. Nach normaler Ruheatmung werden Sie gebeten, tiefstmöglich einzuatmen und anschliessend so schnell und kräftig wie möglich die gesamte Luft herauszublasen. Das Gerät misst dabei das Lungenvolumen und die Strömungsgeschwindigkeit der Luft.",
-      "Je nach Fragestellung wiederholen wir die Messung nach Gabe eines bronchienerweiternden Sprays (Bronchospasmolysetest), um zu prüfen, ob sich verengte Atemwege wieder öffnen. Bringen Sie bitte Ihre Versichertenkarte und allfällige Inhalationsmedikamente mit.",
+    "procedureTitle": "Wie läuft die Herzuntersuchung in der Praxis ab?",
+    "procedureParagraphs": [
+      "Die Herzuntersuchung in der Hausarztpraxis Zürich Altstetten beginnt stets mit einer ausführlichen ärztlichen Anamnese. Wir besprechen Ihre aktuellen Symptome, Vorerkrankungen, Lebensgewohnheiten und Medikamente in einer ruhigen, vertrauensvollen Atmosphäre. Anschliessend folgt die gezielte körperliche Untersuchung inklusive Auskultation von Herz und Lungen sowie präziser Blutdruck- und Pulsmessung an beiden Armen.",
+      "Das Standard-Ruhe-EKG (12-Kanal-Elektrokardiogramm) dauert etwa 5 bis 10 Minuten. Hierbei werden kleine Klebeelektroden an Ihrem Brustkorb, den Handgelenken und Fussknöcheln angebracht. Das EKG registriert die natürlichen elektrischen Impulse Ihres Herzmuskels vollkommen schmerzfrei und zeichnet sie als Kurvensignal auf. Bei Verdacht auf paroxysmale Herzrhythmusstörungen oder unklare Synkopen statten wir Sie mit einem kompakten Langzeit-EKG-Gerät aus, das Ihre Herzaktivität über 24 bis 48 Stunden im vertrauten Alltag dokumentiert.",
+      "Zur Konsultation bringen Sie bitte Ihre Schweizer Krankenkassenkarte, Ihre aktuelle Medikamentenliste sowie eventuell vorhandene frühere EKG-Ausdrucke oder Spitalberichte mit."
     ],
-    equipmentTitle: "Moderne Spirometrie direkt in der Praxis",
-    equipmentParagraphs: [
-      "In unserer Praxis an der Badenerstrasse 621 setzen wir auf hochpräzise, kalibrierte Ultraschall-Spirometer der neuesten Generation. Die Messdaten werden in Echtzeit als Fluss-Volumen-Kurve dargestellt und mit den offiziellen Sollwerten nach Alter, Geschlecht und Körpergrösse verglichen.",
-      "Gleichzeitig können wir vor Ort die Sauerstoffsättigung im Blut mittels Pulsoximetrie bestimmen und bei Bedarf eine Röntgenaufnahme des Brustkorbs (Thorax) auf unserem praxiseigenen digitalen Röntgengerät anfertigen. So erhalten Sie eine lückenlose Diagnostik aus einer Hand an einem einzigen Termin.",
+    "equipmentTitle": "Moderne kardiologische Diagnostik und Praxislabor in Altstetten",
+    "equipmentParagraphs": [
+      "In unserer Praxis an der Badenerstrasse 621 setzen wir moderne digital vernetzte 12-Kanal-EKG-Systeme und ergonomische Langzeit-Holter-Recorder ein. Die digitalen Kurven werden sofort algorithmisch voranalysiert, dauerhaft archiviert und können mit historischen Vergleichsaufnahmen sekundenschnell abgeglichen werden.",
+      "Ein unverzichtbarer Vorteil unserer Praxisinfrastruktur ist die unmittelbare Kopplung an unser praxiseigenes Sofortlabor. Bei unklaren Thoraxbeschwerden können wir hochspezifische kardiale Notfall-Biomarker wie hochsensitives Troponin (zum sicheren Ausschluss eines akuten Myokardinfarkts) sowie D-Dimere (zum Ausschluss einer Lungenembolie) innerhalb von nur 15 Minuten bestimmen. Dies garantiert Ihnen maximale diagnostische Sicherheit ohne unnötige Spitalwartezeiten."
     ],
-    costsTitle: "Kosten und Krankenkasse",
-    costsParagraphs: [
-      "Sämtliche medizinisch verordneten Lungenfunktionsprüfungen, Spirometrien und begleitenden Sauerstoffanalysen sind anerkannte Pflichtleistungen der Schweizer Krankenpflege-Grundversicherung (KVG).",
-      "Die Abrechnung erfolgt transparant über den Schweizer TARMED-Tarif. Nach Abzug der vereinbarten Franchise und des gesetzlichen Selbstbehalts übernimmt Ihre Krankenkasse die Kosten vollständig.",
+    "costsTitle": "Kosten und Krankenkassenvergütung nach KVG",
+    "costsParagraphs": [
+      "Alle medizinisch begründeten kardiologischen Untersuchungen, Ruhe-EKGs, Langzeit-EKGs und labormedizinischen Herz-Biomarker werden in der Schweiz vollumfänglich durch die obligatorische Krankenpflegeversicherung (Grundversicherung nach KVG) erstattet.",
+      "Die Abrechnung erfolgt transparent nach dem offiziellen Schweizer Arzttarif TARMED bzw. TARDOC, unter Anrechnung Ihrer gewählten Jahresfranchise und des gesetzlichen Selbstbehalts von 10 Prozent. Für präventive Sport-Checks oder Tauchtauglichkeitsuntersuchungen informieren wir Sie vorab über die fairen Tarife."
     ],
-    faqs: [
+    "faqs": [
       {
-        q: "Muss ich meine Asthmasprays vor der Spirometrie absetzen?",
-        a: "Wenn die Untersuchung der Erstdiagnose dient, sollten kurzwirksame Inhalatoren oft einige Stunden vor dem Test pausiert werden. Bei einer Verlaufskontrolle soll die Messung meist unter gewohnter Medikation stattfinden. Wir informieren Sie bei der Terminvereinbarung genau darüber."
+        "q": "Ist eine EKG-Untersuchung mit Schmerzen oder Risiken verbunden?",
+        "a": "Nein, ein EKG ist absolut schmerzfrei, unschädlich und frei von jeglichen Nebenwirkungen. Die Elektroden registrieren lediglich die ohnehin vom Herzen ausgesendeten körpereigenen elektrischen Ströme; es wird keinerlei Strom in den Körper geleitet."
       },
       {
-        q: "Ist der Lungenfunktionstest anstrengend?",
-        a: "Das maximale Ausatmen erfordert einen kurzen Kraftaufwand von wenigen Sekunden. Zwischen den einzelnen Manövern haben Sie ausreichend Zeit zum Durchatmen. Für Ihren Körper ist der Test völlig unschädlich."
+        "q": "Worin liegt der Unterschied zwischen einem Ruhe-EKG und einem Langzeit-EKG?",
+        "a": "Das Ruhe-EKG liefert eine Momentaufnahme von wenigen Sekunden im Liegen. Ein Langzeit-EKG zeichnet Ihren Herzrhythmus über 24 bis 48 Stunden auf und erfasst so zuverlässig Rhythmusstörungen, die nur sporadisch unter Stress, beim Sport oder nachts auftreten."
       },
       {
-        q: "Ab welchem Alter kann eine Spirometrie durchgeführt werden?",
-        a: "Da der Test ein aktives Mitmachen und genaues Befolgen der Atemkommandos erfordert, ist er in der Regel ab einem Alter von ca. 5 bis 6 Jahren zuverlässig durchführbar."
+        "q": "Wie bereite ich mich optimal auf die Herzuntersuchung vor?",
+        "a": "Nehmen Sie Ihre gewohnten Medikamente wie verordnet ein. Vermeiden Sie kurz vor dem Termin stark koffeinhaltige Getränke oder schwere Mahlzeiten. Bitte cremen Sie Ihren Oberkörper am Untersuchungstag nicht ein, damit die Klebeelektroden stabilen Hautkontakt behalten."
       },
       {
-        q: "Wie unterscheidet die Spirometrie zwischen Asthma und COPD?",
-        a: "Bei Asthma lässt sich die Verengung der Atemwege durch ein Inhalationsspray meist vollständig normalisieren (Reversibilität), während bei COPD eine dauerhafte, nur teilweise umkehrbare Verengung bestehen bleibt."
+        "q": "Wie schnell liegen die Befunde der Herzuntersuchung vor?",
+        "a": "Das Ergebnis des Ruhe-EKGs und die Werte unseres Notfalllabors bespricht der Arzt unmittelbar im Termin mit Ihnen. Die Auswertung des 24-Stunden-Langzeit-EKGs liegt in der Regel nach 1 bis 2 Werktagen vollständig vor."
       },
       {
-        q: "Wann liegen die Ergebnisse der Lungenuntersuchung vor?",
-        a: "Die Kurven und Volumenwerte stehen unmittelbar nach Beendigung der Messung fest und werden direkt im Anschluss ausführlich mit Ihnen besprochen."
+        "q": "Erfolgt bei auffälligen Befunden eine Überweisung an Spezialisten?",
+        "a": "Ja. Dank unseres engen Netzwerks mit renommierten Kardiologie-Zentren im Grossraum Zürich überweisen wir Sie bei Bedarf direkt für weiterführende Verfahren wie Echokardiographie (Herzultraschall), Belastungs-EKG oder Koronarangiographie."
       }
     ],
-    images: [
-      { src: "/images/services/Lungenuntersuchungen.webp", alt: "Lungenfunktionstest und Spirometrie in Zürich Altstetten" },
-      { src: "/images/services/Röntgenuntersuchung.webp", alt: "Thorax-Röntgen zur Lungenabklärung direkt vor Ort" },
-      { src: "/images/praxis/3x.webp", alt: "Ruhiger Konsultationsraum für Atemwegsberatung" },
-    ],
-    relatedSlugs: ["roentgenuntersuchung", "herzuntersuchung", "notfallpraxis-walk-in", "check-ups"]
-  },
-
-  fahreignungsabklaerung: {
-    slug: "fahreignungsabklaerung",
-    title: "Fahreignungsabklärung",
-    h1: "Fahreignungsabklärung in Zürich Altstetten",
-    metaTitle: "Fahreignungsabklärung Stufe 1 & 2 Zürich Altstetten | Strassenverkehrsamt",
-    metaDesc: "Offizielle Fahreignungsuntersuchung Stufe 1 & 2 in Zürich Altstetten (Senioren ab 75, Berufschauffeure, Atteste Strassenverkehrsamt). Schnell & unkompliziert.",
-    intro: "Die offizielle Fahreignungsabklärung in Zürich Altstetten gewährleistet die verkehrsmedizinische Begutachtung nach den Richtlinien des Strassenverkehrsamtes. An der Badenerstrasse 621 führen wir anerkannte Kontrolluntersuchungen für Senioren ab 75 Jahren sowie Berufsfahrer der Stufe 1 und 2 schnell und kompetent durch.",
-    whenNeededTitle: "Wann ist eine Fahreignungsabklärung nötig?",
-    whenNeededParagraphs: [
-      "In der Schweiz verlangt das Strassenverkehrsgesetz regelmässige medizinische Kontrolluntersuchungen, um die Fahrsicherheit im Strassenverkehr zum Schutz aller Verkehrsteilnehmer zu gewährleisten.",
-      "Eine verkehrsmedizinische Untersuchung in unserer Praxis ist in folgenden gesetzlich geregelten Fällen erforderlich:",
-    ],
-    whenNeededPoints: [
-      "Periodische Kontrolluntersuchung für Seniorinnen und Senioren ab dem 75. Lebensjahr (Stufe 1, alle zwei Jahre auf Aufforderung des kantonalen Strassenverkehrsamtes).",
-      "Verkehrsmedizinische Untersuchung für Berufschauffeure der Stufe 2 (Kategorien C, C1, D, D1, gewerbsmässiger Personentransport BPT/Taxi).",
-      "Ersterwerb oder Wiedererteilung eines Führerausweises nach behördlicher Auflage.",
-      "Wiedereinstieg nach schwerer Erkrankung, Schlaganfall, Herzinfarkt oder bei bekannten neurologischen Erkrankungen.",
-      "Freiwilliger Selbst-Check der Fahrsicherheit im höheren Lebensalter zur eigenen Beruhigung und für Angehörige.",
-    ],
-    procedureTitle: "Wie läuft die Untersuchung ab?",
-    procedureParagraphs: [
-      "Die verkehrsmedizinische Kontrolluntersuchung dauert rund 30 bis 45 Minuten und folgt einem standardisierten, vom Bundesamt für Strassen (ASTRA) vorgegebenen Ablauf. Unser Praxisteam empfängt Sie freundlich an der Badenerstrasse 621 in Altstetten.",
-      "Zunächst erfassen wir Ihre Krankengeschichte und besprechen allfällige Vorerkrankungen sowie Ihre Dauermedikation. Anschliessend überprüfen wir Ihr Sehvermögen (Sehschärfe und Gesichtsfeld), Ihr Gehör, den Blutdruck und die Beweglichkeit von Kopf, Nacken und Gliedmassen. Ein Urintest prüft auf Eiweiss, Zucker und Glukose.",
-      "Abschliessend testen wir Ihre kognitiven Fähigkeiten, Reaktionsschnelligkeit und Orientierung. Bringen Sie bitte das offizielle Aufforderungsformular des Strassenverkehrsamtes, Ihre aktuelle Brille/Kontaktlinsen, den Führerausweis und einen aktuellen Medikamentenplan mit.",
-    ],
-    equipmentTitle: "Zertifizierte Diagnostik direkt in der Praxis",
-    equipmentParagraphs: [
-      "Unsere Praxis ist offiziell als verkehrsmedizinische Untersuchungsstelle anerkannt. Wir verfügen über genormte Sehtesttafeln, Sehprüfgeräte für das Dämmerungssehen und praxiseigene Laborkapazitäten für die sofortige Urin- und Blutzuckeranalyse.",
-      "Nach Abschluss aller Tests füllen wir das amtliche Zeugnis direkt für Sie aus und übermitteln die Bestätigung auf Wunsch elektronisch oder händigen Ihnen das abgestempelte Originalformular sofort für das Strassenverkehrsamt Zürich aus.",
-    ],
-    costsTitle: "Kosten und Krankenkasse",
-    costsParagraphs: [
-      "Gesetzlich vorgeschriebene Fahreignungsuntersuchungen sind administrative Kontrolluntersuchungen und werden gemäss Schweizer Krankenversicherungsgesetz (KVG) nicht von der obligatorischen Krankenkasse bezahlt.",
-      "Die Abrechnung erfolgt als Selbstzahlerleistung transparent nach den kantonalen Tarifen. Sie können den Betrag bequem direkt vor Ort bar, mit EC-/Maestro-Karte, Postcard, Kreditkarte oder TWINT begleichen.",
-    ],
-    faqs: [
+    "images": [
       {
-        q: "Welche Dokumente muss ich zum Fahreignungstest mitbringen?",
-        a: "Bringen Sie das originale Aufgebotsformular des Strassenverkehrsamtes, Ihren Führerausweis, einen amtlichen Lichtbildausweis, Ihre Fernbrille (falls vorhanden auch den Brillenpass) sowie eine Liste Ihrer Medikamente mit."
+        "src": "/images/services/Herzuntersuchung.webp",
+        "alt": "Kardiologische Diagnostik und EKG in Zürich Altstetten"
       },
       {
-        q: "Was passiert, wenn mein Sehvermögen nicht ganz ausreicht?",
-        a: "Häufig liegt es lediglich an einer veralteten Brillenstärke. In diesem Fall verweisen wir Sie kurz zum Optiker für eine Anpassung der Sehhilfe und tragen die Sehhilfepflicht (Code 01) in das Zeugnis ein."
+        "src": "/images/praxis/4x.webp",
+        "alt": "Praxiseigenes Diagnostiklabor für kardiale Sofortmarker"
       },
       {
-        q: "Gilt die Untersuchung für Senioren ab 70 oder ab 75 Jahren?",
-        a: "Seit der Gesetzesänderung im Jahr 2019 beginnt die Pflicht zur periodischen Kontrolluntersuchung in der Schweiz erst ab dem 75. Altersjahr (sofern keine früheren behördlichen Auflagen bestehen)."
-      },
-      {
-        q: "Führen Sie auch Kontrollen der Stufe 3 oder 4 durch?",
-        a: "In unserer Grundversorgerpraxis führen wir Untersuchungen der Stufen 1 und 2 durch. Für Stufe 3 und 4 (psychologische Gutachten, Drogen-/Alkoholfragestellungen) sind spezialisierte rechtsmedizinische Institute zuständig."
-      },
-      {
-        q: "Wie lange vor der Frist sollte ich einen Termin buchen?",
-        a: "Wir empfehlen, den Termin 3 bis 4 Wochen vor Ablauf der vom Strassenverkehrsamt gesetzten Frist zu vereinbaren, um Engpässe zu vermeiden."
+        "src": "/images/praxis/1x.webp",
+        "alt": "Empfang der Hausarztpraxis Zürich Altstetten"
       }
     ],
-    images: [
-      { src: "/images/services/Fahreignungsabklärung.webp", alt: "Offizielle Fahreignungsuntersuchung in Zürich Altstetten" },
-      { src: "/images/praxis/1x.webp", alt: "Empfangsbereich für Fahreignungsatteste an der Badenerstrasse 621" },
-      { src: "/images/praxis/3x.webp", alt: "Untersuchungszimmer für Seh- und Mobilitätstests" },
-    ],
-    relatedSlugs: ["check-ups", "labor", "herzuntersuchung", "vorsorge-checkup"]
+    "relatedSlugs": [
+      "lungenuntersuchungen",
+      "labor",
+      "check-ups",
+      "notfallpraxis-walk-in"
+    ]
   },
-
-  ohrenspuelung: {
-    slug: "ohrenspuelung",
-    title: "Ohrenspülung",
-    h1: "Ohrenspülung in Zürich Altstetten",
-    metaTitle: "Ohrenspülung Zürich Altstetten | Sanfte Ohrenreinigung & Cerumen-Entfernung",
-    metaDesc: "Professionelle Ohrenspülung & Cerumen-Entfernung in Zürich Altstetten an der Badenerstrasse 621. Schnelle Hilfe bei verstopften Ohren & Hörminderung.",
-    intro: "Eine professionelle Ohrenspülung in Zürich Altstetten befreit verstopfte Gehörgänge schonend und effektiv von störendem Ohrenschmalz (Cerumenpfropf). In unserer modernen Hausarztpraxis an der Badenerstrasse 621 sorgen wir mit sanften Spül- und Absaugmethoden für eine sofortige Wiederherstellung Ihres vollen Hörvermögens.",
-    whenNeededTitle: "Wann ist eine Ohrenspülung nötig?",
-    whenNeededParagraphs: [
-      "Ohrenschmalz (Cerumen) ist eine natürliche Schutzsubstanz des Gehörgangs, die Schmutz und Bakterien bindet. Durch übermässige Produktion, enge Gehörgänge oder die unsachgemässe Verwendung von Wattestäbchen kann sich jedoch ein harter Pfropf bilden, der den Gehörgang komplett verschliesst.",
-      "Typische Symptome, bei denen eine professionelle Ohrenreinigung erforderlich ist:",
+  "lungenuntersuchungen": {
+    "slug": "lungenuntersuchungen",
+    "title": "Lungenuntersuchungen",
+    "h1": "Lungenuntersuchungen & Spirometrie in Zürich Altstetten",
+    "metaTitle": "Lungenfunktionstest & Spirometrie Zürich Altstetten | Praxis Altstetten",
+    "metaDesc": "Lungenfunktionstest & Spirometrie in Zürich Altstetten. Präzise Diagnostik bei Asthma, Husten & Atemnot an der Badenerstrasse 621. Jetzt Termin vereinbaren!",
+    "intro": "Umfassende Lungenuntersuchungen und hochpräzise Lungenfunktionstests in Zürich Altstetten schaffen Klarheit bei Atemwegserkrankungen und akuter Kurzatmigkeit. In unserer Hausarztpraxis an der Badenerstrasse 621 nahe Bahnhof Altstetten führen wir computergestützte Spirometrie-Messungen, Pulsoxymetrie und differenzierte Atemwegsdiagnostik durch. Wir unterstützen Sie dabei, wieder frei und beschwerdefrei durchzuatmen.",
+    "whenNeededTitle": "Wann ist eine Lungenuntersuchung oder Spirometrie nötig?",
+    "whenNeededParagraphs": [
+      "Atemnot, chronischer Reizhusten und verengte Bronchien mindern die Lebensqualität oft drastisch. Da Erkrankungen der Atemwege häufig schleichend beginnen und im Verlauf zu irreversiblen Lungengewebsveränderungen führen können, ist eine frühzeitige Funktionsprüfung der Lunge von zentraler Bedeutung.",
+      "Ein fundierter Lungenfunktionstest in unserer Praxis in Zürich Altstetten ist insbesondere bei folgenden Symptomen und klinischen Fragestellungen dringend indiziert:"
     ],
-    whenNeededPoints: [
-      "Plötzliche oder schleichende Hörminderung, oft wie 'durch Watte hören' oder das Gefühl eines verstopften Ohrs.",
-      "Verschlimmerung des Verschlussgefühls nach dem Duschen, Baden oder Schwimmen, da der Pfropf durch Wasser aufquillt.",
-      "Dumpfes Druckgefühl oder leichter Schmerz im Gehörgang.",
-      "Ohrgeräusche (Rauschen, Summen oder Tinnitus), die durch den mechanischen Druck auf das Trommelfell entstehen.",
-      "Juckreiz, Völlegefühl oder Irritationen durch festsitzendes trockenes Cerumen.",
+    "whenNeededPoints": [
+      "Anhaltender Husten über mehr als 3 bis 4 Wochen, chronischer morgendlicher Auswurf oder unklarer Reizhusten ohne Infektzeichen.",
+      "Atemnot (Dyspnoe) bei alltäglicher körperlicher Anstrengung, beim Treppensteigen oder anfallsartig auftretende Kurzatmigkeit in Ruhe.",
+      "Pfeifende, brummende oder rasselnde Atemgeräusche (Giemen) sowie Engegefühl im Brustkorb bei körperlicher Belastung oder Kälteeinfluss.",
+      "Verdacht auf Asthma bronchiale, chronisch obstruktive Lungenerkrankung (COPD) oder allergische Reaktionen der unteren Atemwege.",
+      "Regelmässige Kontroll- und Verlaufsmessungen bei bekannten Asthmatikern oder COPD-Patienten zur optimalen Anpassung der Inhalator-Medikation.",
+      "Vorsorgeuntersuchung und Lungen-Check bei langjährigem Tabakkonsum, E-Zigaretten-Nutzung oder beruflicher Schadstoffbelastung (z. B. Stäube, Chemikalien)."
     ],
-    procedureTitle: "Wie läuft die Untersuchung ab?",
-    procedureParagraphs: [
-      "Vor jeder Behandlung führen unsere Ärzte eine gründliche Otoskopie (Ohrenspiegelung) durch. Mit einem beleuchteten Ohrtrichter untersuchen wir den Gehörgang und beurteilen die Beschaffenheit des Trommelfells sowie die genaue Lage des Schmalzpfropfes.",
-      "Die eigentliche Ohrenspülung erfolgt mit körperwarmem, steril filtriertem Wasser unter kontrolliertem, sanftem Druck. Die Spülflüssigkeit wird gezielt am Pfropf vorbei geleitet, sodass dieser sich sanft löst und zusammen mit dem Wasser in eine Nierenschale abfliesst. Bei besonders festem oder trockenem Cerumen setzen wir vorab schonende cerumenlösende Tropfen ein oder entfernen Reste mit feinen Mikro-Instrumenten.",
-      "Die gesamte Behandlung dauert nur rund 10 bis 15 Minuten und ist vollkommen schmerzfrei. Bringen Sie bitte Ihre Schweizer Krankenkassenkarte mit.",
+    "procedureTitle": "Wie läuft der Lungenfunktionstest (Spirometrie) ab?",
+    "procedureParagraphs": [
+      "Die Spirometrie in der Hausarztpraxis Zürich Altstetten ist ein schmerzloses, nicht-invasives Messverfahren, das rund 15 bis 20 Minuten dauert. Vor Beginn der Messung bespricht unser Praxisteam Ihre Beschwerden und erklärt Ihnen die Atemmanöver Schritt für Schritt, da Ihre aktive Mitarbeit für exakte Messergebnisse entscheidend ist.",
+      "Sie sitzen während des Tests aufrecht und entspannt. Auf Ihre Nase wird eine weiche Nasenklammer gesetzt, damit der gesamte Atemstrom ausschliesslich über den Mund fliesst. Anschliessend atmen Sie über ein hygienisches Einweg-Mundstück in das Spirometer ein und aus. Nach einigen normalen Atemzügen fordern wir Sie auf, so tief wie möglich einzuatmen und die Luft dann mit maximaler Kraft und Geschwindigkeit schlagartig auszupusten, bis die Lunge komplett entleert ist.",
+      "Bei auffälligen Werten führen wir oft einen sogenannten Bronchospasmolysetest durch: Sie inhalieren ein schnell wirksames atemwegserweiterndes Medikament, und nach etwa 15 Minuten wird die Messung wiederholt. So können wir präzise zwischen reversiblem Asthma und dauerhafter COPD differenzieren."
     ],
-    equipmentTitle: "Moderne Ohrdiagnostik direkt in der Praxis",
-    equipmentParagraphs: [
-      "In unserer Praxis in Zürich Altstetten nutzen wir moderne elektronische Ohrspülsysteme mit exakter Temperaturregelung. Dadurch wird verhindert, dass zu kaltes oder zu heisses Wasser Schwindelgefühle (kalorischer Nystagmus) auslöst.",
-      "Dank hochauflösender Videootoskope können wir den Gehörgang vor und nach der Spülung auf dem Bildschirm betrachten. So stellen wir sicher, dass das Trommelfell intakt und reizfrei ist, und können kleinste Entzündungen oder Pilzinfektionen sofort erkennen und behandeln.",
+    "equipmentTitle": "Moderne Spirometrie und Pulsoxymetrie direkt vor Ort",
+    "equipmentParagraphs": [
+      "Unsere Praxis an der Badenerstrasse 621 ist mit modernen computergestützten Spirometrie-Messplätzen ausgestattet. Die Messgeräte erfassen Lungenvolumen (Vitalkapazität FVC) und Einsekundenkapazität (FEV1) in Echtzeit und stellen Fluss-Volumen-Kurven grafisch auf dem Bildschirm dar.",
+      "Ergänzt wird die Spirometrie durch moderne Pulsoxymetrie zur Messung der arteriellen Sauerstoffsättigung im Blut sowie bei Bedarf durch unser praxiseigenes Labor zur Bestimmung von Entzündungsmarkern und Blutgaswerten. Zudem steht in unserer Praxis digitales Röntgen zur Verfügung, um Pneumonien, Lungenemphyseme oder Rippenverletzungen ohne Überweisung am selben Tag bildgebend auszuschliessen."
     ],
-    costsTitle: "Kosten und Krankenkasse",
-    costsParagraphs: [
-      "Die ärztliche Gehörgangsinspektion und die medizinisch indizierte Ohrenspülung bei Beschwerden oder Hörminderung sind offizielle Pflichtleistungen der Schweizer Krankenpflege-Grundversicherung (KVG).",
-      "Die Abrechnung erfolgt transparent gemäss TARMED. Nach Abzug der gewählten Franchise und des Selbstbehalts werden die Kosten vollumfänglich von Ihrer Krankenkasse erstattet.",
+    "costsTitle": "Kosten und Kostenübernahme durch die Krankenkasse",
+    "costsParagraphs": [
+      "Medizinisch verordnete Lungenfunktionsprüfungen, Spirometrie-Untersuchungen und damit verbundene ärztliche Beratungen werden in der Schweiz zu 100 Prozent von der obligatorischen Krankenpflegeversicherung (KVG) aller Kassen vergütet.",
+      "Die Abrechnung erfolgt transparent gemäss TARMED/TARDOC unter Berücksichtigung Ihrer Jahresfranchise und des gesetzlichen Selbstbehalts. Bringen Sie zur Untersuchung bitte Ihre Versichertenkarte und alle derzeit verwendeten Inhalatoren mit."
     ],
-    faqs: [
+    "faqs": [
       {
-        q: "Ist eine Ohrenspülung schmerzhaft?",
-        a: "Nein, eine fachgerecht durchgeführte Ohrenspülung mit körperwarmem Wasser ist schmerzfrei. Die meisten Patientinnen und Patienten empfinden die Spülung als angenehm und spüren eine sofortige, befreiende Erleichterung beim Hören."
+        "q": "Muss ich meine Lungenmedikamente vor dem Spirometrie-Test absetzen?",
+        "a": "Bitte fragen Sie uns bei der Terminvereinbarung. Häufig ist es sinnvoll, kurzwirksame Bronchialinhalatoren einige Stunden vor der Erstdiagnostik zu pausieren, damit die Ausgangsfunktion unverfälscht beurteilt werden kann. Bei Routinekontrollen sollte die Medikation meist wie gewohnt genommen werden."
       },
       {
-        q: "Warum sollte man keine Wattestäbchen (Q-Tips) verwenden?",
-        a: "Wattestäbchen schieben das Ohrenschmalz tief in den Gehörgang hinein und komprimieren es direkt vor dem Trommelfell zu einem harten Pfropf. Zudem besteht die Gefahr, die empfindliche Gehörgangshaut zu verletzen oder das Trommelfell zu perforieren."
+        "q": "Ist der Lungenfunktionstest anstrengend?",
+        "a": "Das forcierte Ausatmen erfordert einen kurzen, kräftigen Kraftaufwand über wenige Sekunden. Manche Patientinnen verspüren danach einen leichten Hustenreiz. Unser medizinisches Personal leitet Sie einfühlsam an und sorgt für ausreichend Pausen."
       },
       {
-        q: "Darf bei einem Loch im Trommelfell gespült werden?",
-        a: "Nein, bei einem bekannten Trommelfelldefekt (Perforation) oder liegenden Paukenröhrchen darf keine Wasserspülung erfolgen. In diesem Fall reinigen wir das Ohr trocken unter mikroskopischer Sicht."
+        "q": "Wie unterscheidet die Spirometrie zwischen Asthma und COPD?",
+        "a": "Asthma zeigt typischerweise eine variable, nach Inhalation von Bronchodilatatoren voll umkehrbare Verengung der Atemwege. Bei COPD bleibt die Atemwegsobstruktion auch nach Medikamentengabe ganz oder teilweise bestehen."
       },
       {
-        q: "Wie kann ich die Ohrenspülung zu Hause vorbereiten?",
-        a: "Wenn Sie wissen, dass Sie zu sehr trockenem, hartem Cerumen neigen, können Sie 1 bis 2 Tage vor dem Termin abends ein paar Tropfen handelsübliches Oliven- oder Mandelöl in das Ohr träufeln, um den Pfropf vorzuweichen."
+        "q": "Erhalte ich die Resultate der Lungenuntersuchung direkt im Termin?",
+        "a": "Ja. Die Messwerte und Diagramme liegen dem behandelnden Arzt sofort digital vor und werden unmittelbar im Anschluss detailliert mit Ihnen besprochen, inklusive individueller Therapie- und Inhalationsempfehlungen."
       },
       {
-        q: "Kann ich ohne Termin für eine Ohrenspülung vorbeikommen?",
-        a: "Bei akutem Verschlussgefühl können Sie während der Sprechzeiten auch als Walk-in-Patient an die Badenerstrasse 621 kommen. Mit einer kurzen Online-Buchung vermeiden Sie jedoch eventuelle Wartezeiten."
+        "q": "Können auch Raucher-Check-ups zur Lungenvorsorge gebucht werden?",
+        "a": "Ja, wir bieten strukturierte Lungen-Vorsorgeuntersuchungen für Raucherinnen und ehemalige Raucher an, um beginnende Atemwegsschäden frühzeitig festzustellen, bevor spürbare Atemnot im Alltag auftritt."
       }
     ],
-    images: [
-      { src: "/images/services/Ohrenspülung.webp", alt: "Professionelle Ohrenspülung und Otoskopie in Zürich Altstetten" },
-      { src: "/images/praxis/3x.webp", alt: "Behandlungsraum für HNO- und Ohrenbehandlungen" },
-      { src: "/images/praxis/1x.webp", alt: "Empfang der Hausarztpraxis Altstetten" },
+    "images": [
+      {
+        "src": "/images/services/Lungenuntersuchungen.webp",
+        "alt": "Lungenfunktionsprüfung und Spirometrie in Zürich Altstetten"
+      },
+      {
+        "src": "/images/praxis/3x.webp",
+        "alt": "Behandlungszimmer für Atemwegsdiagnostik Badenerstrasse 621"
+      },
+      {
+        "src": "/images/praxis/1x.webp",
+        "alt": "Empfang der Hausarztpraxis Zürich Altstetten"
+      }
     ],
-    relatedSlugs: ["notfallpraxis-walk-in", "check-ups", "labor", "therapien"]
+    "relatedSlugs": [
+      "roentgenuntersuchung",
+      "herzuntersuchung",
+      "labor",
+      "check-ups"
+    ]
   },
-
+  "fahreignungsabklaerung": {
+    "slug": "fahreignungsabklaerung",
+    "title": "Fahreignungsabklärung",
+    "h1": "Fahreignungsabklärung Stufe 1 bis 3 in Zürich Altstetten",
+    "metaTitle": "Fahreignungsabklärung Zürich Altstetten | StVA Stufe 1-3 Kontrolluntersuchung",
+    "metaDesc": "Fahreignungsabklärung Stufe 1 bis 3 in Zürich Altstetten. Ärztliche Kontrolluntersuchung für Senioren & Berufschauffeure nach StVA-Richtlinien. Jetzt buchen!",
+    "intro": "Die verkehrsmedizinische Fahreignungsabklärung in Zürich Altstetten sichert Ihre Mobilität und gewährleistet höchste Verkehrssicherheit gemäss den strengen Richtlinien des Strassenverkehrsamtes (StVA). An der Badenerstrasse 621 führen unsere anerkannten Ärztinnen und Ärzte verkehrsmedizinische Kontrolluntersuchungen der Stufen 1 bis 3 schnell, gründlich und unkompliziert für Seniorinnen, Senioren und Berufschauffeure durch.",
+    "whenNeededTitle": "Wer benötigt eine verkehrsmedizinische Fahreignungsabklärung?",
+    "whenNeededParagraphs": [
+      "In der Schweiz verlangt das Strassenverkehrsgesetz (SVG) regelmässige ärztliche Kontrolluntersuchungen, um die körperliche und geistige Eignung zum sicheren Lenken von Motorfahrzeugen verbindlich zu überprüfen.",
+      "Unsere zertifizierten Ärztinnen und Ärzte in Zürich Altstetten führen die verkehrsmedizinischen Abklärungen für verschiedene Zielgruppen und Führerausweiskategorien durch:"
+    ],
+    "whenNeededPoints": [
+      "Seniorinnen und Senioren ab dem 75. Altersjahr (Stufe 1): Gesetzlich vorgeschriebene Kontrolluntersuchung alle zwei Jahre nach Aufforderung durch das Strassenverkehrsamt des Kantons Zürich (oder anderer Kantone).",
+      "Berufschauffeure und höhere Führerausweiskategorien (Stufe 2): Regelmässige Eignungsprüfungen für Lastwagen (Kat. C/C1), Busse (Kat. D/D1), gewerbsmässigen Personentransport (BPT / Taxi) und Ambulanzfahrer.",
+      "Fahreignungsabklärung nach schweren akuten Erkrankungen oder Operationen (z. B. nach Schlaganfall, Herzinfarkt, Epilepsie, Schädel-Hirn-Trauma oder Diabetes-Einstellung).",
+      "Behördlich angeordnete Kontrolluntersuchungen nach verkehrsrelevanten Vorfällen oder auf behördliche Auflage hin (Stufen 1 und 2)."
+    ],
+    "procedureTitle": "Ablauf der verkehrsmedizinischen Kontrolluntersuchung",
+    "procedureParagraphs": [
+      "Die Fahreignungsabklärung in unserer Praxis in Zürich Altstetten folgt einem standardisierten, transparenten Ablauf und nimmt in der Regel etwa 30 bis 45 Minuten in Anspruch. Wir legen grossen Wert auf eine respektvolle, stressfreie Atmosphäre, in der Sie sich gut aufgehoben fühlen.",
+      "Zunächst erfassen wir Ihre Krankengeschichte und besprechen vorliegende Beschwerden, chronische Leiden sowie Ihre regelmässige Medikamenteneinnahme. Anschliessend folgt die körperliche Untersuchung mit Überprüfung des Herz-Kreislauf-Systems, des Bewegungsapparates und der neurologischen Reflexe. Ein zentraler Bestandteil ist die exakte Testung der Sehschärfe (Visus), des Gesichtsfeldes sowie des Hörvermögens.",
+      "Zudem führen wir orientierende Tests zur geistigen Leistungsfähigkeit, Reaktionsgeschwindigkeit und Aufmerksamkeit durch. Eine Urinprobe (Schnelltest auf Glukose, Eiweiss und bei Bedarf toxikologische Marker) rundet die Untersuchung ab. Nach Abschluss besprechen wir das Resultat direkt mit Ihnen und übermitteln den ärztlichen Untersuchungsbericht digital oder postalisch an das Strassenverkehrsamt.",
+      "Bei Bedarf besprechen wir mit Ihnen auch kompensatorische Möglichkeiten wie das Fahren mit Automatikgetriebe, angepasste Rückspiegel oder das Vermeiden von Nachtfahrten, um Ihre Fahrsicherheit und Mobilität so lange wie möglich verantwortungsvoll zu erhalten."
+    ],
+    "equipmentTitle": "Erforderliche Unterlagen und Vorbereitung auf den Termin",
+    "equipmentParagraphs": [
+      "Damit Ihre Fahreignungsuntersuchung an der Badenerstrasse 621 reibungslos verläuft, bitten wir Sie, folgende Unterlagen vollständig zum Termin mitzubringen:",
+      "Das offizielle Aufforderungsschreiben mit dem beigelegten Untersuchungsformular des Strassenverkehrsamtes, Ihren aktuellen Führerausweis sowie einen amtlichen Lichtbildausweis (ID oder Reisepass). Falls Sie eine Sehhilfe (Brille oder Kontaktlinsen) tragen, bringen Sie diese bitte unbedingt mit, ebenso wie die Brillenverordnung Ihres Augenarztes oder Optikers. Nehmen Sie zudem Ihre aktuelle Medikamentenliste und eventuelle Facharztberichte über Vorerkrankungen mit."
+    ],
+    "costsTitle": "Kosten und Abrechnung der Fahreignungsuntersuchung",
+    "costsParagraphs": [
+      "Verkehrsmedizinische Kontrolluntersuchungen für das Strassenverkehrsamt stellen gemäss Schweizer Recht eine behördlich angeordnete administrative Dienstleistung dar. Aus diesem Grund dürfen sie gemäss KVG nicht über die obligatorische Krankenversicherung abgerechnet werden.",
+      "Die Kosten sind als Selbstzahlerleistung direkt vor Ort in unserer Praxis zu begleichen (bequem per Debitkarte, Kreditkarte oder TWINT). Unsere Tarife sind fair, transparent und orientieren sich an den offiziellen kantonalen Empfehlungen der Verkehrsmedizin. Sie erhalten eine detaillierte Quittung zur Vorlage."
+    ],
+    "faqs": [
+      {
+        "q": "Ab welchem Alter muss ich zur Senioren-Fahrprüfung?",
+        "a": "In der Schweiz gilt seit 2019 die Altersgrenze von 75 Jahren für die erste verkehrsmedizinische Kontrolluntersuchung. Sie erhalten dazu automatisch ein schriftliches Aufgebot Ihres kantonalen Strassenverkehrsamtes mit einer gesetzten Frist."
+      },
+      {
+        "q": "Was geschieht, wenn die Sehkraft für die Fahreignung nicht ganz ausreicht?",
+        "a": "Häufig liegt dies lediglich an einer veralteten Brillenstärke. In diesem Fall vermerken wir die Notwendigkeit einer Sehhilfenanpassung und Sie können nach Konsultation eines Optikers oder Augenarztes die Bestätigung nachreichen."
+      },
+      {
+        "q": "Wie lange ist das ärztliche Zeugnis gültig?",
+        "a": "Für Seniorinnen und Senioren ab 75 Jahren gilt das Zeugnis der Stufe 1 in der Regel für zwei Jahre. Bei Berufschauffeuren richten sich die Intervalle nach Alter und Führerausweiskategorie."
+      },
+      {
+        "q": "Können Sie auch Kontrollen für ausserkantonale Strassenverkehrsämter durchführen?",
+        "a": "Ja, als anerkannte verkehrsmedizinische Untersuchungsstelle können wir Formulare aller Schweizer Kantone (z. B. Zürich, Aargau, Schwyz, Zug) untersuchen und abstempeln."
+      },
+      {
+        "q": "Wie schnell erhalte ich einen Termin für die Fahreignungsabklärung?",
+        "a": "Wir vergeben verkehrsmedizinische Termine zeitnah und flexibel, damit Sie Ihre gesetzte Frist beim Strassenverkehrsamt sicher einhalten können. Buchen Sie online oder rufen Sie uns an."
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/services/Fahreignungsabklärung.webp",
+        "alt": "Fahreignungsabklärung für Senioren und Berufschauffeure in Zürich Altstetten"
+      },
+      {
+        "src": "/images/praxis/1x.webp",
+        "alt": "Empfangsbereich für verkehrsmedizinische Kontrollen Badenerstrasse 621"
+      },
+      {
+        "src": "/images/praxis/5x.webp",
+        "alt": "Untersuchungszimmer für kognitive und sensorische Tests"
+      }
+    ],
+    "relatedSlugs": [
+      "check-ups",
+      "herzuntersuchung",
+      "labor",
+      "vorsorge-checkup"
+    ]
+  },
+  "ohrenspuelung": {
+    "slug": "ohrenspuelung",
+    "title": "Ohrenspülung",
+    "h1": "Professionelle Ohrenspülung & Ohrenreinigung in Zürich Altstetten",
+    "metaTitle": "Ohrenspülung Zürich Altstetten | Schonende Gehörgangsreinigung & Cerumen",
+    "metaDesc": "Professionelle Ohrenspülung in Zürich Altstetten: Sanfte Cerumen-Entfernung bei verstopftem Ohr & Hörminderung. Sofortige Hilfe an der Badenerstrasse 621.",
+    "intro": "Eine professionelle Ohrenspülung und Gehörgangsreinigung in Zürich Altstetten befreit Sie rasch und schonend von verstopfenden Ohrenschmalzpfropfen (Cerumen obturans). An der Badenerstrasse 621 entfernen unsere erfahrenen Ärztinnen und medizinischen Fachpersonen verhärtetes Cerumen mit modernsten Spül- und Absauggeräten. So gewinnen Sie sofort wieder ein klares Hörvermögen und ein angenehmes Druckgefühl zurück.",
+    "whenNeededTitle": "Wann ist eine professionelle Ohrenspülung erforderlich?",
+    "whenNeededParagraphs": [
+      "Ohrenschmalz (Cerumen) ist ein natürliches Schutzsekret unserer Gehörgangsdrüsen, das Schmutz, Staub und Krankheitserreger bindet und aus dem Ohr transportiert. Durch enge Gehörgänge, übermässige Talgproduktion, das Tragen von In-Ear-Kopfhörern oder Hörgeräten kann es jedoch zu einer schmerzhaften Verstopfung kommen.",
+      "Besonders riskant ist die Selbstreinigung mit Wattestäbchen: Dadurch wird das Cerumen meist tief vor das Trommelfell geschoben und verdichtet. Typische Anzeichen für einen verstopften Gehörgang sind:"
+    ],
+    "whenNeededPoints": [
+      "Plötzliche oder schleichende Hörminderung, dumpfes Hören ('wie unter Wasser') – besonders häufig bemerkt nach dem Duschen oder Schwimmen durch Aufquellen des Pfropfes.",
+      "Unangenehmes Druckgefühl oder Völlegefühl im Gehörgang, teilweise begleitet von leichtem Stechen.",
+      "Ohrgeräusche wie Rauschen, Summen oder leichtes Pfeifen (Tinnitus), ausgelöst durch den mechanischen Druck auf das Trommelfell.",
+      "Juckreiz, Hautirritationen oder Entzündungsneigung im äusseren Gehörgang.",
+      "Rückkoppelungen oder Funktionsstörungen bei Hörgeräteträgern durch verstopfte Belüftungskanäle."
+    ],
+    "procedureTitle": "Wie läuft die Gehörgangsreinigung in der Praxis ab?",
+    "procedureParagraphs": [
+      "Die Ohrenreinigung in der Hausarztpraxis Zürich Altstetten ist ein schmerzloser, kurzer Eingriff, der in den allermeisten Fällen innerhalb von 10 bis 15 Minuten abgeschlossen ist. Zu Beginn untersucht die behandelnde Ärztin oder der Arzt Ihren Gehörgang und das Trommelfell sorgfältig mittels Otoskop (Ohrenspiegel), um die Lage des Cerumens zu beurteilen und ein perforiertes Trommelfell sicher auszuschliessen.",
+      "Anschliessend wird körperwarmes, steril aufbereitetes Wasser mit sanftem, kontrolliertem Druck in den Gehörgang geleitet. Der Wasserstrahl umspült den Pfropf und schwemmt ihn schmerzfrei in eine Auffangschale aus. Bei besonders zähem oder eingetrocknetem Cerumen weichen wir den Pfropf zuvor mit speziellen ohrenärztlichen Tropfen schonend auf oder entfernen Reste mit feinen Mikroinstrumenten unter Sicht.",
+      "Nach der Spülung wird der Gehörgang sanft getrocknet und das Trommelfell erneut otoskopisch auf Unversehrtheit inspiziert. Sie spüren in der Regel sofortige Erleichterung und hören wieder uneingeschränkt klar."
+    ],
+    "equipmentTitle": "Medizinische Sicherheit und moderne Spültechnik",
+    "equipmentParagraphs": [
+      "In unserer Praxis verwenden wir moderne elektrische Ohrenspülsysteme mit regulierbarem Druck und exakter Temperaturkontrolle. Die Verwendung von exakt körperwarmem Wasser ist essenziell: Zu kaltes oder zu warmes Wasser würde das empfindliche Gleichgewichtsorgan im Innenohr reizen und vorübergehenden Schwindel auslösen.",
+      "Dank der exakten Dosierung und sterilen Einwegspülköpfe ist das Verfahren maximal hygienisch und für das empfindliche Trommelfell vollkommen sicher. Sollte eine Spülung aufgrund einer früheren Trommelfellperforation nicht angezeigt sein, bieten wir Ihnen alternative, trockene mikroskopische Reinigungsverfahren an."
+    ],
+    "costsTitle": "Kosten und Krankenkassenabrechnung nach KVG",
+    "costsParagraphs": [
+      "Eine medizinisch notwendige Gehörgangsreinigung und Ohrenspülung bei verstopftem Gehörgang oder Hörstörung gilt in der Schweiz als reguläre ärztliche Pflichtleistung. Die Kosten werden vollumfänglich von der obligatorischen Krankenpflegeversicherung (Grundversicherung nach KVG) übernommen.",
+      "Die Abrechnung erfolgt transparent nach TARMED/TARDOC unter Berücksichtigung Ihrer gewählten Franchise und des Selbstbehalts. Sie können für die Ohrenspülung bequem online einen Termin buchen oder bei akuten Beschwerden unseren Walk-in-Service nutzen."
+    ],
+    "faqs": [
+      {
+        "q": "Tut eine Ohrenspülung weh?",
+        "a": "Nein, eine fachgerecht durchgeführte Ohrenspülung ist nicht schmerzhaft. Die meisten Patientinnen und Patienten empfinden das warme Wasser und die sofortige Befreiung vom Gehörgangsdruck als sehr angenehm."
+      },
+      {
+        "q": "Warum sollte man keine Wattestäbchen zur Ohrenreinigung verwenden?",
+        "a": "Wattestäbchen schieben das Ohrenschmalz wie ein Kolben tief in den Gehörgang direkt vor das Trommelfell. Zudem besteht das Risiko, die dünne Haut des Gehörgangs zu verletzen oder das Trommelfell zu beschädigen."
+      },
+      {
+        "q": "Kann ich bei plötzlicher Verstopfung ohne Voranmeldung vorbeikommen?",
+        "a": "Ja, wenn Ihr Ohr nach dem Duschen oder Schwimmen plötzlich vollständig zu ist, können Sie während unserer Öffnungszeiten an die Badenerstrasse 621 kommen. Wir behandeln akute Ohrenverschlüsse rasch in unserer Walk-in-Sprechstunde."
+      },
+      {
+        "q": "Wie kann ich einem erneuten Cerumenpfropf vorbeugen?",
+        "a": "Reinigen Sie nur die sichtbare Ohrmuschel mit einem feuchten Tuch. Bei starker Neigung zu Ohrenschmalzbildung können spezielle pflegende Ohrentropfen auf Ölbasis helfen, das Sekret geschmeidig zu halten."
+      },
+      {
+        "q": "Darf bei einem Paukenröhrchen eine Ohrenspülung gemacht werden?",
+        "a": "Nein, bei liegendem Paukenröhrchen oder bekanntem Trommelfellloch darf kein Wasser in den Gehörgang gelangen. Bitte teilen Sie uns dies vor der Behandlung mit; wir reinigen das Ohr in diesem Fall trocken unter Sicht."
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/services/Ohrenspülung.webp",
+        "alt": "Professionelle Ohrenspülung und Cerumen-Entfernung in Zürich Altstetten"
+      },
+      {
+        "src": "/images/praxis/3x.webp",
+        "alt": "Modernes Behandlungszimmer für HNO-Untersuchungen Badenerstrasse 621"
+      },
+      {
+        "src": "/images/praxis/1x.webp",
+        "alt": "Empfang der Hausarztpraxis Zürich Altstetten"
+      }
+    ],
+    "relatedSlugs": [
+      "notfallpraxis-walk-in",
+      "check-ups",
+      "labor",
+      "therapien"
+    ]
+  },
   "check-ups": {
-    slug: "check-ups",
-    title: "Check-ups & Atteste",
-    h1: "Check-ups & Atteste in Zürich Altstetten",
-    metaTitle: "Medizinische Check-ups & Atteste Zürich Altstetten | Vorsorgeuntersuchung",
-    metaDesc: "Ganzheitliche medizinische Check-ups & ärztliche Atteste in Zürich Altstetten an der Badenerstrasse 621. EKG, Labor, Tauch- & Sportatteste. Termin online buchen.",
-    intro: "Ganzheitliche medizinische Check-ups und Atteste in Zürich Altstetten geben Ihnen fundierte Sicherheit über Ihren aktuellen Gesundheitszustand. In unserer modernen Praxis an der Badenerstrasse 621 erstellen wir umfassende Gesundheitsgutachten, Sport- und Tauchtauglichkeitsatteste sowie Berufszeugnisse zügig und gewissenhaft.",
-    whenNeededTitle: "Wann sind Check-ups und ärztliche Atteste nötig?",
-    whenNeededParagraphs: [
-      "Regelmässige Gesundheits-Check-ups helfen dabei, Risikofaktoren wie Bluthochdruck, Diabetes, Nierenfunktionsstörungen oder Fettstoffwechselstörungen frühzeitig aufzudecken, noch bevor spürbare Symptome oder Folgeschäden auftreten.",
-      "Typische Anlässe für Check-ups und Atteste in unserer Praxis Altstetten:",
+    "slug": "check-ups",
+    "title": "Check-ups & Atteste",
+    "h1": "Medizinische Check-ups & Ärztliche Atteste in Zürich Altstetten",
+    "metaTitle": "Check-ups & Atteste Zürich Altstetten | Ärztliche Zeugnisse & Gesundheitscheck",
+    "metaDesc": "Medizinische Check-ups & Atteste in Zürich Altstetten. Umfassende Vorsorge, Laboranalysen & Zeugnisse für Beruf, Sport und Reisen. Jetzt Termin vereinbaren!",
+    "intro": "Ganzheitliche medizinische Check-ups und verlässliche ärztliche Atteste in Zürich Altstetten sichern Ihre Gesundheit und erfüllen behördliche, berufliche und private Anforderungen. An der Badenerstrasse 621 bieten wir Ihnen strukturierte Gesundheitsuntersuchungen, Tauchtauglichkeitsatteste, Sport-Checks sowie Eignungsprüfungen für Schule, Studium und Beruf aus einer Hand.",
+    "whenNeededTitle": "Welche Check-ups und Atteste bieten wir an?",
+    "whenNeededParagraphs": [
+      "In einer dynamischen Gesellschaft wird die frühzeitige Erfassung gesundheitlicher Risikofaktoren immer wichtiger. Gleichzeitig verlangen Arbeitgeber, Sportverbände, Universitäten und Versicherungen regelmässig fundierte ärztliche Eignungsnachweise.",
+      "In unserer modern ausgestatteten Hausarztpraxis in Zürich Altstetten decken wir ein breites Spektrum an Untersuchungen und Bescheinigungen kompetent ab:"
     ],
-    whenNeededPoints: [
-      "Präventiver Gesundheits-Check ab 35 oder 50 Jahren zur Erfassung des individuellen Herz-Kreislauf- und Stoffwechselrisikos.",
-      "Ärztliche Atteste für Arbeitgeber, Versicherungen, Universitäten oder Ausbildungsstätten.",
-      "Sport- und Fitness-Tauglichkeitsuntersuchungen vor Aufnahme intensiver Trainingsprogramme oder Marathonläufe.",
-      "Tauchtauglichkeitsuntersuchung (Medical Certificate for Diving) nach den Richtlinien der Tauchmedizin.",
-      "Reisemedizinische Check-ups inklusive Überprüfung des Impfstatus und Malariaberatung vor Fernreisen.",
-      "Operationsvorbereitung (OP-Freigabe / präoperativer Check) vor geplanten ambulanten oder stationären Eingriffen.",
+    "whenNeededPoints": [
+      "Ganzheitlicher Gesundheits-Check-up: Strukturierte Bestandsaufnahme Ihrer Vitalparameter, Laborwerte, Organsysteme und Ihres Herz-Kreislauf-Risikos zur nachhaltigen Gesundheitsvorsorge.",
+      "Tauchtauglichkeitsuntersuchung (Medical Statement): Gründliche Untersuchung von Lunge (Spirometrie), Herz-Kreislauf-System (EKG) und Gehör nach internationalen Standards (z. B. SUHMS / PADI).",
+      "Sport- und Fitness-Check: Ärztliche Eignungsprüfung für Marathonläufe, Triathlons, Wettkampfsportarten oder den Wiedereinstieg ins Fitnesstraining nach längerer Pause.",
+      "Berufliche Eignungsuntersuchungen und Arbeitsatteste für Lehrberufe, Sicherheitsdienste, Pflegeberufe oder Auslandsaufenthalte.",
+      "Versicherungs- und Hypothekar-Atteste: Präzise Erhebung des Gesundheitsstatus gemäss den Vorgaben von Lebens- und Rentenversicherungen.",
+      "Reisemedizinische Zeugnisse, Gelbfieber-Impfstatusprüfung und Nachweise für Flugreisen bei chronischen Vorerkrankungen."
     ],
-    procedureTitle: "Wie läuft die Untersuchung ab?",
-    procedureParagraphs: [
-      "Ein umfassender Check-up in der Hausarztpraxis Zürich Altstetten wird individuell auf Ihr Alter, Ihr Geschlecht und Ihr persönliches Risikoprofil abgestimmt. Der Termin dauert in der Regel 30 bis 60 Minuten.",
-      "Im persönlichen Gespräch analysieren wir Ihre gesundheitliche Vorgeschichte, familiäre Risiken, Ernährung, Bewegungsgewohnheiten und Stresslevel. Es folgt eine gründliche körperliche Untersuchung: Herz- und Lungenauskultation, Blutdruck- und Pulsmessung, Abtasten des Bauches, Inspektion von Haut und Lymphknoten sowie die Überprüfung von Reflexen und Bewegungsapparat.",
-      "Je nach Modul ergänzen wir die Untersuchung durch ein Ruhe-EKG, Lungenfunktionstests und ein umfassendes Praxislabor (Blutbild, Leber-, Nieren-, Blutzucker- und Cholesterinwerte). Bringen Sie bitte Ihren Impfausweis, bestehende Vorbefunde und Ihre Krankenkassenkarte mit.",
+    "procedureTitle": "Ablauf und Inhalt des medizinischen Check-ups in der Praxis",
+    "procedureParagraphs": [
+      "Ein Check-up in der Hausarztpraxis Zürich Altstetten verläuft strukturiert, zielgerichtet und ohne unnötige Wartezeiten. Im Vorfeld erfassen wir in einem ausführlichen Gespräch Ihre persönliche Krankengeschichte, familiäre Vorbelastungen, Ihren Lebensstil sowie konkrete sportliche oder berufliche Vorhaben.",
+      "Im Anschluss erfolgt die eingehende körperliche Untersuchung aller Organsysteme: Abhören von Herz und Lunge, Abtasten des Abdomens, Inspektion von Haut, Gelenken und Wirbelsäule sowie Prüfung der Reflexe und Sinnesorgane. Ergänzt wird die Untersuchung durch ein Ruhe-EKG, Lungenfunktionstests (Spirometrie) und unser hauseigenes Sofortlabor zur Messung von Blutzucker, Cholesterinprofil, Nieren- und Leberwerten sowie Entzündungsparametern.",
+      "Alle Befunde fassen wir in einem verständlichen Abschlussgespräch zusammen, übergeben Ihnen das schriftliche ärztliche Zeugnis und formulieren auf Wunsch massgeschneiderte Empfehlungen für Ihre Ernährung, Bewegung und Prävention.",
+      "Zur differenzierten Beurteilung Ihres kardiovaskulären Risikoprofils setzen unsere Mediziner auf standardisierte Schweizer Risikoscores (wie den AGLA-Score). Damit können wir das 10-Jahres-Risiko für Herzinfarkt oder Schlaganfall präzise berechnen und gezielte Gegenmassnahmen – von der Cholesterinoptimierung bis zur Blutdruckeinstellung – frühzeitig einleiten."
     ],
-    equipmentTitle: "Umfassende Praxisausstattung direkt vor Ort",
-    equipmentParagraphs: [
-      "Unsere Praxis an der Badenerstrasse 621 vereint modernste diagnostische Methoden unter einem Dach: Praxiseigenes Sofortlabor für Blut- und Urinanalysen, 12-Kanal-EKG, digitales Röntgen und Spirometrie.",
-      "Dank dieser Ausstattung erhalten Sie Ihre Laborergebnisse und apparativen Befunde meist noch während desselben Termins. Wir fassen alle Ergebnisse in einem leicht verständlichen schriftlichen Dossier zusammen und geben Ihnen konkrete Empfehlungen zur Optimierung Ihrer Vitalität.",
+    "equipmentTitle": "Moderne Praxisausstattung für umfassende Befunderhebung",
+    "equipmentParagraphs": [
+      "Durch die hervorragende gerätetechnische Ausstattung an der Badenerstrasse 621 können wir sämtliche Untersuchungen direkt in den Räumlichkeiten unserer Praxis durchführen. Sie müssen keine separaten Termine bei Röntgeninstituten oder externen Großlaboren wahrnehmen.",
+      "Unser digitales Röntgengerät, moderne 12-Kanal-EKGs, präzise Spirometrie-Messplätze und Point-of-Care-Laboranalysatoren ermöglichen eine vollständige Befunderhebung innerhalb eines einzigen Konsultationstermins. Das spart Ihnen wertvolle Zeit und garantiert Ihnen maximale Verlässlichkeit.",
+      "Nach Abschluss aller Untersuchungen händigen wir Ihnen ein verständlich aufbereitetes Gesundheitsdossier mit sämtlichen Laborwerten, EKG-Kurven und schriftlichen ärztlichen Befunden aus, das Sie auch für Arbeitgeber, Versicherungen oder Sportvereine verwenden können."
     ],
-    costsTitle: "Kosten und Krankenkasse",
-    costsParagraphs: [
-      "Werden Check-ups aufgrund bestehender Symptome, Vorerkrankungen oder familiärer Risiken durchgeführt, übernimmt die Grundversicherung (KVG) die Kosten im Rahmen der Franchise.",
-      "Reine Vorsorge-Checks ohne Krankheitswert sowie private Atteste (z. B. für Sport, Tauchen oder Visa) sind Selbstzahlerleistungen. Viele Schweizer Zusatzversicherungen (VVG) beteiligen sich jedoch mit jährlichen Beiträgen (z. B. 50–90 %) an präventiven Check-ups.",
+    "costsTitle": "Kosten und Abrechnung von Check-ups und Attesten",
+    "costsParagraphs": [
+      "Die Abrechnung von Check-ups und Attesten richtet sich nach dem Anlass der Untersuchung: Dient der Check-up der Abklärung bestehender Symptome oder chronischer Beschwerden, übernimmt die obligatorische Grundversicherung (KVG) die Kosten gemäss TARMED/TARDOC.",
+      "Reine Vorsorge-Checks ohne Krankheitssymptome, Tauchatteste oder berufliche Zeugnisse sind behördlich oder privat veranlasste Leistungen. Viele Schweizer Krankenkassen beteiligen sich über Zusatzversicherungen (VVG) an präventiven Check-ups. Wir informieren Sie stets vorab transparent über allfällige Selbstzahlerkosten."
     ],
-    faqs: [
+    "faqs": [
       {
-        q: "Muss ich nüchtern zum Check-up erscheinen?",
-        a: "Für eine exakte Bestimmung von Nüchternblutzucker und Blutfettwerten (Cholesterin, Triglyceride) ist es ideal, wenn Sie 8 bis 12 Stunden vor dem Termin keine Nahrung mehr zu sich nehmen. Wasser oder ungesüsster Tee sind erlaubt."
+        "q": "Wie lange ist ein Tauchtauglichkeitsattest gültig?",
+        "a": "Für Taucher unter 40 Jahren gilt das Attest bei unauffälligem Befund meist für zwei bis drei Jahre. Ab dem 40. Lebensjahr wird gemäss internationalen Tauchsportverbänden eine jährliche Erneuerung empfohlen."
       },
       {
-        q: "Wie lange ist ein Tauchtauglichkeitsattest gültig?",
-        a: "Für gesunde Erwachsene unter 40 Jahren gilt das Attest in der Regel zwei bis drei Jahre. Ab 40 Jahren oder bei Vorerkrankungen wird eine jährliche Erneuerung empfohlen."
+        "q": "Muss ich für die Laboruntersuchung beim Check-up nüchtern sein?",
+        "a": "Wenn Nüchternblutzucker und ein detailliertes Lipidprofil (Triglyzeride, Cholesterin) bestimmt werden sollen, empfehlen wir, ab 8 Stunden vor dem Termin nur noch Wasser zu trinken und nicht zu frühstücken."
       },
       {
-        q: "Stellen Sie auch kurzfristig Atteste für Arbeitgeber aus?",
-        a: "Ja. Nach einer gründlichen Konsultation stellen wir Ihnen ein formgerechtes ärztliches Zeugnis über Ihre Arbeitsunfähigkeit oder Ihren Gesundheitsstatus aus."
+        "q": "Wie schnell erhalte ich mein fertiges Attest?",
+        "a": "In der Regel stellen unsere Ärzte das Zeugnis unmittelbar im Anschluss an die Untersuchung und Laborauswertung aus, sodass Sie es direkt mitnehmen können."
       },
       {
-        q: "Wie oft sollte man einen präventiven Check-up machen lassen?",
-        a: "Ab dem 35. Lebensjahr empfiehlt sich ein Basis-Check alle 2 bis 3 Jahre. Ab 50 Jahren oder bei Risikofaktoren wie Bluthochdruck oder Rauchen ist ein jährlicher Check ratsam."
+        "q": "Werden die Kosten von meiner Krankenkasse übernommen?",
+        "a": "Medizinisch begründete Abklärungen bezahlt die KVG-Grundversicherung. Bei reiner Vorsorge oder Sportattesten hängt eine Kostenbeteiligung von Ihrer freiwilligen Zusatzversicherung ab; wir stellen Ihnen eine detaillierte Rechnung aus."
       },
       {
-        q: "Erhalte ich eine schriftliche Zusammenfassung der Ergebnisse?",
-        a: "Ja, Sie erhalten einen detaillierten Laborausdruck und einen verständlichen Befundbericht mit allen Messwerten für Ihre persönlichen Unterlagen."
+        "q": "Können auch fremdsprachige Formulare ausgefüllt werden?",
+        "a": "Ja, wir füllen internationale Zeugnisse für Visa, Universitäten oder Sportverbände gerne auf Deutsch oder Englisch für Sie aus."
       }
     ],
-    images: [
-      { src: "/images/services/Weitere Untersuchungen.webp", alt: "Ganzheitlicher Check-up in der Hausarztpraxis Zürich Altstetten" },
-      { src: "/images/services/Labor.webp", alt: "Praxislabor für umfassende Check-up-Blutanalysen" },
-      { src: "/images/praxis/1x.webp", alt: "Empfang der Praxis an der Badenerstrasse 621" },
-    ],
-    relatedSlugs: ["labor", "herzuntersuchung", "vorsorge-checkup", "mineralmangel"]
-  },
-
-  mineralmangel: {
-    slug: "mineralmangel",
-    title: "Mineral- & Eisenmangel",
-    h1: "Mineral- & Eisenmangel in Zürich Altstetten",
-    metaTitle: "Mineralmangel & Eiseninfusion Zürich Altstetten | Vitalitätsdiagnostik",
-    metaDesc: "Gezielte Diagnostik & Therapie bei Mineral- und Eisenmangel in Zürich Altstetten. Eiseninfusionen, Vitamin-Aufbau & Labor an der Badenerstrasse 621.",
-    intro: "Die präzise Abklärung und Therapie bei Mineral- und Eisenmangel in Zürich Altstetten gibt Ihnen neue Vitalität und Energie zurück. An der Badenerstrasse 621 diagnostizieren wir Nährstoffdefizite mittels moderner Blutanalysen und beheben Mängel durch massgeschneiderte Infusionstherapien und Ernährungsberatung.",
-    whenNeededTitle: "Wann liegt ein Mineral- oder Eisenmangel vor?",
-    whenNeededParagraphs: [
-      "Vitamine, Mineralstoffe und Spurenelemente wie Eisen, Magnesium, Zink und Vitamin B12 sind essenzielle Bausteine für unseren Energiestoffwechsel, die Blutbildung und das Immunsystem. Ein Mangel entwickelt sich oft unbemerkt über Monate hinweg und führt zu schleichendem Leistungsverlust.",
-      "In unserer Praxis an der Badenerstrasse 621 in Zürich Altstetten führen wir präzise Laboruntersuchungen durch, um Mängel exakt zu quantifizieren und zielgerichtet zu beheben. Typische Symptome, die auf einen behandlungsbedürftigen Nährstoffmangel hinweisen:",
-    ],
-    whenNeededPoints: [
-      "Chronische Müdigkeit, Abgeschlagenheit und Antriebslosigkeit trotz ausreichendem Schlaf.",
-      "Konzentrationsschwäche, 'Gehirnnebel' (Brain Fog) und spürbarer Leistungsabfall bei der Arbeit oder beim Sport.",
-      "Diffuser Haarausfall, brüchige Fingernägel, trockene Haut oder eingerissene Mundwinkel (Rhagaden).",
-      "Ständige Fröstelneigung, kalte Hände und Füsse sowie Blässe im Gesicht.",
-      "Erhöhte Infektanfälligkeit und langwierige Erkältungsverläufe.",
-      "Erhöhter Bedarf bei Frauen mit starker Menstruation, während der Schwangerschaft, bei veganer/vegetarischer Ernährung oder bei Leistungssportlern.",
-    ],
-    procedureTitle: "Wie läuft die Abklärung und Behandlung ab?",
-    procedureParagraphs: [
-      "Die Diagnostik in unserer Praxis in Zürich Altstetten beginnt mit einer gezielten Blutanalyse in unserem Praxislabor. Neben dem Hämoglobinwert bestimmen wir entscheidende Speicherparameter wie Ferritin (Eisenspeicher), Transferrinsättigung, Vitamin B12, Folsäure, Vitamin D3, Zink und Elektrolyte.",
-      "Bestätigt das Labor einen signifikanten Mangel, erarbeiten wir einen massgeschneiderten Therapieplan. Bei ausgeprägtem Eisenmangel hat sich die intravenöse Eiseninfusion (z. B. Ferinject®) bewährt, da sie die leeren Eisenspeicher innerhalb kürzester Zeit auffüllt – ganz ohne die typischen Magen-Darm-Beschwerden oraler Eisentabletten.",
-      "Die Infusion wird in entspannter Atmosphäre im Behandlungsraum verabreicht und dauert rund 20 bis 30 Minuten. Nach einer kurzen Nachbeobachtungszeit können Sie die Praxis wieder verlassen.",
-    ],
-    equipmentTitle: "Modernes Labor & Infusionsplatz direkt in der Praxis",
-    equipmentParagraphs: [
-      "In unserer Praxis an der Badenerstrasse 621 verfügen wir über ein eigenes Labor für Sofortblutbilder und arbeiten eng mit akkreditierten Schweizer Fachlaboren für hochspezifische Mikronährstoffanalysen zusammen.",
-      "Unsere Behandlungsräume sind mit bequemen Ruhesesseln und modernen Infusionsüberwachungssystemen ausgestattet. Unser medizinisches Fachpersonal überwacht die Gabe professionell, um maximale Verträglichkeit und Patientensicherheit zu gewährleisten.",
-    ],
-    costsTitle: "Kosten und Krankenkasse",
-    costsParagraphs: [
-      "Labordiagnostik und intravenöse Eiseninfusionen bei nachgewiesenem Eisenmangelsyndrom (Ferritinwert unter den KVG-Referenzgrenzen) sind offizielle Pflichtleistungen der Schweizer Krankenpflege-Grundversicherung (KVG).",
-      "Die Abrechnung erfolgt nach TARMED. Nach Abzug der Franchise und des Selbstbehalts werden die Kosten von Ihrer Krankenkasse übernommen. Bei rein präventiven Vitamingaben informieren wir Sie transparent vorab.",
-    ],
-    faqs: [
+    "images": [
       {
-        q: "Wie schnell spüre ich die Wirkung einer Eiseninfusion?",
-        a: "Die meisten Patientinnen und Patienten berichten bereits nach 1 bis 2 Wochen über einen deutlichen Anstieg des Energieniveaus, verbesserte Konzentration und das Nachlassen der ständigen Erschöpfung."
+        "src": "/images/services/Fahreignungsabklärung.webp",
+        "alt": "Medizinische Check-ups und ärztliche Atteste in Zürich Altstetten"
       },
       {
-        q: "Welche Nebenwirkungen können bei einer Eiseninfusion auftreten?",
-        a: "Moderne Eisenpräparate sind sehr gut verträglich. Gelegentlich kann es zu vorübergehendem leichten Metallgeschmack, milden Kopfschmerzen oder vorübergehender Müdigkeit kommen. Allergische Reaktionen sind extrem selten."
+        "src": "/images/praxis/4x.webp",
+        "alt": "Praxislabor für Sofortanalysen beim Gesundheits-Check-up"
       },
       {
-        q: "Warum wirken Eisentabletten oft nicht ausreichend?",
-        a: "Über den Magen-Darm-Trakt kann der Körper pro Tag nur wenige Milligramm Eisen aufnehmen. Zudem verursachen Tabletten häufig Übelkeit, Bauchkrämpfe oder Verstopfung, weshalb sie oft abgesetzt werden."
-      },
-      {
-        q: "Wann sollte nach einer Infusion der Ferritinwert kontrolliert werden?",
-        a: "Wir empfehlen eine Kontroll-Blutanalyse rund 8 bis 12 Wochen nach der letzten Infusion, um den Therapieerfolg und die Stabilität des Speichers zu überprüfen."
-      },
-      {
-        q: "Benötige ich für eine Infusion eine ärztliche Voruntersuchung?",
-        a: "Ja, vor jeder Infusionstherapie ist eine fundierte Blutuntersuchung und ärztliche Indikationsstellung zwingend erforderlich, um eine Überladung zu vermeiden."
+        "src": "/images/praxis/1x.webp",
+        "alt": "Empfang der Hausarztpraxis Zürich Altstetten Badenerstrasse 621"
       }
     ],
-    images: [
-      { src: "/images/services/Eisenmangel.webp", alt: "Eisenmangeltherapie und Eiseninfusion in Zürich Altstetten" },
-      { src: "/images/services/Labor.webp", alt: "Labordiagnostik von Ferritin und Mikronährstoffen" },
-      { src: "/images/praxis/3x.webp", alt: "Bequemer Behandlungsraum für Infusionstherapien" },
-    ],
-    relatedSlugs: ["eiseninfusion-labor", "labor", "therapien", "check-ups"]
+    "relatedSlugs": [
+      "vorsorge-checkup",
+      "labor",
+      "herzuntersuchung",
+      "fahreignungsabklaerung"
+    ]
   },
-
-  labor: {
-    slug: "labor",
-    title: "Labor",
-    h1: "Praxislabor in Zürich Altstetten",
-    metaTitle: "Praxislabor Zürich Altstetten | Schnelle Blut- & Urinanalysen vor Ort",
-    metaDesc: "Praxiseigenes Sofortlabor in Zürich Altstetten an der Badenerstrasse 621. Blutbild, CRP, Troponin, Urinstatus in wenigen Minuten. Jetzt Termin vereinbaren.",
-    intro: "Das praxiseigene Sofortlabor in Zürich Altstetten liefert lebenswichtige Diagnosewerte in wenigen Minuten direkt vor Ort. An der Badenerstrasse 621 ermöglicht modernste Laboranalytik eine schnelle und zielgerichtete Behandlung ohne quälendes Warten auf externe Laborberichte.",
-    whenNeededTitle: "Wann ist eine Laboruntersuchung nötig?",
-    whenNeededParagraphs: [
-      "Laboruntersuchungen von Blut, Urin und Abstrichen sind das Rückgrat der modernen medizinischen Diagnostik. Sie ermöglichen es, verborgene Entzündungen, Organfunktionsstörungen und akute Notfälle präzise zu objektivieren.",
-      "Häufige Situationen für Laboranalysen in unserer Praxis in Altstetten:",
+  "mineralmangel": {
+    "slug": "mineralmangel",
+    "title": "Mineral- & Eisenmangel",
+    "h1": "Mineral- & Eisenmangel Behandlung in Zürich Altstetten",
+    "metaTitle": "Mineral- & Eisenmangel Zürich Altstetten | Infusionstherapie & Diagnostik",
+    "metaDesc": "Diagnostik & Infusionstherapie bei Mineralstoff- und Eisenmangel in Zürich Altstetten. Schnelle Hilfe bei chronischer Müdigkeit an der Badenerstrasse 621.",
+    "intro": "Die präzise Diagnostik und gezielte Behandlung von Mineral- und Eisenmangel in Zürich Altstetten verhilft Ihnen zu neuer Vitalität, gesteigerter Konzentrationsfähigkeit und körperlicher Leistungsstärke. An der Badenerstrasse 621 kombinieren wir modernste laborchemische Blutanalysen mit massgeschneiderten oralen und intravenösen Infusionstherapien, um Mangelzustände schnell und nachhaltig zu beheben.",
+    "whenNeededTitle": "Woran erkennt man einen Mineral- oder Eisenmangel?",
+    "whenNeededParagraphs": [
+      "Essenzielle Mineralstoffe, Spurenelemente und Vitamine – allen voran Eisen, Magnesium, Zink, Calcium, Vitamin B12 und Vitamin D3 – sind unersetzliche Katalysatoren für den zellulären Energiestoffwechsel, den Sauerstofftransport und das Immunsystem.",
+      "Ein Defizit entwickelt sich oft schleichend über viele Monate hinweg, beispielsweise durch starke Monatsblutungen, vegetarische oder vegane Ernährung, intensive sportliche Belastungen oder chronische Magen-Darm-Erkrankungen. Typische Leitsymptome umfassen:"
     ],
-    whenNeededPoints: [
-      "Akute Infektionskrankheiten mit Fieber, Husten oder Halsschmerzen zur Unterscheidung zwischen viralen und bakteriellen Erregern (CRP-Wert).",
-      "Akuter Brustschmerz oder Engegefühl zum schnellen Ausschluss eines Herzinfarkts (Troponin-T-Schnelltest).",
-      "Verdacht auf Thrombose oder Lungenembolie bei Beinschwellung oder Atemnot (D-Dimer-Test).",
-      "Harnwegsinfektionen, Blasenentzündungen oder Nierenschmerzen mittels Urinstatus und Sediment.",
-      "Verlaufskontrollen bei chronischen Krankheiten wie Diabetes (HbA1c-Langzeitblutzucker) oder Nieren- und Lebererkrankungen.",
-      "Routinemässige Check-ups, Cholesterinbestimmung, Schilddrüsenwerte (TSH) und Eisenspeicher-Analysen (Ferritin).",
+    "whenNeededPoints": [
+      "Anhaltende chronische Müdigkeit, Erschöpfungszustände und fehlende Regeneration trotz ausreichendem Nachtschlaf.",
+      "Diffuse Konzentrationsschwäche, mentale Verlangsamung, Gedächtnislücken und 'Brain Fog' im Berufsalltag.",
+      "Haarausfall, brüchige Fingernägel, trockene Haut und eingerissene Mundwinkel (Rhagaden).",
+      "Körperliche Leistungsminderung, Kurzatmigkeit bei sportlicher Anstrengung und schnelle Muskelerschöpfung.",
+      "Erhöhte Infektanfälligkeit, wiederkehrende Erkältungen und verzögerte Wundheilungsprozesse.",
+      "Muskelkrämpfe (z. B. Wadenkrämpfe bei Magnesiummangel), Kälteempfindlichkeit und depressive Verstimmungen."
     ],
-    procedureTitle: "Wie läuft die Laboruntersuchung ab?",
-    procedureParagraphs: [
-      "Die Probenentnahme erfolgt schnell, hygienisch und schmerzarm durch unser erfahrenes Praxisteam. Bei den meisten Untersuchungen genügt eine kleine venöse Blutentnahme aus der Armbeuge oder ein kleiner Tropfen Kapillarblut aus der Fingerbeere.",
-      "Nach der Entnahme wird die Probe unmittelbar in unseren modernen Analysegeräten im Praxislabor verarbeitet. Die Messung dauert je nach Parameter zwischen 2 und 15 Minuten. Sie können die kurze Wartezeit in unserem gemütlichen Wartezimmer verbringen.",
-      "Sobald die Werte vorliegen, ruft Sie der behandelnde Arzt ins Sprechzimmer, bespricht die Ergebnisse verständlich mit Ihnen und passt die Medikation sofort an. Bringen Sie bitte Ihre Versichertenkarte mit.",
+    "procedureTitle": "Präzise Labordiagnostik und Auswertung in der Praxis",
+    "procedureParagraphs": [
+      "Die Behandlung in der Hausarztpraxis Zürich Altstetten basiert auf einer fundierten labormedizinischen Diagnostik. Vor Beginn einer Therapie reicht ein einfaches 'Raten' nicht aus: Wir bestimmen in unserem praxiseigenen Labor nicht nur das Hämoglobin, sondern spezifische Speicherparameter wie Ferritin (Eisenspeicher) und die Transferrinsättigung.",
+      "Gleichzeitig analysieren wir bei Bedarf Elektrolyte, Magnesium, Zink, Folsäure, Vitamin B12 und 25-OH-Vitamin D3. Anhand dieser objektiven Messwerte erstellen unsere Ärztinnen und Ärzte einen individuellen Therapieplan. Bei leichten Mängeln reicht oft eine optimierte Ernährungsberatung oder orale Supplementierung aus. Bei ausgeprägtem Eisenmangel oder Resorptionsstörungen im Darm ist die intravenöse Infusionstherapie die mit Abstand wirksamste und schnellste Methode.",
+      "Neben Ferritin und Transferrinsättigung analysieren wir bei chronischer Müdigkeit gezielt Vitamin B12 (Holotranscobalamin), Folsäure, Vitamin D3 sowie essenzielle Spurenelemente wie Zink und Selen. Anhand dieses ganzheitlichen Mikronährstoffprofils erstellen wir einen massgeschneiderten Substitutionsplan, der ernährungsmedizinische Anpassungen und gezielte orthomolekulare Wirkstoffgaben optimal miteinander kombiniert."
     ],
-    equipmentTitle: "Modernste Sofortanalytik direkt in der Praxis",
-    equipmentParagraphs: [
-      "Unser Labor an der Badenerstrasse 621 ist mit hochpräzisen, vollautomatischen Analyseautomaten führender Medizintechnik-Hersteller ausgestattet. Wir unterliegen strengen Qualitätskontrollen nach den Richtlinien der Schweizerischen Kommission für Qualitätssicherung im medizinischen Labor (QUALAB).",
-      "Zu unseren Sofortanalysen gehören: Grosses Blutbild, CRP (Entzündungsmarker), Troponin (Herzmarker), D-Dimer (Thrombosemarker), Blutzucker und HbA1c, Quick/INR (Gerinnung), Urinstatus sowie Streptokokken- und COVID-Schnelltests. Für hochspezialisierte molekulargenetische oder mikrobiologische Analysen arbeiten wir nahtlos mit akkreditierten Schweizer Referenzlaboren zusammen.",
+    "equipmentTitle": "Gezielte Infusionstherapie im komfortablen Behandlungsbereich",
+    "equipmentParagraphs": [
+      "In unserer Praxis an der Badenerstrasse 621 führen wir intravenöse Eisen- und Mikronährstoffinfusionen in einem ruhigen, angenehmen Ambiente durch. Wir verwenden ausschliesslich hochmoderne, bewährte Eisenpräparate (wie Eisencarboxymaltose / Ferinject), die sich durch exzellente Verträglichkeit und schnelle Bioverfügbarkeit auszeichnen.",
+      "Eine Infusionssitzung dauert inklusive Vorbereitung und kurzer Nachbeobachtungszeit lediglich 20 bis 30 Minuten. Das Eisen gelangt direkt in den Blutkreislauf und füllt die körpereigenen Speicher rasch auf, ohne den Magen-Darm-Trakt zu belasten. Während der gesamten Infusion werden Sie von unserem qualifizierten Personal kontinuierlich überwacht.",
+      "Die Infusionsbehandlung erfolgt in unseren ruhigen Behandlungsräumen auf bequemen Relax-Liegen. Das medizinische Personal überwacht die Tropfgeschwindigkeit und Ihre Vitalparameter kontinuierlich, sodass die Gabe maximal schonend und kreislaufstabil erfolgt."
     ],
-    costsTitle: "Kosten und Krankenkasse",
-    costsParagraphs: [
-      "Alle vom Arzt verordneten Laboruntersuchungen sind reguläre Pflichtleistungen der Schweizer Grundversicherung (KVG) und werden nach der offiziellen eidgenössischen Analysenliste (AL) vergütet.",
-      "Die Abrechnung erfolgt transparent über Ihre Krankenkasse unter Anrechnung von Franchise und 10 % Selbstbehalt. Bei Unfallfolge übernimmt die Schweizer Unfallversicherung (UVG) 100 % der Laborkosten.",
+    "costsTitle": "Kosten und Kostenübernahme durch die Grundversicherung KVG",
+    "costsParagraphs": [
+      "Die labordiagnostische Abklärung eines klinisch vermuteten Eisen- oder Mineralstoffmangels sowie medizinisch indizierte intravenöse Eiseninfusionen werden in der Schweiz vollständig von der obligatorischen Krankenpflegeversicherung (Grundversicherung KVG) übernommen.",
+      "Die Abrechnung erfolgt nach TARMED/TARDOC und den Kriterien der Schweizerischen Gesellschaft für Allgemeinmedizin (SGAIM). Spezielle Vitalitäts- und Anti-Aging-Infusionen ausserhalb der KVG-Kriterien bieten wir Ihnen transparent als faire Selbstzahlerleistungen an."
     ],
-    faqs: [
+    "faqs": [
       {
-        q: "Muss ich für jede Blutentnahme nüchtern sein?",
-        a: "Nein. Für Akutwerte wie CRP, Blutbild, Troponin oder Schilddrüsenwerte müssen Sie nicht nüchtern sein. Lediglich bei Blutzucker-, Cholesterin- und Triglycerid-Messungen ist es empfehlenswert, vorab 8 bis 12 Stunden nichts zu essen."
+        "q": "Wie schnell spüre ich die Wirkung einer Eiseninfusion?",
+        "a": "Viele Patientinnen und Patienten berichten bereits nach wenigen Tagen über einen spürbaren Energieschub, nachlassende Müdigkeit und bessere Konzentration. Der maximale Effekt tritt meist nach 2 bis 3 Wochen ein."
       },
       {
-        q: "Wie schnell erhalte ich die Ergebnisse meines Bluttests?",
-        a: "Unsere Notfall- und Sofortparameter (Blutbild, CRP, Troponin, Urin) liegen bereits nach 10 bis 15 Minuten vor und werden sofort besprochen. Spezialwerte aus dem Partnerlabor treffen in der Regel am Folgetag ein."
+        "q": "Welche Nebenwirkungen können bei einer Eiseninfusion auftreten?",
+        "a": "Moderne Eisenpräparate wie Ferinject sind sehr gut verträglich. Gelegentlich können vorübergehende leichte Kopfschmerzen, Übelkeit oder ein metallischer Geschmack im Mund auftreten. Schwere allergische Reaktionen sind extrem selten."
       },
       {
-        q: "Kann ich meine Laborwerte schriftlich mit nach Hause nehmen?",
-        a: "Selbstverständlich händigen wir Ihnen auf Wunsch einen vollständigen Computerausdruck Ihrer Laborwerte aus oder senden ihn Ihnen gesichert per E-Mail zu."
+        "q": "Warum wirken Eisentabletten oft nicht ausreichend?",
+        "a": "Orale Eisentabletten werden im Dünndarm nur zu wenigen Prozent resorbiert und verursachen häufig Magenschmerzen, Verstopfung oder Übelkeit. Eine Infusion umgeht den Verdauungstrakt vollständig und füllt die Speicher direkt auf."
       },
       {
-        q: "Was bedeutet ein erhöhter CRP-Wert?",
-        a: "Das C-reaktive Protein (CRP) ist ein hochempfindlicher Entzündungsmarker. Stark erhöhte Werte weisen auf eine bakterielle Entzündung hin, bei der Antibiotika sinnvoll sein können, während normale Werte unnötige Medikamentengaben verhindern."
+        "q": "Wie oft muss die Ferritin-Kontrolle nach einer Infusion wiederholt werden?",
+        "a": "Wir empfehlen eine labormedizinische Nachkontrolle des Ferritinspiegels etwa 8 bis 12 Wochen nach der letzten Infusion, um den Therapieerfolg zu dokumentieren und die Speicherstabilität zu prüfen."
       },
       {
-        q: "Führen Sie auch Schnelltests für Kinder durch?",
-        a: "Ja, für Kinder nutzen wir besonders feine Nadeln und wo immer möglich kapilläre Fingerbeeren-Blutentnahmen, um die Untersuchung so sanft wie möglich zu gestalten."
+        "q": "Kann ich die Abklärung mit anderen Untersuchungen kombinieren?",
+        "a": "Ja, wir können die Blutentnahme für Mineralien und Vitamine ideal mit einem umfassenden Check-up, Herz-EKG oder einer allgemeinen Vorsorgeuntersuchung in einem Termin verbinden."
       }
     ],
-    images: [
-      { src: "/images/services/Labor.webp", alt: "Praxislabor für Sofortanalysen in Zürich Altstetten" },
-      { src: "/images/praxis/4x.webp", alt: "Laborgeräte für Blutbild und Entzündungswerte" },
-      { src: "/images/praxis/1x.webp", alt: "Praxisempfang an der Badenerstrasse 621" },
-    ],
-    relatedSlugs: ["herzuntersuchung", "mineralmangel", "notfallpraxis-walk-in", "check-ups"]
-  },
-
-  therapien: {
-    slug: "therapien",
-    title: "Therapien",
-    h1: "Medizinische Therapien & Infusionen in Zürich Altstetten",
-    metaTitle: "Medizinische Therapien & Infusionen Zürich Altstetten | Hausarztpraxis",
-    metaDesc: "Umfassende ambulante Therapien in Zürich Altstetten: Infusionstherapie, Wundversorgung, Impfungen, Infiltrationen & Schmerztherapie an der Badenerstrasse 621.",
-    intro: "Individuelle medizinische Therapien in Zürich Altstetten sichern eine ganzheitliche Genesung und langfristiges Wohlbefinden. An der Badenerstrasse 621 bieten wir Ihnen ein breites Spektrum ambulanter therapeutischer Massnahmen – von Infusionen über professionelle Wundversorgung bis hin zur gezielten Schmerztherapie.",
-    whenNeededTitle: "Wann sind unsere medizinischen Therapien angezeigt?",
-    whenNeededParagraphs: [
-      "In einer modernen Hausarztpraxis enden die Leistungen nicht bei der Diagnose. Eine sorgfältig auf den Patienten abgestimmte konservative und interventionelle Therapie ist der Schlüssel zur erfolgreichen Heilung akuter und chronischer Beschwerden.",
-      "Unser therapeutisches Angebot in Altstetten umfasst Massnahmen bei:",
-    ],
-    whenNeededPoints: [
-      "Akuten und chronischen Schmerzzuständen des Bewegungsapparats (Rückenschmerzen, Hexenschuss, Gelenkarthrose, Sehnenentzündungen) mittels gezielter Infiltrationen und medikamentöser Therapie.",
-      "Akuten Verletzungen wie Schnittwunden, Riss- und Schürfwunden, Verbrennungen oder postoperativen Wundkontrollen und Fadenentfernungen.",
-      "Ausgeprägten Nährstoff- und Flüssigkeitsdefiziten durch intravenöse Infusionstherapien (Eisen, Vitamine, Elektrolyte).",
-      "Präventivem Impfbedarf, Tetanus-Auffrischungen, Grippeimpfungen oder reisemedizinischen Impfungen.",
-      "Chronischen Erkrankungen wie Bluthochdruck, Asthma oder Diabetes mellitus zur optimalen medikamentösen Einstellung.",
-    ],
-    procedureTitle: "Wie läuft die therapeutische Behandlung ab?",
-    procedureParagraphs: [
-      "Jeder Therapie geht eine sorgfältige ärztliche Untersuchung und Indikationsstellung voraus. Gemeinsam mit Ihnen besprechen wir die möglichen Behandlungsoptionen, deren Wirkungsweise und allfällige Alternativen.",
-      "Kleinere Eingriffe wie Wundnähte, Verbandswechsel oder Gelenkinfiltrationen führen wir direkt unter sterilen Bedingungen in unserem praxiseigenen Behandlungsraum durch. Bei Infusionstherapien nehmen Sie in einem unserer bequemen Ruhesessel Platz, während die Infusion unter regelmässiger Überwachung von Puls und Blutdruck einläuft.",
-      "Für chronische Therapien erstellen wir einen verbindlichen Behandlungs- und Kontrollplan, damit Sie Ihre Fortschritte stets transparent mitverfolgen können. Bringen Sie bitte Ihre Versichertenkarte und Ihren Impfausweis mit.",
-    ],
-    equipmentTitle: "Modern ausgestattete Therapieräume direkt vor Ort",
-    equipmentParagraphs: [
-      "Unsere Praxis an der Badenerstrasse 621 verfügt über separate, voll ausgestattete Behandlungs- und Eingriffsräume. Wir arbeiten nach höchsten schweizerischen Hygienestandards mit sterilen Einweginstrumenten und modernem Verbandsmaterial für feuchte Wundheilung.",
-      "Für Schmerzbehandlungen und Infiltrationen setzen wir auf hochpräzise Injektionstechniken und moderne Lokalanästhetika, um Schmerzen rasch und nachhaltig auszuschalten. Zudem steht eine hauseigene Apotheke zur Verfügung, sodass Sie verordnete Medikamente, Salben und Schmerzmittel direkt nach der Behandlung mit nach Hause nehmen können.",
-    ],
-    costsTitle: "Kosten und Krankenkasse",
-    costsParagraphs: [
-      "Medizinisch notwendige Behandlungen, Wundversorgungen, Infiltrationen und vom Arzt verordnete Infusionstherapien sind reguläre Pflichtleistungen der Schweizer Krankenversicherung (KVG).",
-      "Die Abrechnung erfolgt transparent nach TARMED. Bei Unfallverletzungen übernimmt die Schweizer Unfallversicherung (UVG) 100 % der Behandlungskosten ohne Selbstbehalt. Gesetzlich empfohlene Impfungen werden gemäss Schweizer Impfplan über die Grundversicherung abgerechnet.",
-    ],
-    faqs: [
+    "images": [
       {
-        q: "Führen Sie auch Notfall-Wundversorgungen durch?",
-        a: "Ja, bei kleineren Schnittverletzungen, Platzwunden oder Schürfungen können Sie ohne Voranmeldung direkt als Walk-in-Patient in unsere Praxis an der Badenerstrasse 621 kommen. Wir reinigen, nähen oder kleben die Wunde fachgerecht und überprüfen direkt Ihren Tetanusschutz."
+        "src": "/images/services/Eisenmangel.webp",
+        "alt": "Diagnostik und Infusionstherapie bei Eisen- und Mineralstoffmangel in Zürich Altstetten"
       },
       {
-        q: "Sind Gelenkinfiltrationen bei Arthrose sehr schmerzhaft?",
-        a: "Mit einer feinen Nadel und einer kurzen Vereisung oder Lokalanästhesie der Einstichstelle ist die Injektion kaum schmerzhafter als eine gewöhnliche Blutentnahme und bringt oft rasche Linderung bei akuten Entzündungsschüben."
+        "src": "/images/praxis/4x.webp",
+        "alt": "Praxislabor zur Bestimmung von Ferritin und Mikronährstoffen"
       },
       {
-        q: "Kann ich meine regulären Impfungen bei Ihnen auffrischen lassen?",
-        a: "Ja, wir überprüfen Ihren Impfausweis und führen alle Standardimpfungen (Tetanus, Diphtherie, Keuchhusten, Polio, FSME/Zecken, Grippe, Pneumokokken) direkt in der Praxis durch."
-      },
-      {
-        q: "Wie lange muss ich nach einer Infusion in der Praxis bleiben?",
-        a: "Nach Ende der Infusion empfehlen wir eine kurze Ruhezeit von 10 bis 15 Minuten, um Ihr Wohlbefinden und die Vitalzeichen zu überprüfen, bevor Sie nach Hause gehen."
-      },
-      {
-        q: "Bieten Sie auch Beratung zur Reisemedizin an?",
-        a: "Ja, wir beraten Sie kompetent vor Fernreisen zu empfohlenen Impfungen, Malariaprophylaxe und stellen Ihnen eine massgeschneiderte Reiseapotheke zusammen."
-      },
-      {
-        q: "Was sollte ich zu einer therapeutischen Behandlung mitbringen?",
-        a: "Bringen Sie bitte Ihre Schweizer Versichertenkarte, allfällige Vorbefunde, eine Liste Ihrer aktuellen Dauermedikamente und bei Impfungen Ihren Impfausweis mit."
+        "src": "/images/praxis/3x.webp",
+        "alt": "Komfortabler Ruheraum für Infusionen Badenerstrasse 621"
       }
     ],
-    images: [
-      { src: "/images/services/Leistungen und Therapien.webp", alt: "Ambulante medizinische Therapien und Wundversorgung in Zürich Altstetten" },
-      { src: "/images/praxis/5x.webp", alt: "Steriler Eingriffs- und Behandlungsraum der Praxis Altstetten" },
-      { src: "/images/praxis/1x.webp", alt: "Empfang an der Badenerstrasse 621" },
-    ],
-    relatedSlugs: ["mineralmangel", "notfallpraxis-walk-in", "labor", "check-ups"]
+    "relatedSlugs": [
+      "eiseninfusion-labor",
+      "labor",
+      "therapien",
+      "check-ups"
+    ]
   },
-
+  "labor": {
+    "slug": "labor",
+    "title": "Labor",
+    "h1": "Praxiseigenes Sofortlabor in Zürich Altstetten",
+    "metaTitle": "Praxislabor Zürich Altstetten | Blutbild & Sofortanalysen in wenigen Minuten",
+    "metaDesc": "Praxiseigenes Sofortlabor in Zürich Altstetten: Blutbild, CRP, Troponin & Stoffwechselwerte in wenigen Minuten ausgewertet. KVG-anerkannt. Jetzt Termin buchen!",
+    "intro": "Unser praxiseigenes Sofortlabor in Zürich Altstetten liefert präzise diagnostische Ergebnisse innerhalb weniger Minuten direkt vor Ort. An der Badenerstrasse 621 analysieren wir Blut-, Urin- und Schnelltests mit moderner Point-of-Care-Labortechnologie. Das erspart Ihnen lange Wartezeiten auf externe Laborbefunde und ermöglicht eine sofortige, zielgenaue Therapieeinleitung noch während Ihrer Konsultation.",
+    "whenNeededTitle": "Welche Laboranalysen führen wir direkt vor Ort durch?",
+    "whenNeededParagraphs": [
+      "In der modernen Allgemein- und Notfallmedizin sind verlässliche Laborwerte der Schlüssel zur richtigen Diagnose. Ob akute Entzündung, Brustschmerzen, Stoffwechselstörung oder Routinekontrolle: Viele Entscheidungen können nicht Tage warten.",
+      "In unserem Praxislabor an der Badenerstrasse 621 analysieren wir ein breites Spektrum wichtiger Notfall- und Routineparameter unmittelbar vor Ort:"
+    ],
+    "whenNeededPoints": [
+      "Grosses und kleines Blutbild (Leukozyten, Erythrozyten, Thrombozyten, Hämoglobin, Hämatokrit) zur Erkennung von Anämien, Infektionen und Blutbildungsstörungen.",
+      "Akute Entzündungsmarker: Hochsensitives CRP (C-reaktives Protein) zur schnellen Unterscheidung zwischen bakteriellen und viralen Infekten und zur Vermeidung unnötiger Antibiotika.",
+      "Kardiovaskuläre Notfallmarker: Hochsensitives Troponin zum schnellen Ausschluss eines Herzinfarkts sowie D-Dimere zum Ausschluss von tiefen Beinvenenthrombosen und Lungenembolien.",
+      "Stoffwechsel- und Organprofile: Blutzucker, HbA1c (Langzeitzucker), Nierenwerte (Kreatinin, eGFR), Leberwerte (GOT, GPT, GGT) und Elektrolyte (Natrium, Kalium).",
+      "Gerinnungsstatus: Quick/INR zur sicheren Kontrolle von blutverdünnenden Medikamenten (z. B. Marcoumar).",
+      "Urindiagnostik: Schnellteststreifen und mikroskopische Urinsediment-Analysen bei Harnwegsinfekten, Nierenerkrankungen oder Mikrohämaturie.",
+      "Schnelltests: Strep-A (Scharlach/Mandelentzündung), Influenza, Covid-19 und RSV."
+    ],
+    "procedureTitle": "Ablauf der Blut- und Laboruntersuchung in der Praxis",
+    "procedureParagraphs": [
+      "Die Probenentnahme in der Hausarztpraxis Zürich Altstetten wird von unseren erfahrenen medizinischen Praxisassistentinnen (MPA) besonders schonend und routiniert durchgeführt. Wir verwenden ultrafeine Sicherheitskanülen, sodass die Venenpunktion kaum spürbar ist.",
+      "Für viele Schnelltests (wie Blutzucker, CRP oder Troponin) reicht sogar ein winziger Tropfen kapilläres Blut aus der Fingerbeere. Unmittelbar nach der Entnahme wird die Probe in unsere vollautomatischen Laboranalysatoren eingesetzt. Während Sie kurz im Wartezimmer oder Sprechzimmer Platz nehmen, läuft die computergestützte Auswertung. Innerhalb von 10 bis 15 Minuten liegen die validierten Resultate vor und werden direkt im Konsultationsgespräch mit der Ärztin oder dem Arzt besprochen.",
+      "Dank der unmittelbaren Anbindung des Labors an die Behandlungszimmer müssen Sie nicht tagelang auf Rückrufe oder Berichte warten. Liegt beispielsweise der Troponin- oder D-Dimer-Wert im Normalbereich, kann ein Herzinfarkt oder eine Thrombose sofort noch während Ihres Besuchs mit hoher Zuverlässigkeit ausgeschlossen werden."
+    ],
+    "equipmentTitle": "Modernste Point-of-Care Medizintechnik an der Badenerstrasse",
+    "equipmentParagraphs": [
+      "Unser Praxislabor in Zürich Altstetten entspricht den höchsten Schweizer Qualitätsstandards gemäss den Richtlinien der QUALAB (Schweizerische Kommission für Qualitätssicherung im medizinischen Labor). Unsere Analysegeräte werden täglich intern kalibriert und nehmen regelmässig an externen Ringversuchen teil.",
+      "Für hochspezifische Spezialanalysen (wie Mikronährstoffprofile, Hormonspiegel, Tumormarker oder genetische Abklärungen) arbeiten wir eng mit führenden Schweizer Grosslaboren (wie dem Labor Team Wyss) zusammen. Die Probenabholung erfolgt täglich per Kurierdienst, sodass auch Spezialergebnisse meist schon am Folgetag digital vorliegen.",
+      "Die Probenverarbeitung erfolgt vollautomatisiert mit Barcode-Scannern und digitaler Schnittstelle direkt in das Praxisinformationssystem. Fehlerquellen werden dadurch minimiert und die Befunde stehen dauerhaft für künftige Verlaufskontrollen digital zur Verfügung."
+    ],
+    "costsTitle": "Kosten und Abrechnung nach Schweizer Analysenliste (AL)",
+    "costsParagraphs": [
+      "Sämtliche medizinisch verordneten Laboranalysen sind Pflichtleistungen der obligatorischen Krankenpflegeversicherung (Grundversicherung nach KVG) und der Schweizer Unfallversicherung (UVG).",
+      "Die Abrechnung erfolgt transparent und einheitlich nach der eidgenössischen Analysenliste (AL) des Bundesamtes für Gesundheit (BAG). Sie zahlen lediglich Ihre vereinbarte Franchise und den gesetzlichen Selbstbehalt von 10 Prozent."
+    ],
+    "faqs": [
+      {
+        "q": "Muss ich für jede Blutentnahme nüchtern sein?",
+        "a": "Nein, für die meisten Akutanalysen (wie CRP, Blutbild oder Troponin) müssen Sie nicht nüchtern sein. Lediglich bei der Bestimmung von Nüchternglukose und spezifischen Blutfettwerten empfehlen wir, ab 8 Stunden vor dem Termin auf Nahrung zu verzichten."
+      },
+      {
+        "q": "Wie schnell erhalte ich die Ergebnisse meiner Laboruntersuchung?",
+        "a": "Die Werte unseres Praxislabors liegen bereits nach 10 bis 15 Minuten vor und werden noch im selben Termin mit Ihnen besprochen. Ergebnisse externer Spezialanalysen erhalten Sie meist innerhalb von 24 bis 48 Stunden."
+      },
+      {
+        "q": "Kann ich meine Laborwerte digital erhalten?",
+        "a": "Ja, auf Wunsch händigen wir Ihnen den vollständigen Laborausdruck aus oder stellen Ihnen die Laborwerte digital und datenschutzkonform zur Verfügung."
+      },
+      {
+        "q": "Kann ich auch ohne Voranmeldung für eine Laboranalyse vorbeikommen?",
+        "a": "Bei akuten Infekten, Verdacht auf Blasenentzündung oder akuten Beschwerden können Sie jederzeit während der Öffnungszeiten unangemeldet als Walk-in-Patient in unsere Praxis kommen."
+      },
+      {
+        "q": "Wie wird die Genauigkeit der Praxislaborwerte sichergestellt?",
+        "a": "Unsere Laborgeräte unterliegen den strengen gesetzlichen Qualitätskontrollen der QUALAB mit täglichen Kontrollmessungen und standardisierten Kalibrierungen."
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/services/Labor.webp",
+        "alt": "Praxiseigenes Sofortlabor für Blut- und Urinanalysen in Zürich Altstetten"
+      },
+      {
+        "src": "/images/praxis/4x.webp",
+        "alt": "Moderne Point-of-Care Analysegeräte an der Badenerstrasse 621"
+      },
+      {
+        "src": "/images/praxis/1x.webp",
+        "alt": "Empfangsbereich der Hausarztpraxis Zürich Altstetten"
+      }
+    ],
+    "relatedSlugs": [
+      "mineralmangel",
+      "eiseninfusion-labor",
+      "notfallpraxis-walk-in",
+      "check-ups"
+    ]
+  },
+  "therapien": {
+    "slug": "therapien",
+    "title": "Therapien",
+    "h1": "Medizinische Therapien & Infusionsbehandlung in Zürich Altstetten",
+    "metaTitle": "Medizinische Therapien Zürich Altstetten | Infusionen, Wundversorgung & Impfung",
+    "metaDesc": "Ganzheitliche Therapien in Zürich Altstetten: Infusionen, Wundversorgung, Impfberatung und Schmerztherapie an der Badenerstrasse 621. Jetzt beraten lassen!",
+    "intro": "Ganzheitliche medizinische Therapien in Zürich Altstetten sichern Ihre rasche Genesung und nachhaltige Beschwerdefreiheit. In unserer modern ausgestatteten Hausarztpraxis an der Badenerstrasse 621 nahe Bahnhof Altstetten bieten wir Ihnen ein breites Spektrum ambulanter Behandlungen: von intravenösen Infusionstherapien und moderner Wundversorgung über Schmerzbehandlungen und Impfungen bis hin zu kleinchirurgischen Eingriffen.",
+    "whenNeededTitle": "Unser therapeutisches Leistungsspektrum im Überblick",
+    "whenNeededParagraphs": [
+      "In der modernen Grundversorgung steht die individuell abgestimmte, evidenzbasierte Therapie im Mittelpunkt. Anstatt nur Symptome kurzfristig zu unterdrücken, zielt unser Behandlungsansatz auf die nachhaltige Beseitigung der Ursachen und die Stärkung Ihrer Selbstheilungskräfte ab.",
+      "An der Badenerstrasse 621 bieten wir Ihnen vielfältige therapeutische Möglichkeiten direkt vor Ort in unserer Praxis:"
+    ],
+    "whenNeededPoints": [
+      "Infusionstherapien: Intravenöse Gabe von hochdosierten Vitaminen (z. B. Vitamin C), Mineralstoffen, Eisen und Elektrolytlösungen bei Erschöpfung, Dehydratation oder chronischen Mangelzuständen.",
+      "Moderne Wundversorgung: Fachgerechte Erstversorgung und sterile Nachbehandlung von akuten Schnitt-, Riss- und Schürfwunden, Verbrennungen sowie chronischen Wunden (Ulcus cruris, diabetischer Fuss).",
+      "Kleinchirurgische Eingriffe: Schmerzarme Entfernung von Hautveränderungen, Atheromen, Lipomen, Muttermalen oder eingewachsenen Nägeln unter lokaler Betäubung.",
+      "Schmerztherapie und Infiltrationen: Gezielte Injektionen und Infiltrationen bei akuten Rückenschmerzen, Hexenschuss (Lumbago), Sehnenansatzentzündungen oder Arthroseschmerzen.",
+      "Impfberatung und Reisemedizin: Überprüfung Ihres Impfpasses, Nachholimpfungen gemäss Schweizer Impfplan sowie individuelle reisemedizinische Beratung für Fernreisen.",
+      "Inhalationstherapien bei akuter Bronchitis, Asthmaanfällen oder COPD-Exazerbationen mittels moderner Verneblergeräte."
+    ],
+    "procedureTitle": "Ablauf und Betreuung bei therapeutischen Behandlungen",
+    "procedureParagraphs": [
+      "Jede Behandlung in der Hausarztpraxis Zürich Altstetten beginnt mit einer sorgfältigen diagnostischen Vorabklärung und einem offenen Gespräch über den therapeutischen Nutzen, Behandlungsalternativen und allfällige Risiken. Gemeinsam mit Ihnen legen wir den optimalen Behandlungsplan fest.",
+      "Therapien wie Infusionen oder Wundversorgungen finden in speziell ausgestatteten, ruhigen Behandlungsräumen statt. Während der gesamten Behandlungsdauer werden Sie von unseren qualifizierten medizinischen Fachpersonen überwacht. Nach dem Eingriff erhalten Sie verständliche Verhaltenshinweise für zu Hause und wir vereinbaren bei Bedarf zeitnah einen Kontrolltermin zur Wund- oder Befundüberprüfung.",
+      "Vor jeder therapeutischen Massnahme klären unsere Ärztinnen und Ärzte Ihre individuellen Vorerkrankungen, mögliche Allergien sowie bestehende Dauermedikationen exakt ab. Während der Verabreichung von Infusionen oder Injektionen überwacht unser geschultes Fachpersonal kontinuierlich Puls, Blutdruck und Ihr allgemeines Wohlbefinden. Bei Wundversorgungen und kleinchirurgischen Eingriffen erhalten Sie ausführliche Verhaltensregeln für den Alltag, wasserfeste Duschpflaster sowie einen fest vereinbarten Kontrolltermin zum Fadenentfernen oder Verbandswechsel."
+    ],
+    "equipmentTitle": "Sicherheit, Hygiene und moderne Praxisinfrastruktur",
+    "equipmentParagraphs": [
+      "Unsere Praxis an der Badenerstrasse 621 verfügt über separate, vollwertig ausgestattete Behandlungs- und Eingriffsräume mit steriler Instrumentenaufbereitung nach strengsten Schweizer Hygienerichtlinien. Für kleinchirurgische Eingriffe stehen moderne OP-Leuchten, HF-Kauterisationsgeräte und hochwertige Einweginstrumente bereit.",
+      "Für Infusionspatienten bieten wir bequeme, verstellbare Therapieliegen in ruhiger Umgebung, sodass Sie während der Infusion entspannen oder lesen können. Die Praxisapotheke vor Ort hält wichtige Medikamente und Verbandsmaterialien sofort bereit.",
+      "Für Patientinnen und Patienten mit akuten Atemwegsbeschwerden oder Bronchitis stehen moderne Ultraschall-Verneblersysteme zur Verfügung, die bronchienerweiternde und entzündungshemmende Wirkstoffe mikroskopisch fein vernebeln. Unsere hauseigene Praxisapotheke ermöglicht es Ihnen zudem, verordnete Salben, Verbände oder Analgetika ohne zusätzlichen Umweg zur externen Apotheke direkt mit nach Hause zu nehmen."
+    ],
+    "costsTitle": "Kosten, Tarife und Abrechnung mit der Krankenkasse",
+    "costsParagraphs": [
+      "Medizinisch notwendige therapeutische Leistungen – einschliesslich Wundversorgungen, Schmerztherapien, KVG-konformen Infusionen, Impfungen und kleinchirurgischen Eingriffen – werden in der Schweiz vollständig durch die Grundversicherung (KVG) oder die Unfallversicherung (UVG) übernommen.",
+      "Die Abrechnung erfolgt transparent nach TARMED bzw. TARDOC. Bei speziellen präventiven oder komplementärmedizinischen Vitalisierungstherapien informieren wir Sie vor Beginn transparent über die genauen Kosten."
+    ],
+    "faqs": [
+      {
+        "q": "Benötige ich für eine Wundversorgung einen Termin?",
+        "a": "Nein, akute Schnittwunden, Verbrennungen oder Risswunden behandeln wir jederzeit ohne Voranmeldung in unserer Notfall- und Walk-in-Sprechstunde an der Badenerstrasse 621."
+      },
+      {
+        "q": "Wie schmerzhaft sind kleinchirurgische Eingriffe in der Praxis?",
+        "a": "Eingriffe wie die Entfernung von Hautveränderungen erfolgen unter einer feinen örtlichen Betäubung (Lokalanästhesie). Sie spüren lediglich einen kurzen Einstich, der eigentliche Eingriff ist vollkommen schmerzfrei."
+      },
+      {
+        "q": "Können Sie meinen Impfausweis auf Vollständigkeit überprüfen?",
+        "a": "Sehr gerne. Bringen Sie Ihren Schweizer Impfpass einfach mit in die Praxis. Wir prüfen Ihren Schutzstatus gemäss den aktuellen BAG-Empfehlungen und frischen fehlende Impfungen direkt auf."
+      },
+      {
+        "q": "Wie lange dauert eine Infusionstherapie?",
+        "a": "Je nach Art und Menge der verabreichten Lösung dauert eine Infusionssitzung in der Regel zwischen 20 und 45 Minuten."
+      },
+      {
+        "q": "Erhalte ich nach einem Eingriff benötigte Medikamente direkt vor Ort?",
+        "a": "Ja, dank unserer praxiseigenen Apotheke können wir Ihnen verordnete Schmerzmittel, Antibiotika oder Wundauflagen direkt beim Verlassen der Praxis mitgeben."
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/services/Leistungen und Therapien.webp",
+        "alt": "Ambulante medizinische Therapien und Infusionen in Zürich Altstetten"
+      },
+      {
+        "src": "/images/praxis/5x.webp",
+        "alt": "Steriler Behandlungsraum für Wundversorgung und Kleinchirurgie"
+      },
+      {
+        "src": "/images/praxis/1x.webp",
+        "alt": "Empfang der Hausarztpraxis Zürich Altstetten"
+      }
+    ],
+    "relatedSlugs": [
+      "mineralmangel",
+      "notfallpraxis-walk-in",
+      "labor",
+      "check-ups"
+    ]
+  },
   "vorsorge-checkup": {
-    slug: "vorsorge-checkup",
-    title: "Vorsorge & Check-up",
-    h1: "Vorsorge & Check-up in Zürich Altstetten",
-    metaTitle: "Vorsorgeuntersuchung & Check-up Zürich Altstetten | Präventivmedizin",
-    metaDesc: "Ganzheitliche Vorsorgeuntersuchung in Zürich Altstetten. Frühzeitige Erkennung von Herz-Kreislauf-Erkrankungen, Diabetes & Krebs. Jetzt Termin buchen.",
-    intro: "Eine fundierte Vorsorgeuntersuchung in Zürich Altstetten ist die wirksamste Investition in Ihre langfristige Gesundheit und Lebensqualität. In unserer Praxis an der Badenerstrasse 621 erfassen wir Risikofaktoren für Herz-Kreislauf-Erkrankungen, Stoffwechselstörungen und Krebs frühzeitig, bevor Beschwerden entstehen.",
-    whenNeededTitle: "Wann ist ein Vorsorge-Check-up sinnvoll?",
-    whenNeededParagraphs: [
-      "Prävention ist das Herzstück moderner Hausarztmedizin. Viele der schwerwiegendsten Zivilisationskrankheiten – wie Arteriosklerose, Bluthochdruck, Typ-2-Diabetes oder Darmkrebs – entwickeln sich über Jahre hinweg völlig schmerzfrei.",
-      "Ein strukturierter Vorsorge-Check-up empfiehlt sich insbesondere in folgenden Situationen:",
+    "slug": "vorsorge-checkup",
+    "title": "Vorsorge & Check-up",
+    "h1": "Vorsorgeuntersuchung & Check-up in Zürich Altstetten",
+    "metaTitle": "Vorsorge-Checkup Zürich Altstetten | Prävention & Gesundheitsuntersuchung",
+    "metaDesc": "Vorsorge-Checkup in Zürich Altstetten: Ganzheitliche Gesundheitsuntersuchung, Herz-Kreislauf-Screening & Krebsfrüherkennung. Sichern Sie jetzt Ihre Vorsorge!",
+    "intro": "Ein strukturierter Vorsorge-Checkup in Zürich Altstetten ist die wirksamste Investition in Ihre langfristige Gesundheit, Vitalität und Lebensqualität. In unserer Praxis an der Badenerstrasse 621 nahe Bahnhof Altstetten bieten wir Ihnen evidenzbasierte Vorsorgeuntersuchungen, Herz-Kreislauf-Screenings, Krebsfrüherkennung und ganzheitliche Präventionsberatung. Wir erkennen gesundheitliche Risiken frühzeitig, bevor spürbare Beschwerden oder chronische Folgeerkrankungen entstehen.",
+    "whenNeededTitle": "Warum ist eine regelmässige Vorsorgeuntersuchung entscheidend?",
+    "whenNeededParagraphs": [
+      "Viele der häufigsten Zivilisationskrankheiten – wie Bluthochdruck, Arteriosklerose, Diabetes mellitus oder bösartige Gewebsveränderungen – entwickeln sich über Jahre hinweg völlig symptomlos. Wer erst dann einen Arzt aufsucht, wenn Schmerzen oder Leistungseinbussen auftreten, verschenkt wertvolle präventive Handlungsspielräume.",
+      "Ein umfassender Vorsorge-Checkup in unserer Praxis in Zürich Altstetten empfiehlt sich für Erwachsene jeden Alters, insbesondere aber in folgenden Lebensphasen:"
     ],
-    whenNeededPoints: [
-      "Basis-Vorsorge ab dem 35. bis 40. Lebensjahr zur Bestimmung des kardiovaskulären Risikoprofils.",
-      "Regelmässige Checks ab 50 Jahren zur erweiterten Krebsfrüherkennung (z. B. Darmkrebs-Screening, Prostatavorsorge, Hautkontrolle).",
-      "Familiäre Häufung von Herzinfarkten, Schlaganfällen, Krebserkrankungen oder Diabetes mellitus.",
-      "Bestehende Risikofaktoren wie Übergewicht, Bewegungsmangel, chronischer beruflicher Stress oder Rauchen.",
-      "Wunsch nach einer professionellen Standortbestimmung der eigenen Vitalität und personalisierten Empfehlungen für Ernährung und Lebensstil.",
+    "whenNeededPoints": [
+      "Regelmässiger Basis-Gesundheitscheck alle 2 bis 3 Jahre ab dem 35. Lebensjahr zur rechtzeitigen Identifikation kardiovaskulärer und metabolischer Risikofaktoren.",
+      "Ab dem 50. Lebensjahr: Intensivierte Vorsorge mit Darmkrebs-Screening (z. B. Blut-im-Stuhl-Test FIT oder Beratung zur Koloskopie), Prostatavorsorge beim Mann und gezielten Herz-Kreislauf-Funktionsprüfungen.",
+      "Familiäre Häufung von Herzinfarkten, Schlaganfällen, Krebserkrankungen oder Diabetes mellitus im engen Verwandtschaftskreis.",
+      "Vorliegen von Zivilisationsrisiken wie chronischem Stress, Übergewicht, Bewegungsmangel, unausgewogener Ernährung oder Nikotinkonsum.",
+      "Präventive Gesundheitsanalyse bei beruflicher Dauerbelastung zur Vorbeugung von Burnout, chronischer Fatigue und metabolischem Syndrom."
     ],
-    procedureTitle: "Wie läuft der Vorsorge-Check-up ab?",
-    procedureParagraphs: [
-      "Der Vorsorge-Check-up in unserer Praxis in Zürich Altstetten läuft in einer ruhigen, angenehmen Atmosphäre ab und dauert rund 45 bis 60 Minuten. Zunächst erfassen wir im ausführlichen Anamnesegespräch Ihre persönliche Lebenssituation, familiäre Veranlagungen und Ernährungsgewohnheiten.",
-      "Es folgt eine gründliche körperliche Untersuchung aller Organsysteme von Kopf bis Fuss: Hautinspektion, Abtasten der Lymphknoten, Schilddrüse und Bauchorgane, Untersuchung von Herz, Lunge und grossen Gefässen sowie Reflex- und Bewegungstests. Ergänzend führen wir ein Ruhe-EKG, Lungenfunktionstests und eine gezielte Laboranalyse (Blutbild, Nieren-, Leber- und Cholesterinwerte, Blutzucker, Urinstatus) durch.",
-      "Im abschliessenden Beratungsgespräch erläutern wir alle Ergebnisse verständlich und formulieren gemeinsam realistische Gesundheitsziele. Bringen Sie bitte Ihre Versichertenkarte, Ihren Impfausweis und aktuelle Medikamente mit.",
+    "procedureTitle": "Was beinhaltet der umfassende Vorsorge-Checkup in Altstetten?",
+    "procedureParagraphs": [
+      "Der Vorsorge-Checkup in der Hausarztpraxis Zürich Altstetten ist ein sorgfältig abgestimmtes medizinisches Programm. Zu Beginn erfassen wir Ihre persönliche und familiäre Krankengeschichte, analysieren Ihren Lebensstil, Ihre Ernährungsgewohnheiten und Ihre individuellen Gesundheitsziele.",
+      "Es folgt eine gründliche körperliche Untersuchung 'von Kopf bis Fuss': Beurteilung der Haut (Muttermal-Screening), Inspektion von Mundhöhle und Rachen, Abtasten der Lymphknoten, Auskultation von Herz, Lunge und Halsschlagadern sowie Abtasten der Bauchorgane. Ergänzend führen wir ein 12-Kanal-Ruhe-EKG zur Beurteilung der Herzfunktion, eine Spirometrie zur Lungenfunktionsprüfung sowie eine orientierende Sinnesprüfung durch.",
+      "In unserem praxiseigenen Labor analysieren wir Ihr Blutbild, Blutzucker, HbA1c, Cholesterinwerte (Gesamtcholesterin, HDL, LDL, Triglyzeride), Nieren- und Leberwerte sowie Entzündungs- und Urinparameter. In einem ausführlichen Abschlussgespräch erläutern wir Ihnen alle Ergebnisse verständlich und formulieren konkrete Präventionsempfehlungen.",
+      "Ein besonderer Schwerpunkt unserer Vorsorgeuntersuchung liegt auf der Früherkennung des metabolischen Syndroms – einer Kombination aus Bauchfett, erhöhtem Blutzucker, Hypertonie und Fettstoffwechselstörungen. Durch eine frühzeitige Intervention lassen sich Diabetes Typ 2 und Gefässverkalkungen nachhaltig abwenden."
     ],
-    equipmentTitle: "Moderne Diagnostik direkt vor Ort in Altstetten",
-    equipmentParagraphs: [
-      "An der Badenerstrasse 621 stehen Ihnen alle modernen diagnostischen Verfahren direkt unter einem Dach zur Verfügung: Praxislabor für Sofortanalysen, digitales Röntgen, 12-Kanal-EKG und Spirometrie.",
-      "Dadurch entfallen zeitraubende Mehrfachtermine bei verschiedenen Fachärzten. Sämtliche Befunde werden digital in Ihrer persönlichen Akte zusammengeführt und stehen Ihnen jederzeit transparent zur Verfügung.",
+    "equipmentTitle": "Präzise Diagnostik und ganzheitliche Beratung vor Ort",
+    "equipmentParagraphs": [
+      "An der Badenerstrasse 621 vereinen wir moderne universitäre Labordiagnostik, digitales Röntgen und kardiologische Funktionsdiagnostik unter einem Dach. Alle Untersuchungsschritte greifen nahtlos ineinander, sodass Sie den gesamten Vorsorge-Checkup in der Regel in einem einzigen kompakten Praxistermin absolvieren können.",
+      "Unser Ärzteteam betrachtet nicht nur isolierte Laborparameter, sondern den Menschen als Ganzes. Neben der Schulmedizin integrieren wir fundierte Ansätze der Longevity- und Vitalitätsmedizin (inklusive Mikronährstoffberatung und Stressmanagement), um Ihre Gesundheit aktiv und proaktiv zu fördern.",
+      "Im Anschluss an die Befundbesprechung erhalten Sie von uns einen individuellen Vorsorgepass, in dem die empfohlenen Nachkontrollintervalle für Labor, Blutdruck und organbezogene Screenings übersichtlich festgehalten werden."
     ],
-    costsTitle: "Kosten und Krankenkasse",
-    costsParagraphs: [
-      "Gesetzlich definierte Vorsorgeleistungen (wie Diabetes- und Cholesterinscreenings bei Risikopersonen, Darmkrebsvorsorge ab 50 Jahren oder gynäkologische Abstriche) sind anerkannte KVG-Pflichtleistungen.",
-      "Für erweiterte private Check-up-Pakete übernehmen viele Schweizer ambulante Zusatzversicherungen (VVG) einen grossen Teil der Kosten (oft 50–90 % bis zu jährlichen Maximalbeträgen). Wir erstellen Ihnen gerne eine transparente Kostenaufstellung.",
+    "costsTitle": "Kostenübernahme der Vorsorge durch die Schweizer Krankenkasse",
+    "costsParagraphs": [
+      "In der Schweiz übernimmt die Grundversicherung (KVG) bestimmte gesetzlich definierte Früherkennungsuntersuchungen (wie Darmkrebs-Screening ab 50 Jahren oder gynäkologische Abstriche) sowie alle Untersuchungen, die bei Vorliegen konkreter Risikofaktoren oder familiärer Belastungen medizinisch indiziert sind.",
+      "Umfassende präventive Check-ups ohne Krankheitsverdacht werden von vielen Schweizer Krankenkassen grosszügig über freiwillige ambulante Zusatzversicherungen (VVG) bezuschusst. Wir informieren Sie stets vorab transparent über Kosten und Beteiligungsmöglichkeiten."
     ],
-    faqs: [
+    "faqs": [
       {
-        q: "Ab welchem Alter sollte man zur ersten Vorsorgeuntersuchung gehen?",
-        a: "Allgemein wird ab dem 35. Lebensjahr ein erster umfassender Basis-Check empfohlen. Bei familiärer Vorbelastung (z. B. Herzinfarkte in jungen Jahren) ist eine frühere Abklärung ratsam."
+        "q": "Ab welchem Alter sollte man mit regelmässigen Check-ups beginnen?",
+        "a": "Wir empfehlen einen ersten Basis-Check-up ab dem 30. bis 35. Lebensjahr. Ab 50 Jahren sollten die Abstände verkürzt und gezielte Screenings für Darm, Prostata und Gefässe integriert werden."
       },
       {
-        q: "Welche Krebsvorsorgeuntersuchungen bieten Sie an?",
-        a: "Wir führen die Erstbeurteilung von Hautveränderungen, Darmkrebs-Screenings (mittels immunologischem Stuhltest FIT oder Überweisung zur Koloskopie) sowie bei Männern die Prostata-Vorsorge (Tastuntersuchung und PSA-Test) durch."
+        "q": "Wie lange dauert der Vorsorge-Checkup in der Praxis?",
+        "a": "Für die Anamnese, körperliche Untersuchung, EKG, Laborabnahme und das ausführliche Beratungsgespräch planen wir rund 45 bis 60 Minuten ein."
       },
       {
-        q: "Muss ich für die Blutabnahme nüchtern sein?",
-        a: "Ja, für die genaue Bestimmung der Nüchtern-Glukose und des Lipidprofils (Cholesterin) ist es ideal, 10 bis 12 Stunden vor dem Termin nur Wasser zu trinken."
+        "q": "Muss ich für den Vorsorgetermin nüchtern sein?",
+        "a": "Ja, für ein aussagekräftiges Stoffwechselprofil (Blutzucker, Cholesterin, Triglyzeride) ist es ratsam, ab 8 Stunden vor der Blutentnahme keine Mahlzeiten einzunehmen. Wasser trinken ist selbstverständlich erlaubt."
       },
       {
-        q: "Wie unterscheidet sich ein Check-up von einem normalen Arztbesuch?",
-        a: "Ein normaler Arztbesuch konzentriert sich auf ein akutes Symptom. Der Check-up betrachtet den gesamten Körper und Ihre Gesundheit ganzheitlich und vorausschauend, um zukünftige Erkrankungen aktiv zu verhindern."
+        "q": "Welche Krebsvorsorge-Untersuchungen werden durchgeführt?",
+        "a": "Wir führen Tastuntersuchungen, Haut-Screenings, Darmkrebs-Vorsorgetests (FIT) sowie PSA-Bestimmungen beim Mann durch und beraten Sie zu Koloskopie und Mammographie."
       },
       {
-        q: "Erhalte ich auch Ratschläge zu Ernährung und Sport?",
-        a: "Ja, fundierte Lebensstil- und Präventionsberatung ist ein Kernbestandteil unseres Check-ups. Wir geben Ihnen alltagstaugliche Empfehlungen mit auf den Weg."
+        "q": "Wie vereinbare ich einen Termin für meinen Vorsorge-Checkup?",
+        "a": "Sie können Ihren Termin jederzeit unkompliziert über unser Online-Buchungsportal auswählen oder unser Praxisteam telefonisch unter 044 244 09 99 kontaktieren."
       }
     ],
-    images: [
-      { src: "/images/services/Weitere Untersuchungen.webp", alt: "Ganzheitliche Vorsorgeuntersuchung in Zürich Altstetten" },
-      { src: "/images/praxis/3x.webp", alt: "Konsultationsraum für ausführliche Präventionsgespräche" },
-      { src: "/images/praxis/1x.webp", alt: "Praxis an der Badenerstrasse 621" },
+    "images": [
+      {
+        "src": "/images/services/Weitere Untersuchungen.webp",
+        "alt": "Umfassender Vorsorge-Checkup und Prävention in Zürich Altstetten"
+      },
+      {
+        "src": "/images/praxis/3x.webp",
+        "alt": "Beratungs- und Untersuchungszimmer für Vorsorge Badenerstrasse 621"
+      },
+      {
+        "src": "/images/praxis/1x.webp",
+        "alt": "Empfang der Hausarztpraxis Zürich Altstetten"
+      }
     ],
-    relatedSlugs: ["check-ups", "herzuntersuchung", "labor", "fahreignungsabklaerung"]
+    "relatedSlugs": [
+      "check-ups",
+      "herzuntersuchung",
+      "labor",
+      "mineralmangel"
+    ]
   },
-
   "notfallpraxis-walk-in": {
-    slug: "notfallpraxis-walk-in",
-    title: "Notfallarzt & Walk-in Praxis",
-    h1: "Notfallarzt & Walk-in Praxis in Zürich Altstetten",
-    metaTitle: "Notfallarzt & Walk-in Praxis Zürich Altstetten | Ohne Voranmeldung",
-    metaDesc: "Walk-in Notfallpraxis in Zürich Altstetten an der Badenerstrasse 621. Sofortige Hilfe bei Schmerzen, Schnittwunden & Infekten ohne Termin. Jetzt vorbeikommen.",
-    intro: "Als Notfallarzt und Walk-in Praxis in Zürich Altstetten bieten wir Ihnen bei akuten Beschwerden, Schnittwunden und plötzlichen Schmerzen sofortige medizinische Hilfe ohne lange Wartezeiten. Direkt an der Badenerstrasse 621 nahe dem Bahnhof Altstetten empfangen wir Sie während unserer Praxisöffnungszeiten auch ohne Voranmeldung.",
-    whenNeededTitle: "Wann können Sie unsere Walk-in Notfallpraxis aufsuchen?",
-    whenNeededParagraphs: [
-      "Plötzliche Krankheiten und Unfälle halten sich an keine Terminkalender. Statt stundenlang auf der Notfallstation eines Spitals zu warten, erhalten Sie in unserer Praxis eine zügige, kompetente Erstversorgung durch erfahrene Allgemein- und Notfallmediziner.",
-      "Kommen Sie bei folgenden akuten Problemen direkt zu uns in die Praxis:",
+    "slug": "notfallpraxis-walk-in",
+    "title": "Notfallarzt & Walk-in Praxis",
+    "h1": "Notfallarzt & Walk-in Praxis in Zürich Altstetten",
+    "metaTitle": "Notfallpraxis & Walk-in Zürich Altstetten | Arzt ohne Termin am Bahnhof 8048",
+    "metaDesc": "Notfallarzt & Walk-in Praxis in Zürich Altstetten nahe Bahnhof: Schnelle Behandlung akuter Erkrankungen & Verletzungen auch ohne Voranmeldung. Sofortige Hilfe!",
+    "intro": "Unsere Notfallarzt- und Walk-in Praxis in Zürich Altstetten bietet Ihnen schnelle, kompetente und unkomplizierte ärztliche Hilfe bei akuten Erkrankungen und Verletzungen – vollkommen ohne Voranmeldung. An der Badenerstrasse 621, nur wenige Minuten vom Bahnhof Altstetten entfernt, empfängt Sie unser erfahrenes Ärzteteam während der Praxisöffnungszeiten mit minimalen Wartezeiten für eine rasche medizinische Versorgung.",
+    "whenNeededTitle": "Wann können Sie unsere Walk-in Notfallpraxis aufsuchen?",
+    "whenNeededParagraphs": [
+      "Medizinische Notfälle und plötzliche Beschwerden halten sich nicht an Terminpläne. Ob hohes Fieber, akute Schmerzen oder eine Schnittverletzung im Haushalt: Bei uns erhalten Sie sofortige ärztliche Betreuung, ohne zuvor tagelang auf einen regulären Termin warten zu müssen.",
+      "Unsere Notfall- und Permanence-Sprechstunde an der Badenerstrasse 621 in Zürich Altstetten steht Ihnen bei einer Vielzahl akuter medizinischer Situationen offen:"
     ],
-    whenNeededPoints: [
-      "Akute Schnitt-, Riss- und Schürfwunden nach Unfällen im Haushalt, bei der Arbeit oder beim Sport zur schnellen Wundnaht oder Verband.",
-      "Verdacht auf Knochenbrüche, Verstauchungen oder Bänderzerrungen nach Stürzen (sofortiges digitales Röntgen vor Ort).",
-      "Akute starke Schmerzen: Hexenschuss, Ischias, Nierenkoliken, akute Magen-Darm-Krämpfe oder starke Migräneanfälle.",
-      "Plötzlich auftretendes hohes Fieber, Schüttelfrost, schwere Grippesymptome oder akute Atemwegsinfekte.",
-      "Akute Blasenentzündungen (brennende Schmerzen beim Wasserlassen, Blut im Urin).",
-      "Plötzliche Ohrenschmerzen, Fremdkörpergefühl im Auge oder allergische Hautreaktionen.",
+    "whenNeededPoints": [
+      "Akute fieberhafte Infekte, schwere Erkältungen, Grippe (Influenza), Mandelentzündungen, akute Bronchitis oder Covid-19.",
+      "Akute Verletzungen: Schnittwunden, Schürfwunden, Platzwunden, Verbrennungen, Tierbisse sowie Prellungen, Zerrungen und Verstauchungen nach Sportunfällen oder Stürzen.",
+      "Verdacht auf Knochenbrüche (Frakturen) oder Gelenkluxationen: Sofortige Abklärung mittels hauseigenem digitalem Röntgen.",
+      "Akute Schmerzzustände: Heftige Kopfschmerzen, Migräneanfälle, Ohrenschmerzen, Zahnschmerzen zur Erstversorgung oder akuter Hexenschuss (Lumbago).",
+      "Magen-Darm-Notfälle: Akuter Brechdurchfall, Magenkrämpfe, Koliken oder Dehydratationserscheinungen.",
+      "Urologische Akutfälle: Schmerzhaftes Brennen beim Wasserlassen, akute Blasenentzündung (Zystitis) oder Verdacht auf Nierenkolik.",
+      "Allergische Reaktionen: Plötzliche Hautausschläge, Nesselfieber (Urtikaria) oder Insektenstiche mit starker lokaler Schwellung."
     ],
-    procedureTitle: "Wie läuft die Notfallbehandlung ab?",
-    procedureParagraphs: [
-      "Als Walk-in-Patient können Sie während unserer Praxisöffnungszeiten einfach direkt an die Badenerstrasse 621 kommen. An unserem Empfang werden Ihre Personalien und Symptome umgehend durch unser medizinisches Fachpersonal erfasst.",
-      "Anschliessend erfolgt eine strukturierte Ersteinschätzung (Triage) nach medizinischer Dringlichkeit. Vital bedrohliche Fälle werden selbstverständlich sofort prioritär behandelt. In unseren modernen Behandlungszimmern nimmt sich der diensthabende Arzt Ihrer Beschwerden an, führt die notwendige Notfalldiagnostik durch und leitet sofort schmerzlindernde Massnahmen ein.",
-      "Bringen Sie bitte Ihre Schweizer Krankenversicherungskarte, einen Ausweis sowie falls vorhanden Unterlagen über Unfälle (Unfallmeldung) mit.",
+    "procedureTitle": "Ablauf Ihres Walk-in Besuchs ohne Voranmeldung",
+    "procedureParagraphs": [
+      "Wenn Sie als Walk-in-Patient in unsere Praxis an der Badenerstrasse 621 kommen, melden Sie sich einfach direkt an unserem Empfang. Unser medizinisches Fachpersonal nimmt Ihre Personalien und Ihre Schweizer Versichertenkarte auf und führt eine strukturierte Triage (medizinische Ersteinschätzung der Dringlichkeit) durch.",
+      "Patienten mit akuten, potenziell bedrohlichen Symptomen (wie starken Brustschmerzen oder akuter Atemnot) werden selbstverständlich sofort prioritär behandelt. Für alle anderen akuten Beschwerden bemühen wir uns um kürzestmögliche Wartezeiten in unseren freundlichen Praxisräumen. Nach der ärztlichen Untersuchung leiten wir die erforderliche Diagnostik (Labor, EKG, Röntgen) sofort vor Ort ein, behandeln Ihre Beschwerden wirksam und versorgen Sie bei Bedarf direkt mit Medikamenten aus unserer Praxisapotheke.",
+      "Unser Notfallteam ist für die zügige Akutversorgung geschult. Sollte sich während der Untersuchung herausstellen, dass eine stationäre Aufnahme im Spital erforderlich ist, organisieren wir die direkte Einweisung und den Krankentransport ins zuständige Zentrumsspital (z. B. Stadtspital Triemli oder Universitätsspital Zürich) ohne jeden Zeitverlust."
     ],
-    equipmentTitle: "Vollständige Notfalldiagnostik direkt vor Ort",
-    equipmentParagraphs: [
-      "Unsere Walk-in Praxis ist optimal für Notfälle gerüstet: Mit unserem praxiseigenen Sofortlabor bestimmen wir Entzündungswerte (CRP), Herzinfarktmarker (Troponin) und Thromboseparameter (D-Dimer) innerhalb von 10 bis 15 Minuten.",
-      "Zudem verfügen wir über digitales Röntgen für den sofortigen Ausschluss von Knochenbrüchen und Lungenentzündungen, ein 12-Kanal-Notfall-EKG sowie eine hauseigene Apotheke. Dadurch erhalten Sie notwendige Schmerzmittel, Antibiotika oder Schienenverbände direkt vor Ort und können Ihren Heimweg sofort antreten.",
+    "equipmentTitle": "Akutdiagnostik mit Sofortlabor und digitalem Röntgen vor Ort",
+    "equipmentParagraphs": [
+      "Der entscheidende Vorteil unserer Notfallpraxis in Zürich Altstetten ist die umfassende diagnostische Infrastruktur direkt im Haus. Wir müssen Sie für die allermeisten Abklärungen nicht in eine Notfallaufnahme weiterleiten.",
+      "Mit unserem digitalen Röntgengerät können wir Frakturen von Extremitäten und Thoraxaufnahmen innerhalb weniger Minuten anfertigen. Unser praxiseigenes Sofortlabor liefert innerhalb von 10 bis 15 Minuten Klarheit über Entzündungswerte (CRP), Blutbild, Herzmarker (Troponin) und Urinwerte. Notwendige Schienenverbände, Wundnähte oder Infusionen führen wir unmittelbar vor Ort durch.",
+      "Durch den direkten Zugriff auf unser Notfall-Labor und das digitale Röntgengerät klären wir Verdachtsfälle auf Frakturen, Lungenentzündungen oder akute Entzündungen direkt in der Praxis ab, was Ihnen mehrstündige Wartezeiten in überfüllten Spitalnotfallstationen erspart."
     ],
-    costsTitle: "Kosten und Krankenkasse",
-    costsParagraphs: [
-      "Alle Behandlungen in unserer Notfallpraxis werden vollumfänglich von den Schweizer Krankenkassen (Grundversicherung KVG) bzw. bei Unfällen von der Schweizer Unfallversicherung (UVG) übernommen.",
-      "Die Abrechnung erfolgt transparent nach dem offiziellen TARMED-Tarif. Es entstehen Ihnen keine zusätzlichen oder überteuerten 'Notfallpauschalen', wie sie oft in Spitälern anfallen.",
+    "costsTitle": "Kosten, Notfallabrechnung und Krankenkasse nach KVG",
+    "costsParagraphs": [
+      "Die Behandlungen in unserer Notfall- und Walk-in-Praxis sind vollwertige Pflichtleistungen der obligatorischen Krankenpflegeversicherung (Grundversicherung nach KVG) und der Schweizer Unfallversicherung (UVG).",
+      "Die Abrechnung erfolgt transparent nach dem offiziellen TARMED/TARDOC-Tarif. Es fallen keine überhöhten privaten Notfallzuschläge an; Sie zahlen lediglich die gewohnte Franchise und den Selbstbehalt von 10 Prozent. Bringen Sie bitte Ihre Krankenkassenkarte mit."
     ],
-    faqs: [
+    "faqs": [
       {
-        q: "Muss ich mich vorher telefonisch anmelden?",
-        a: "Nein, eine Voranmeldung ist nicht zwingend nötig. Bei akuten Schmerzen oder Verletzungen können Sie jederzeit einfach vorbeikommen. Ein kurzer Anruf hilft uns jedoch, uns optimal auf Ihr Eintreffen vorzubereiten."
+        "q": "Muss ich vorher anrufen, bevor ich in die Walk-in Praxis komme?",
+        "a": "Eine vorherige Anmeldung ist nicht zwingend erforderlich – Sie können während unserer Öffnungszeiten jederzeit einfach vorbeikommen. Ein kurzer Anruf hilft uns jedoch, Sie bereits für die Triage vorzumerken."
       },
       {
-        q: "Wie lange sind die Wartezeiten im Walk-in?",
-        a: "Dank unseres effizienten Praxiskonzepts sind die Wartezeiten in der Regel wesentlich kürzer als auf Spitalnotfallstationen. Wir behandeln nach medizinischer Dringlichkeit."
+        "q": "Wie lange sind die Wartezeiten in der Notfallpraxis Altstetten?",
+        "a": "Dank unseres eingespielten Praxisteams und effizienter Prozesse liegen die Wartezeiten meist deutlich unter jenen von Spitalnotfallstationen. Medizinisch dringende Fälle werden stets prioritär versorgt."
       },
       {
-        q: "Was soll ich bei lebensbedrohlichen Notfällen tun?",
-        a: "Bei akuter Lebensgefahr, Verdacht auf Schlaganfall (Lähmungen, Sprachstörungen), schwerer Bewusstlosigkeit oder vernichtendem Brustschmerz wählen Sie bitte sofort den offiziellen Notruf 144!"
+        "q": "Was soll ich bei lebensbedrohlichen Notfällen tun?",
+        "a": "Bei lebensbedrohlichen Zuständen (wie Verdacht auf schweren Herzinfarkt, Schlaganfall mit Lähmung oder schwerste Atemnot) wählen Sie bitte immer sofort direkt die Notrufnummer 144 der Sanität."
       },
       {
-        q: "Erhalte ich bei Ihnen ein Arztzeugnis für den Arbeitgeber?",
-        a: "Ja, wenn eine Arbeitsunfähigkeit vorliegt, stellt Ihnen der behandelnde Notfallarzt sofort ein entsprechendes ärztliches Zeugnis aus."
+        "q": "Können Sie auch Wunden nähen oder kleben?",
+        "a": "Ja, wir versorgen Schnitt-, Platz- und Risswunden fachgerecht und steril mittels Naht, Hautkleber oder Steri-Strips direkt in unserem chirurgischen Eingriffsraum."
       },
       {
-        q: "Werden Patienten im Hausarzt- oder Telmed-Modell auch behandelt?",
-        a: "Ja. Bei akuten Notfällen ist die Behandlung in einer Walk-in Praxis immer gestattet. Melden Sie die Notfallkonsultation anschliessend einfach Ihrer Versicherung oder Hotline."
+        "q": "Wo befindet sich die Praxis und wie reise ich an?",
+        "a": "Unsere Praxis liegt an der Badenerstrasse 621 in 8048 Zürich Altstetten. Sie erreichen uns ideal mit dem Tram 2 (Haltestelle Farbhof oder Lindenplatz) oder in wenigen Gehminuten vom Bahnhof Zürich Altstetten."
       }
     ],
-    images: [
-      { src: "/images/services/Notfallpraxis.webp", alt: "Walk-in Notfallpraxis in Zürich Altstetten an der Badenerstrasse 621" },
-      { src: "/images/praxis/5x.webp", alt: "Notfallbehandlungsraum für Wundversorgungen" },
-      { src: "/images/praxis/1x.webp", alt: "Empfang der Hausarzt- und Notfallpraxis Altstetten" },
+    "images": [
+      {
+        "src": "/images/services/Notfallpraxis.webp",
+        "alt": "Notfallarzt und Walk-in Praxis in Zürich Altstetten ohne Termin"
+      },
+      {
+        "src": "/images/praxis/1x.webp",
+        "alt": "Empfang und Triage der Walk-in Notfallpraxis Badenerstrasse 621"
+      },
+      {
+        "src": "/images/praxis/5x.webp",
+        "alt": "Akutbehandlungsraum für Notfallversorgung und Kleinchirurgie"
+      }
     ],
-    relatedSlugs: ["roentgenuntersuchung", "labor", "herzuntersuchung", "ohrenspuelung"]
+    "relatedSlugs": [
+      "roentgenuntersuchung",
+      "labor",
+      "therapien",
+      "herzuntersuchung"
+    ]
   },
-
   "eiseninfusion-labor": {
-    slug: "eiseninfusion-labor",
-    title: "Eiseninfusion & Labor",
-    h1: "Eiseninfusion & Laboruntersuchungen in Zürich Altstetten",
-    metaTitle: "Eiseninfusion & Labor Zürich Altstetten | Schnelle Hilfe bei Eisenmangel",
-    metaDesc: "Gezielte Eiseninfusion & Labordiagnostik in Zürich Altstetten an der Badenerstrasse 621. Schnelle Beseitigung von Erschöpfung & Müdigkeit. KVG-anerkannt.",
-    intro: "Eine professionelle Eiseninfusion mit fundierten Laboruntersuchungen in Zürich Altstetten beseitigt chronische Erschöpfung und füllt geleerte Eisenspeicher schnell und schonend wieder auf. An der Badenerstrasse 621 bieten wir Ihnen eine lückenlose Betreuung von der präzisen Ferritin-Bestimmung bis zur sicheren Infusionstherapie.",
-    whenNeededTitle: "Wann sind eine Eiseninfusion und Labordiagnostik nötig?",
-    whenNeededParagraphs: [
-      "Eisen ist das zentrale Spurenelement für den Sauerstofftransport im Blut (Hämoglobin) und die zelluläre Energiegewinnung in den Mitochondrien. Ein Mangel an Speichereisen (Ferritin) führt zu spürbaren Leistungseinbussen im Alltag und Beruf.",
-      "Eine labordiagnostische Überprüfung und Infusionstherapie ist besonders angezeigt bei:",
+    "slug": "eiseninfusion-labor",
+    "title": "Eiseninfusion & Labor",
+    "h1": "Eiseninfusion & Labordiagnostik in Zürich Altstetten",
+    "metaTitle": "Eiseninfusion Zürich Altstetten | Ferritin-Diagnostik & Infusionstherapie",
+    "metaDesc": "Eiseninfusion & Labordiagnostik in Zürich Altstetten: Schnelle Ferritin-Messung und gezielte Infusionstherapie bei Erschöpfung. KVG-gedeckt. Jetzt buchen!",
+    "intro": "Umfassende Labordiagnostik und professionelle Eiseninfusionen in Zürich Altstetten bieten Ihnen die schnellste und wirksamste Lösung bei chronischem Eisenmangel und Erschöpfung. An der Badenerstrasse 621 bestimmen wir Ihre genauen Eisenwerte (Ferritin, Transferrinsättigung) in unserem praxiseigenen Labor und verabreichen hochmoderne intravenöse Eisenpräparate in entspannter Atmosphäre. So gewinnen Sie Ihre gewohnte Energie und Vitalität rasch zurück.",
+    "whenNeededTitle": "Wann ist eine intravenöse Eiseninfusion indiziert?",
+    "whenNeededParagraphs": [
+      "Eisen ist das zentrale Spurenelement für die Bildung des roten Blutfarbstoffs Hämoglobin und damit für den lebensnotwendigen Sauerstofftransport im gesamten Körper. Zudem benötigen unsere Muskelzellen und Gehirnzellen Eisen für die mitochondriale Energieproduktion.",
+      "Ein Eisenmangel (mit oder ohne manifeste Anämie) ist in der Schweiz eine der häufigsten Ursachen für unerklärliche Erschöpfungszustände, besonders bei Frauen im gebärfähigen Alter, Sportlern und Vegetariern. Eine Eiseninfusion ist insbesondere in folgenden Situationen die Therapie der Wahl:"
     ],
-    whenNeededPoints: [
-      "Ständiger, bleierner Müdigkeit, Erschöpfungszuständen und morgendlicher Antriebslosigkeit trotz ausreichenden Schlafs.",
-      "Konzentrationsproblemen, verminderter geistiger Leistungsfähigkeit und Gedächtnislücken.",
-      "Diffusem Haarausfall, dünner werdendem Haar, brüchigen Nägeln oder brennender Zunge.",
-      "Unerklärlichen Schwindelgefühlen, Kopfschmerzen und Kälteempfindlichkeit.",
-      "Frauen im gebärfähigen Alter mit starken Menstruationsblutungen (häufigste Ursache für Eisenmangel).",
-      "Unverträglichkeit oder fehlendem Ansprechen auf herkömmliche Eisentabletten (Magen-Darm-Beschwerden, Verstopfung).",
+    "whenNeededPoints": [
+      "Chronische, bleierne Müdigkeit, fehlende körperliche Leistungsfähigkeit und ausgeprägte Antriebslosigkeit trotz ausreichendem Schlaf.",
+      "Konzentrationsstörungen, Gedächtnisschwäche, depressive Verstimmungen und 'Brain Fog' bei der Arbeit.",
+      "Ausgeprägter Haarausfall, brüchige Fingernägel, trockene Haut und blasse Schleimhäute.",
+      "Unruhige Beine am Abend oder in der Nacht (Restless-Legs-Syndrom).",
+      "Unverträglichkeit von oralen Eisentabletten (z. B. wegen schwerer Magenschmerzen, Übelkeit, Sodbrennen oder Obstipation).",
+      "Mangelnde Resorption im Magen-Darm-Trakt (z. B. bei chronisch-entzündlichen Darmerkrankungen wie Morbus Crohn, Colitis ulcerosa oder nach bariatrischen Magen-Bypass-Operationen).",
+      "Ausgeprägter Eisenmangel bei starker Menstruationsblutung (Hypermenorrhoe) oder nach Operationen und Geburten."
     ],
-    procedureTitle: "Wie läuft die Infusionstherapie ab?",
-    procedureParagraphs: [
-      "Am Anfang steht immer eine exakte Bestimmung des Eisenstatus in unserem Praxislabor: Wir analysieren Ferritin, Transferrin, Transferrinsättigung und das vollständige Blutbild. Anhand dieser Laborwerte und Ihres Körpergewichts berechnen wir die exakt benötigte Eisendosis (z. B. Ferinject®).",
-      "Die Verabreichung erfolgt über einen winzigen venösen Zugang in entspannter Atmosphäre in unserem Ruheraum. Die Eisenlösung tropft langsam und kontrolliert über 20 bis 30 Minuten ein. Während der gesamten Zeit werden Ihre Vitalparameter wie Blutdruck und Puls überwacht.",
-      "Nach Beendigung der Infusion verbleiben Sie noch etwa 15 Minuten zur kurzen Nachbeobachtung bei uns, bevor Sie Ihren gewohnten Tagesablauf vollkommen beschwerdefrei wieder aufnehmen können. Bringen Sie bitte Ihre Krankenversicherungskarte mit.",
+    "procedureTitle": "Ablauf der Eiseninfusion in unserer Praxis in Altstetten",
+    "procedureParagraphs": [
+      "Die Eisenbehandlung in der Hausarztpraxis Zürich Altstetten beginnt immer mit einer exakten labormedizinischen Diagnostik. Wir entnehmen Ihnen eine kleine Blutprobe und bestimmen neben dem Blutbild Ihren Ferritinwert (den Eisenspeicherwert) sowie die Transferrinsättigung und CRP als Entzündungsparameter. Nur so lässt sich der tatsächliche Eisenbedarf wissenschaftlich fundiert berechnen.",
+      "Bestätigt sich der Eisenmangel, verabreichen wir Ihnen in einem Folgetermin die berechnete Eisenmenge als intravenöse Kurzinfusion. Wir verwenden dafür moderne, hochmolekulare Eisenpräparate wie Eisencarboxymaltose (Ferinject). Die Infusion wird über eine feine Venenverweilkanüle verabreicht und dauert lediglich 15 bis 20 Minuten. Sie sitzen dabei bequem auf unseren komfortablen Therapieliegen.",
+      "Nach Beendigung der Infusion verbleiben Sie zur Sicherheit noch etwa 15 Minuten in unserer Praxis zur Nachbeobachtung. Anschliessend können Sie Ihren gewohnten Tagesablauf sofort wieder aufnehmen."
     ],
-    equipmentTitle: "Modernes Labor und entspannte Infusionsplätze",
-    equipmentParagraphs: [
-      "In unserer Praxis an der Badenerstrasse 621 nutzen wir modernste Labordiagnostik für verlässliche Ferritin- und Blutbildwerte in kürzester Zeit. Dies stellt sicher, dass eine Infusion nur bei medizinisch eindeutiger Indikation verabreicht wird.",
-      "Unsere Infusionsplätze sind mit bequemen Liegesesseln ausgestattet. Wir verwenden ausschliesslich moderne Eisen-Carboxymaltose-Präparate, die sich durch eine hervorragende Verträglichkeit und minimale Nebenwirkungsraten auszeichnen.",
+    "equipmentTitle": "Laborkontrollen, Verträglichkeit und höchste Sicherheit",
+    "equipmentParagraphs": [
+      "In unserer Praxis an der Badenerstrasse 621 steht Patientensicherheit an oberster Stelle. Moderne Eisenpräparate zeichnen sich durch ein hervorragendes Sicherheitsprofil aus, da das Eisen stabil an eine Kohlenhydrathülle gebunden ist und kontrolliert an das körpereigene Speichersystem abgegeben wird.",
+      "Unser medizinisches Personal ist in der Durchführung von Infusionen bestens geschult und überwacht Ihre Vitalwerte während der Behandlung kontinuierlich. Um den nachhaltigen Erfolg der Therapie zu sichern, führen wir rund 8 bis 12 Wochen nach der Infusion eine labormedizinische Nachkontrolle durch, um den stabilen Anstieg des Ferritinspiegels verbindlich zu dokumentieren."
     ],
-    costsTitle: "Kosten und Krankenkasse",
-    costsParagraphs: [
-      "Bei laborchemisch nachgewiesenem Eisenmangel mit Symptomen (Ferritin unter dem KVG-Grenzwert oder verminderte Transferrinsättigung) werden sowohl die Laborkosten als auch die Eiseninfusion vollumfänglich von der Schweizer Grundversicherung (KVG) übernommen.",
-      "Die Abrechnung erfolgt transparent nach TARMED. Nach Abzug der gewählten Franchise und des regulären Selbstbehalts von 10 % zahlt Ihre Krankenkasse die gesamte Behandlung.",
+    "costsTitle": "Kostenübernahme der Eisentherapie durch die Krankenkasse",
+    "costsParagraphs": [
+      "Liegt ein labormedizinisch nachgewiesener Eisenmangel mit entsprechenden klinischen Symptomen (oder eine Eisenmangelanämie) vor, werden sowohl die diagnostischen Laboranalysen als auch die intravenöse Eiseninfusion vollständig von der obligatorischen Krankenpflegeversicherung (Grundversicherung KVG) übernommen.",
+      "Die Abrechnung erfolgt transparent gemäss den Kriterien der Schweizerischen Gesellschaft für Allgemeinmedizin (SGAIM) und dem TARMED/TARDOC-Tarif. Sie tragen lediglich Ihre gewählte Franchise und den regulären Selbstbehalt von 10 Prozent."
     ],
-    faqs: [
+    "faqs": [
       {
-        q: "Wie viele Infusionen sind in der Regel erforderlich?",
-        a: "Mit modernen hochdosierten Eisenpräparaten reicht in den allermeisten Fällen bereits eine einzige Infusion (seltener zwei im Abstand von ein bis zwei Wochen) aus, um die Eisenspeicher für viele Monate vollständig aufzufüllen."
+        "q": "Wie viele Infusionen sind nötig, um meinen Eisenspeicher aufzufüllen?",
+        "a": "Dank moderner hochdosierter Präparate wie Ferinject reicht in den allermeisten Fällen bereits eine einzige Infusion (seltener zwei Infusionen im Abstand von einer Woche) aus, um die Eisenspeicher vollständig aufzufüllen."
       },
       {
-        q: "Welche Vorteile hat die Infusion gegenüber Tabletten?",
-        a: "Die Infusion umgeht den Verdauungstrakt vollständig. Dadurch gelangt das Eisen zu 100 % direkt ins Blut, führt nicht zu Magenschmerzen oder Verstopfung und füllt die Speicher in Tagen statt in Monaten auf."
+        "q": "Welche Vorteile hat eine Eiseninfusion gegenüber Eisentabletten?",
+        "a": "Infusionen füllen den Eisenspeicher innerhalb von Minuten direkt über das Blut auf, während Tabletten über Monate täglich eingenommen werden müssen, den Magen-Darm-Trakt belasten und vom Körper oft kaum aufgenommen werden."
       },
       {
-        q: "Wie lange hält die Wirkung einer Eiseninfusion an?",
-        a: "Je nach individuellem Eisenverlust (z. B. Stärke der Menstruation) bleiben die Eisenspeicher nach einer erfolgreichen Infusion meist zwischen 6 und 24 Monaten stabil."
+        "q": "Wann spüre ich eine Besserung meiner Symptome?",
+        "a": "Die Mehrheit unserer Patientinnen und Patienten bemerkt bereits nach 3 bis 7 Tagen eine deutliche Zunahme an Energie, mehr Leistungsfähigkeit und weniger Erschöpfung."
       },
       {
-        q: "Wann sollte die Kontrolle der Laborwerte erfolgen?",
-        a: "Eine Kontrolluntersuchung des Ferritinwerts ist etwa 8 bis 12 Wochen nach der Infusion sinnvoll. Vor Ablauf von 6 Wochen ist der Messwert oft noch künstlich erhöht."
+        "q": "Darf eine Eiseninfusion während der Schwangerschaft gegeben werden?",
+        "a": "Ab dem zweiten Schwangerschaftstrimester (ab der 13. Schwangerschaftswoche) und in der Stillzeit können Eiseninfusionen bei nachgewiesenem Mangel nach strenger ärztlicher Indikation sicher verabreicht werden."
       },
       {
-        q: "Gibt es Kontraindikationen für eine Eiseninfusion?",
-        a: "Bei bekannten schweren Überempfindlichkeiten, akuten Infekten mit Fieber, Leberfunktionsstörungen oder im ersten Schwangerschaftstrimenon darf keine Eiseninfusion durchgeführt werden."
+        "q": "Wie buche ich einen Termin für die Eisenabklärung in Altstetten?",
+        "a": "Sie können online über unser Buchungsportal einen Termin für 'Eisenmangel & Labor' auswählen oder uns direkt unter 044 244 09 99 anrufen."
       }
     ],
-    images: [
-      { src: "/images/services/Eiseninfusion.webp", alt: "Moderne Eiseninfusionstherapie in Zürich Altstetten" },
-      { src: "/images/services/Labor.webp", alt: "Praxislabor für Ferritin- und Blutbildanalysen" },
-      { src: "/images/praxis/3x.webp", alt: "Infusions- und Ruheraum an der Badenerstrasse 621" },
+    "images": [
+      {
+        "src": "/images/services/Eiseninfusion.webp",
+        "alt": "Intravenöse Eiseninfusion und Labordiagnostik in Zürich Altstetten"
+      },
+      {
+        "src": "/images/praxis/4x.webp",
+        "alt": "Modernes Praxislabor zur Ferritin- und Hämoglobinbestimmung"
+      },
+      {
+        "src": "/images/praxis/3x.webp",
+        "alt": "Bequeme Therapieliegen für Eiseninfusionen Badenerstrasse 621"
+      }
     ],
-    relatedSlugs: ["mineralmangel", "labor", "check-ups", "therapien"]
+    "relatedSlugs": [
+      "mineralmangel",
+      "labor",
+      "therapien",
+      "check-ups"
+    ]
   }
 };

@@ -14,9 +14,9 @@ export const viewport = {
 
 /* ── Global Metadata ── */
 export const metadata = {
-  title: "Hausarzt & Arztpraxis Altstetten | Ärztezentrum am Bahnhof | Notfall auch ohne Termin",
+  title: "Hausarzt & Arztpraxis Zürich Altstetten | Notfall Walk-in",
   description:
-    "Suchen Sie einen Arzt oder Hausarzt in Zürich Altstetten (8048)? Unsere Arztpraxis am Bahnhof Altstetten (Badenerstrasse 621) empfängt Sie auch ohne Termin. Ihr Doktor & Ärztezentrum für Allgemeinmedizin, Labor, EKG & Notfallversorgung.",
+    "Ihre Hausarztpraxis in Zürich Altstetten (Badenerstrasse 621). Hausarzt, Notfall-Walk-in ohne Voranmeldung, Labor & EKG. Jetzt Termin online vereinbaren!",
   keywords: [
     "Hausarzt Altstetten",
     "Arztpraxis Altstetten",
@@ -32,8 +32,8 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Hausarzt & Arztpraxis Altstetten | Ärztezentrum am Bahnhof | Notfall auch ohne Termin",
-    description: "Suchen Sie einen Arzt oder Hausarzt in Zürich Altstetten (8048)? Unsere Arztpraxis am Bahnhof Altstetten (Badenerstrasse 621) empfängt Sie auch ohne Termin. Ihr Doktor & Ärztezentrum für Allgemeinmedizin, Labor, EKG & Notfallversorgung.",
+    title: "Hausarzt & Arztpraxis Zürich Altstetten | Notfall Walk-in",
+    description: "Ihre Hausarztpraxis in Zürich Altstetten (Badenerstrasse 621). Hausarzt, Notfall-Walk-in ohne Voranmeldung, Labor & EKG. Jetzt Termin online vereinbaren!",
     images: [
       {
         url: '/images/og-image.webp',

@@ -35,13 +35,68 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/hausaerzte-zuerich-altstetten',
+        source: '/810',
         destination: '/',
         permanent: true,
       },
       {
-        source: '/hausaerzte-zuerich-altstetten/',
+        source: '/810/',
         destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/leistungen',
+        destination: '/#services',
+        permanent: true,
+      },
+      {
+        source: '/leistungen/',
+        destination: '/#services',
+        permanent: true,
+      },
+      {
+        source: '/leistungen-alt/:path*',
+        destination: '/#services',
+        permanent: true,
+      },
+      {
+        source: '/hausarztpraxis-zurich-altstetten-leistungen',
+        destination: '/#services',
+        permanent: true,
+      },
+      {
+        source: '/hausarztpraxis-zurich-altstetten-leistungen/',
+        destination: '/#services',
+        permanent: true,
+      },
+      {
+        source: '/galerie',
+        destination: '/#about',
+        permanent: true,
+      },
+      {
+        source: '/galerie/:path*',
+        destination: '/#about',
+        permanent: true,
+      },
+      {
+        source: '/Galerienartikel-Typ/:path*',
+        destination: '/#about',
+        permanent: true,
+      },
+      {
+        source: '/author/:path*',
+        destination: '/#team',
+        permanent: true,
+      },
+      {
+        source: '/hausaerzte-zuerich-altstetten',
+        destination: '/#team',
+        permanent: true,
+      },
+      {
+        source: '/hausaerzte-zuerich-altstetten/:path*',
+        destination: '/#team',
         permanent: true,
       },
       {
@@ -65,6 +120,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/service/weitere-untersuchungen',
+        destination: '/leistungen/vorsorge-checkup',
+        permanent: true,
+      },
+      {
+        source: '/service/weitere-untersuchungen/',
+        destination: '/leistungen/vorsorge-checkup',
+        permanent: true,
+      },
+      {
         source: '/service/:slug',
         destination: '/leistungen/:slug',
         permanent: true,
@@ -72,11 +137,6 @@ const nextConfig = {
       {
         source: '/Service/:slug',
         destination: '/leistungen/:slug',
-        permanent: true,
-      },
-      {
-        source: '/leistungen-alt/:path*',
-        destination: '/#services',
         permanent: true,
       },
       {
@@ -110,18 +170,118 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/doctor/dr-saskia-rodriguez-hausarztpraxis-zurich-in-altstetten',
+        source: '/contact',
+        destination: '/#contact',
+        permanent: true,
+      },
+      {
+        source: '/contact/',
+        destination: '/#contact',
+        permanent: true,
+      },
+      {
+        source: '/kontakt',
+        destination: '/#contact',
+        permanent: true,
+      },
+      {
+        source: '/kontakt/',
+        destination: '/#contact',
+        permanent: true,
+      },
+      {
+        source: '/termin',
+        destination: '/#contact',
+        permanent: true,
+      },
+      {
+        source: '/termin/',
+        destination: '/#contact',
+        permanent: true,
+      },
+      {
+        source: '/about',
+        destination: '/#about',
+        permanent: true,
+      },
+      {
+        source: '/about/',
+        destination: '/#about',
+        permanent: true,
+      },
+      {
+        source: '/uber-uns',
+        destination: '/#about',
+        permanent: true,
+      },
+      {
+        source: '/uber-uns/',
+        destination: '/#about',
+        permanent: true,
+      },
+      {
+        source: '/team',
         destination: '/#team',
         permanent: true,
       },
       {
-        source: '/doctor/dr-saskia-rodriguez-hausarztpraxis-zurich-in-altstetten/',
+        source: '/team/',
         destination: '/#team',
         permanent: true,
       },
       {
         source: '/doctor/:path*',
         destination: '/#team',
+        permanent: true,
+      },
+      {
+        source: '/faq',
+        destination: '/#faq',
+        permanent: true,
+      },
+      {
+        source: '/faq/',
+        destination: '/#faq',
+        permanent: true,
+      },
+      {
+        source: '/faqs',
+        destination: '/#faq',
+        permanent: true,
+      },
+      {
+        source: '/faqs/',
+        destination: '/#faq',
+        permanent: true,
+      },
+      {
+        source: '/category/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/neuigkeiten-hausarztpraxis-zuerich-atlstetten',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/neuigkeiten-hausarztpraxis-zuerich-atlstetten/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/grippesaison-gesundheitstipps-fur-den-winter',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/grippesaison-gesundheitstipps-fur-den-winter/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/impressum/',
+        destination: '/impressum',
         permanent: true,
       },
     ];

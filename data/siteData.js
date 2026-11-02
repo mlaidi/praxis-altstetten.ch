@@ -34,6 +34,7 @@ export const SERVICES = [
     title: "Herzuntersuchung",
     img: "/images/services/Herzuntersuchung.webp",
     short: "Umfassende kardiologische Diagnostik mit EKG.",
+    metaDesc: "Kardiologische Diagnostik in Zürich Altstetten: Ruhe- & Langzeit-EKG, Herz-Kreislauf-Check & Notfall-Biomarker an der Badenerstrasse 621. Jetzt Termin buchen!",
     full: "Umfassende kardiologische Diagnostik mit modernsten EKG-Geräten für Ihre Herzgesundheit. Wir führen Ruhe-EKGs und Langzeit-EKGs durch, um Herzrhythmusstörungen und andere kardiale Auffälligkeiten frühzeitig zu erkennen. Bei Bedarf überweisen wir Sie an spezialisierte Kardiologen in der Region.",
   },
   {
@@ -41,7 +42,7 @@ export const SERVICES = [
     title: "Lungenuntersuchungen",
     img: "/images/services/Lungenuntersuchungen.webp",
     short: "Spirometrie und Lungenfunktionstests.",
-    metaDesc: "Jetzt Termin für Lungenuntersuchungen in Zürich Altstetten vereinbaren. Schnelle Spirometrie und Lungenfunktionstests.",
+    metaDesc: "Lungenfunktionstest & Spirometrie in Zürich Altstetten. Präzise Diagnostik bei Asthma, Husten & Atemnot an der Badenerstrasse 621. Jetzt Termin vereinbaren!",
     full: "Spirometrie und Lungenfunktionstests für eine präzise Diagnose Ihrer Atemwege. Ob Asthma, COPD oder andere Lungenerkrankungen – wir klären Ihre Beschwerden sorgfältig ab. Unsere modernen Spirometriesysteme ermöglichen schnelle und zuverlässige Messungen direkt in unserer Praxis.",
   },
   {
@@ -49,6 +50,7 @@ export const SERVICES = [
     title: "Röntgenuntersuchung",
     img: "/images/services/Röntgenuntersuchung.webp",
     short: "Röntgen direkt in unserer Praxis.",
+    metaDesc: "Digitales Röntgen in Zürich Altstetten ohne Wartezeit: Sofortdiagnostik für Knochen, Thorax & Gelenke an der Badenerstrasse 621. KVG-Abrechnung. Jetzt Termin!",
     full: " Röntgenuntersuchung direkt in unserer Praxis für schnelle und zuverlässige Bildgebung. Ob Thorax-Röntgen, Knochen oder Gelenke – wir liefern Ihnen schnelle Resultate ohne lange Wartezeiten.",
   },
   {
@@ -56,6 +58,7 @@ export const SERVICES = [
     title: "Fahreignungsabklärung",
     img: "/images/services/Fahreignungsabklärung.webp",
     short: "Medizinische Abklärung der Fahreignung Stufe I bis III.",
+    metaDesc: "Fahreignungsabklärung Stufe 1 bis 3 in Zürich Altstetten. Ärztliche Kontrolluntersuchung für Senioren & Berufschauffeure nach StVA-Richtlinien. Jetzt buchen!",
     full: "Medizinische Abklärung der Fahreignung Stufe I bis III – schnell und unkompliziert. Ab einem bestimmten Alter oder bei bestimmten Erkrankungen ist eine ärztliche Bestätigung der Fahreignung notwendig. Wir führen die Untersuchung gemäss den Richtlinien des Strassenverkehrsamtes durch und stellen Ihnen das entsprechende Attest aus.",
   },
   {
@@ -63,6 +66,7 @@ export const SERVICES = [
     title: "Ohrenspülung",
     img: "/images/services/Ohrenspülung.webp",
     short: "Professionelle Ohrenreinigung und -spülung.",
+    metaDesc: "Professionelle Ohrenspülung in Zürich Altstetten: Sanfte Cerumen-Entfernung bei verstopftem Ohr & Hörminderung. Sofortige Hilfe an der Badenerstrasse 621.",
     full: "Professionelle Ohrenreinigung und -spülung für besseres Hören und Wohlbefinden. Verstopfte Gehörgänge durch Cerumen (Ohrenschmalz) können zu Hörminderung und Beschwerden führen. Wir entfernen Cerumen schonend und effektiv, sodass Sie sofort wieder besser hören können.",
   },
   {
@@ -70,6 +74,7 @@ export const SERVICES = [
     title: "Check-ups & Atteste",
     img: "/images/services/Fahreignungsabklärung.webp",
     short: "Medizinische Check-ups und Ausstellung von Attesten.",
+    metaDesc: "Medizinische Check-ups & Atteste in Zürich Altstetten. Umfassende Vorsorge, Laboranalysen & Zeugnisse für Beruf, Sport und Reisen. Jetzt Termin vereinbaren!",
     full: "Medizinische Check-ups und Ausstellung von Gesundheitsattesten – schnell und unkompliziert. Ob für den Beruf, den Sport oder allgemeine Vorsorge, wir führen die notwendigen Untersuchungen sorgfältig durch und stellen Ihnen das entsprechende ärztliche Attest aus.",
   },
   {
@@ -77,6 +82,7 @@ export const SERVICES = [
     title: "Mineral- & Eisenmangel",
     img: "/images/services/Eisenmangel.webp",
     short: "Behandlung bei Mineral- und Eisenmangel mittels Infusion.",
+    metaDesc: "Diagnostik & Infusionstherapie bei Mineralstoff- und Eisenmangel in Zürich Altstetten. Schnelle Hilfe bei chronischer Müdigkeit an der Badenerstrasse 621.",
     full: "Behandlung von Erschöpfung und Müdigkeit bei Mineral- und Eisenmangel mittels Infusionen. Ein Mangel an essenziellen Mineralien oder Eisen ist eine der häufigsten Ursachen für chronische Müdigkeit und Leistungsminderung. In unserer Praxis bieten wir Ihnen eine schnelle und effektive Behandlung durch massgeschneiderte intravenöse Infusionen an.",
   },
   {
@@ -84,6 +90,7 @@ export const SERVICES = [
     title: "Labor",
     img: "/images/services/Labor.webp",
     short: "Modernste Laborgeräte für schnelle Analysen.",
+    metaDesc: "Praxiseigenes Sofortlabor in Zürich Altstetten: Blutbild, CRP, Troponin & Stoffwechselwerte in wenigen Minuten ausgewertet. KVG-anerkannt. Jetzt Termin buchen!",
     full: "Modernste Laborgeräte für schnelle Ergebnisse und umfassende Analysen. Unser Praxislabor deckt ein breites Spektrum an Laboruntersuchungen ab: von Blutbild und Entzündungswerten bis zu Stoffwechsel- und Schilddrüsenparametern. Viele Ergebnisse liegen innerhalb weniger Minuten vor.",
   },
   {
@@ -91,14 +98,15 @@ export const SERVICES = [
     title: "Therapien",
     img: "/images/services/Leistungen und Therapien.webp",
     short: "Infusionstherapien, Impfungen und individuelle Behandlungen.",
+    metaDesc: "Ganzheitliche Therapien in Zürich Altstetten: Infusionen, Wundversorgung, Impfberatung und Schmerztherapie an der Badenerstrasse 621. Jetzt beraten lassen!",
     full: "Unser therapeutisches Angebot umfasst Infusionstherapien (Eisen, Vitamine), Impfberatungen, Reisemedizin, Wundversorgung und kleinchirurgische Eingriffe. Wir erstellen für Sie einen individuellen Therapieplan, der auf Ihre Bedürfnisse abgestimmt ist.",
   },
   {
     slug: "vorsorge-checkup",
-    title: "Weitere Untersuchungen",
+    title: "Vorsorge & Check-up",
     img: "/images/services/Weitere Untersuchungen.webp",
     short: "Gesundheitschecks und Vorsorgeuntersuchungen.",
-    metaDesc: "Jetzt Termin für Vorsorge-Checkup in Zürich Altstetten vereinbaren. Gesundheitschecks, Ernährungsberatung und Prävention.",
+    metaDesc: "Vorsorge-Checkup in Zürich Altstetten: Ganzheitliche Gesundheitsuntersuchung, Herz-Kreislauf-Screening & Krebsfrüherkennung. Sichern Sie jetzt Ihre Vorsorge!",
     full: "Umfassende Vorsorgeuntersuchungen und Gesundheitschecks für Ihre langfristige Gesundheit. Wir bieten individuelle Check-ups, reisemedizinische Beratung, Ernährungsberatung und gezielte Früherkennung von Risikofaktoren.",
   },
   {
@@ -106,6 +114,7 @@ export const SERVICES = [
     title: "Notfallarzt & Walk-in Praxis",
     img: "/images/services/Notfallpraxis.webp",
     short: "Kurzfristige Arzttermine ohne Voranmeldung für akute Beschwerden.",
+    metaDesc: "Notfallarzt & Walk-in Praxis in Zürich Altstetten nahe Bahnhof: Schnelle Behandlung akuter Erkrankungen & Verletzungen auch ohne Voranmeldung. Sofortige Hilfe!",
     full: "Notfallarzt & Walk-in Praxis in Zürich Altstetten. Wir sind für akute medizinische Notfälle und plötzliche Beschwerden da. Sie können als Walk-in Patient ohne Voranmeldung vorbeikommen, um bei Fieber, Schmerzen, Verletzungen oder Infektionen sofortige Hilfe zu erhalten. Unsere Praxis liegt zentral nahe dem Bahnhof Altstetten und ist schnell erreichbar.",
   },
   {
@@ -113,6 +122,7 @@ export const SERVICES = [
     title: "Eiseninfusion & Laboruntersuchungen",
     img: "/images/services/Eiseninfusion.webp",
     short: "Umfassende Labordiagnostik und Eiseninfusionen bei Mangelerscheinungen.",
+    metaDesc: "Eiseninfusion & Labordiagnostik in Zürich Altstetten: Schnelle Ferritin-Messung und gezielte Infusionstherapie bei Erschöpfung. KVG-gedeckt. Jetzt buchen!",
     full: "Eiseninfusion & Laboruntersuchungen in Zürich. Ein Eisenmangel führt oft zu chronischer Müdigkeit, Konzentrationsschwäche und Haarausfall. In unserer Praxis führen wir zunächst ein umfassendes Blutbild durch, um Mängel festzustellen. Anschliessend bieten wir massgeschneiderte Eisentherapien mittels Infusion an, um Ihre Speicher schnell und sicher wieder aufzufüllen.",
   },
 ];
@@ -194,7 +204,7 @@ export const FOOTER_SERVICES = [
   { label: "Mineral- & Eisenmangel", slug: "mineralmangel" },
   { label: "Laboranalysen", slug: "labor" },
   { label: "Therapien", slug: "therapien" },
-  { label: "Vorsorge-Checkups", slug: "vorsorge-checkup" },
+  { label: "Vorsorge & Check-up", slug: "vorsorge-checkup" },
 ];
 
 export const FOOTER_PARTNERS = [
