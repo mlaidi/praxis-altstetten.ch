@@ -135,9 +135,9 @@ export default function HomePage() {
       {/* ══════════ AERZTEZENTRUM & QUARTIERE ALTSTETTEN (SEO HUB) ══════════ */}
       <section id="aerztezentrum" className="seoHub">
         <div className="seoHubInner">
-          <SectionTitle sub="Medizinisches Zentrum & Notfallversorgung" title="Ihr Ärztezentrum & Hausarzt in Altstetten – Zentrale Lage & Walk-in Praxis" />
-          <p style={{ textAlign: 'center', fontSize: 16, lineHeight: 1.8, color: 'var(--text-light)', maxWidth: 820, margin: '-24px auto 40px' }}>
-            Als modernes medizinisches Versorgungszentrum an der Badenerstrasse 621 bieten wir erstklassige Hausarztmedizin, sofortige Notfallhilfe ohne Voranmeldung und spezialisierte Facharzt-Sprechstunden für Patientinnen und Patienten aus ganz Zürich und der Region.
+          <SectionTitle sub="Medizinisches Zentrum & Notfallversorgung" title="Ihr Ärztezentrum & Hausarzt am Bahnhof Altstetten (ehem. Praxisgemeinschaft PGA)" />
+          <p style={{ textAlign: 'center', fontSize: 16, lineHeight: 1.8, color: 'var(--text-light)', maxWidth: 840, margin: '-24px auto 40px' }}>
+            Als traditionsreiches medizinisches Versorgungszentrum an der Badenerstrasse 621 – <strong>ehemals bekannt als Praxisgemeinschaft Altstetten (PGA AG)</strong> – bieten wir umfassende hausärztliche Grundversorgung, sofortigen Walk-in Notfalldienst ohne Voranmeldung sowie spezialisierte Behandlungen für Patientinnen und Patienten aus Zürich Altstetten, Schlieren, Albisrieden und der gesamten Region.
           </p>
           <div className="seoGrid">
             <FadeIn delay={0.05} className="seoFadeWrapper" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
@@ -145,13 +145,13 @@ export default function HomePage() {
                 <div className="seoCardIcon"><EmergencyWalkInIcon /></div>
                 <h3>Walk-in Notfallpraxis & Arzt ohne Termin</h3>
                 <p>
-                  Bei akuten Schmerzen, Infekten oder Verletzungen empfangen wir Sie während der Öffnungszeiten auch ohne Voranmeldung. Unser Team sichert eine zügige Triage und direkte Behandlung vor Ort – Ihre Notfallpraxis in Zürich Altstetten.
+                  Bei akuten Schmerzen, Infekten, Wunden oder plötzlichen Beschwerden empfangen wir Sie während unserer Öffnungszeiten auch <strong>ohne Voranmeldung</strong>. Schnelle Triage und direkte Betreuung – auch für Notfall-Patienten aus Schlieren, Regensdorf und Zürich-West.
                 </p>
                 <div className="seoCardTags">
                   <span className="seoTag">Arzt ohne Termin</span>
-                  <span className="seoTag">Walk-in Praxis</span>
+                  <span className="seoTag">Walk-in Praxis Zürich</span>
                   <span className="seoTag">Notfallpraxis Altstetten</span>
-                  <span className="seoTag">Permanence Altstetten</span>
+                  <span className="seoTag">Notfall Schlieren</span>
                 </div>
               </div>
             </FadeIn>
@@ -159,15 +159,15 @@ export default function HomePage() {
             <FadeIn delay={0.1} className="seoFadeWrapper" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
               <div className="seoCard">
                 <div className="seoCardIcon"><LocationTransitIcon /></div>
-                <h3>Nahe Bahnhof Altstetten – Für alle Quartiere</h3>
+                <h3>3 Min. vom Bahnhof Altstetten & Lindenplatz</h3>
                 <p>
-                  Nur wenige Gehminuten vom Bahnhof Zürich-Altstetten entfernt an der Badenerstrasse 621 (8048 Zürich). Schnell erreichbar aus allen Stadtteilen: Albisrieden, Schlieren, Grünau, Hardau, Lindenplatz und ganz Zürich West.
+                  Zentral gelegen an der Badenerstrasse 621 (8048 Zürich), nur 3 Gehminuten vom Bahnhof Zürich-Altstetten und unmittelbar beim Lindenplatz. Perfekte Tram- und Busverbindung für Patientinnen und Patienten aus Altstetten, Albisrieden, Schlieren und Grünau.
                 </p>
                 <div className="seoCardTags">
                   <span className="seoTag">Bahnhof Altstetten</span>
-                  <span className="seoTag">Albisrieden</span>
-                  <span className="seoTag">Schlieren</span>
-                  <span className="seoTag">8048 Zürich</span>
+                  <span className="seoTag">Praxisgemeinschaft PGA</span>
+                  <span className="seoTag">Lindenplatz</span>
+                  <span className="seoTag">Schlieren & Albisrieden</span>
                 </div>
               </div>
             </FadeIn>
@@ -175,15 +175,15 @@ export default function HomePage() {
             <FadeIn delay={0.15} className="seoFadeWrapper" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
               <div className="seoCard">
                 <div className="seoCardIcon"><DiagnostikIcon /></div>
-                <h3>Labor, EKG, Röntgen & Eiseninfusion</h3>
+                <h3>Eisenzentrum, Labor, Röntgen & EKG</h3>
                 <p>
-                  Modernste Diagnostik direkt in unserer Arztpraxis: eigenes Praxislabor, EKG, Spirometrie (Lungenuntersuchung), digitales Röntgen sowie Infusionstherapien (Eisen, Vitamine). Kein Umweg in ein Spital – alles unter einem Dach.
+                  Umfassende Diagnostik direkt vor Ort: Praxislabor für Sofortanalysen, digitales Röntgen für Thorax und Gelenke, Ruhe- und Langzeit-EKG sowie gezielte Eisentherapie (Eiseninfusionen) bei chronischer Müdigkeit und Ferritinmangel im praxiseigenen Eisenzentrum.
                 </p>
                 <div className="seoCardTags">
-                  <span className="seoTag">Eiseninfusion Zürich</span>
-                  <span className="seoTag">Röntgen Altstetten</span>
-                  <span className="seoTag">Labor</span>
-                  <span className="seoTag">Vorsorge & Check-ups</span>
+                  <span className="seoTag">Eisenzentrum Zürich</span>
+                  <span className="seoTag">Eiseninfusion</span>
+                  <span className="seoTag">Digitales Röntgen</span>
+                  <span className="seoTag">Sofortlabor</span>
                 </div>
               </div>
             </FadeIn>
@@ -193,13 +193,13 @@ export default function HomePage() {
                 <div className="seoCardIcon"><MultilingualTeamIcon /></div>
                 <h3>Mehrsprachiges Team & Neue Patienten</h3>
                 <p>
-                  Wir nehmen laufend neue Patienten für alle Krankenkassenmodelle auf. Unser Team berät Sie auf Deutsch, Englisch (English speaking doctor), Spanisch (Español), Arabisch (Arabisch sprechender Arzt / Arabic), Französisch und Rumänisch.
+                  Wir nehmen jederzeit neue Patientinnen und Patienten aller Krankenkassenmodelle auf (HMO, Hausarzt, freie Wahl). Unser Team berät Sie auf Deutsch, Englisch (English speaking doctor), Spanisch (médico español), Arabisch (طبيب عربي), Französisch und Rumänisch.
                 </p>
                 <div className="seoCardTags">
                   <span className="seoTag">Neue Patienten</span>
                   <span className="seoTag">English speaking GP</span>
-                  <span className="seoTag">Arabischer Arzt</span>
-                  <span className="seoTag">Familienarzt</span>
+                  <span className="seoTag">Médico Español</span>
+                  <span className="seoTag">طبيب عربي زيورخ</span>
                 </div>
               </div>
             </FadeIn>

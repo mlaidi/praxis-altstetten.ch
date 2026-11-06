@@ -14,26 +14,42 @@ export const viewport = {
 
 /* ── Global Metadata ── */
 export const metadata = {
-  title: "Hausarzt & Arztpraxis Zürich Altstetten | Notfall Walk-in",
+  title: "Hausarzt & Notfall Walk-in Altstetten | Nahe Bhf Altstetten (PGA)",
   description:
-    "Ihre Hausarztpraxis in Zürich Altstetten (Badenerstrasse 621). Hausarzt, Notfall-Walk-in ohne Voranmeldung, Labor & EKG. Jetzt Termin online vereinbaren!",
+    "Ihre Hausarztpraxis & Notfall Walk-in in Zürich Altstetten (Badenerstr. 621, 3 Min. vom Bahnhof Altstetten, ehem. PGA). Ohne Termin für Notfälle. Jetzt buchen!",
   keywords: [
     "Hausarzt Altstetten",
     "Arztpraxis Altstetten",
+    "Arzt am Bahnhof Altstetten",
+    "Praxisgemeinschaft Altstetten",
+    "PGA Altstetten",
+    "Walk-in Praxis Zürich",
+    "Arzt ohne Termin",
     "Hausarzt Zürich",
     "Notfall Arzt Zürich",
     "Allgemeinmedizin 8048",
     "Eiseninfusion Zürich",
     "Dr. Saskia Rodriguez",
     "Dr. Awad Abuawad",
+    "Dr. Amin Zahran",
+    "PD Dr. Mohammad Kassar",
   ],
   metadataBase: new URL("https://praxis-altstetten.ch"),
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.png', type: 'image/png', sizes: '192x192' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   openGraph: {
-    title: "Hausarzt & Arztpraxis Zürich Altstetten | Notfall Walk-in",
-    description: "Ihre Hausarztpraxis in Zürich Altstetten (Badenerstrasse 621). Hausarzt, Notfall-Walk-in ohne Voranmeldung, Labor & EKG. Jetzt Termin online vereinbaren!",
+    title: "Hausarzt & Notfall Walk-in Altstetten | Nahe Bhf Altstetten (PGA)",
+    description: "Ihre Hausarztpraxis & Notfall Walk-in in Zürich Altstetten (Badenerstr. 621, 3 Min. vom Bahnhof Altstetten, ehem. PGA). Ohne Termin für Notfälle. Jetzt buchen!",
     images: [
       {
         url: '/images/og-image.webp',

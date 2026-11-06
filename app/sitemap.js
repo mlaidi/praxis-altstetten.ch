@@ -3,7 +3,7 @@
  * Generates /sitemap.xml automatically with current lastmod.
  */
 
-import { SERVICES } from '@/data/siteData';
+import { SERVICES, TEAM } from '@/data/siteData';
 
 const BASE_URL = 'https://praxis-altstetten.ch';
 
@@ -46,5 +46,13 @@ export default function sitemap() {
     priority: 0.9,
   }));
 
-  return [...staticPages, ...servicePages];
+  /* ── Dynamic doctor profile pages (all 7 practitioners) ── */
+  const doctorPages = TEAM.map((member) => ({
+    url: `${BASE_URL}/aerzte/${member.slug}`,
+    lastModified: currentDate,
+    changeFrequency: 'weekly',
+    priority: 0.85,
+  }));
+
+  return [...staticPages, ...servicePages, ...doctorPages];
 }

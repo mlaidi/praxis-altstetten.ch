@@ -802,9 +802,9 @@ export const SERVICES_DETAILED = {
   "notfallpraxis-walk-in": {
     "slug": "notfallpraxis-walk-in",
     "title": "Notfallarzt & Walk-in Praxis",
-    "h1": "Notfallarzt & Walk-in Praxis in Zürich Altstetten",
-    "metaTitle": "Notfallpraxis & Walk-in Zürich Altstetten | Arzt ohne Termin am Bahnhof 8048",
-    "metaDesc": "Notfallarzt & Walk-in Praxis in Zürich Altstetten nahe Bahnhof: Schnelle Behandlung akuter Erkrankungen & Verletzungen auch ohne Voranmeldung. Sofortige Hilfe!",
+    "h1": "Walk-in Praxis & Notfallarzt in Zürich Altstetten",
+    "metaTitle": "Walk-in Praxis Zürich Altstetten | Notfall & Arzt ohne Termin",
+    "metaDesc": "Walk-in Notfallpraxis in Zürich Altstetten (3 Min. vom Bahnhof, Badenerstr. 621): Sofortige Behandlung ohne Voranmeldung. Auch für Schlieren & Albisrieden.",
     "intro": "Unsere Notfallarzt- und Walk-in Praxis in Zürich Altstetten bietet Ihnen schnelle, kompetente und unkomplizierte ärztliche Hilfe bei akuten Erkrankungen und Verletzungen – vollkommen ohne Voranmeldung. An der Badenerstrasse 621, nur wenige Minuten vom Bahnhof Altstetten entfernt, empfängt Sie unser erfahrenes Ärzteteam während der Praxisöffnungszeiten mit minimalen Wartezeiten für eine rasche medizinische Versorgung.",
     "whenNeededTitle": "Wann können Sie unsere Walk-in Notfallpraxis aufsuchen?",
     "whenNeededParagraphs": [
@@ -882,10 +882,10 @@ export const SERVICES_DETAILED = {
   },
   "eiseninfusion-labor": {
     "slug": "eiseninfusion-labor",
-    "title": "Eiseninfusion & Labor",
-    "h1": "Eiseninfusion & Labordiagnostik in Zürich Altstetten",
-    "metaTitle": "Eiseninfusion Zürich Altstetten | Ferritin-Diagnostik & Infusionstherapie",
-    "metaDesc": "Eiseninfusion & Labordiagnostik in Zürich Altstetten: Schnelle Ferritin-Messung und gezielte Infusionstherapie bei Erschöpfung. KVG-gedeckt. Jetzt buchen!",
+    "title": "Eisenzentrum & Eiseninfusion",
+    "h1": "Eisenzentrum & Eiseninfusion in Zürich Altstetten",
+    "metaTitle": "Eisenzentrum Zürich Altstetten | Eiseninfusion bei Eisenmangel",
+    "metaDesc": "Eisenzentrum Zürich Altstetten: Gezielte Ferritin-Diagnostik & wirksame Eiseninfusionen bei Eisenmangel und Müdigkeit. KVG-gedeckt an der Badenerstrasse 621.",
     "intro": "Umfassende Labordiagnostik und professionelle Eiseninfusionen in Zürich Altstetten bieten Ihnen die schnellste und wirksamste Lösung bei chronischem Eisenmangel und Erschöpfung. An der Badenerstrasse 621 bestimmen wir Ihre genauen Eisenwerte (Ferritin, Transferrinsättigung) in unserem praxiseigenen Labor und verabreichen hochmoderne intravenöse Eisenpräparate in entspannter Atmosphäre. So gewinnen Sie Ihre gewohnte Energie und Vitalität rasch zurück.",
     "whenNeededTitle": "Wann ist eine intravenöse Eiseninfusion indiziert?",
     "whenNeededParagraphs": [

@@ -14,12 +14,12 @@ export default function HeroSection() {
         {/* Text */}
         <div className="heroContent">
           <div className="heroBadgesContainer">
-            <div className="heroBadge"><span className="heroBadgeDot heroBadgeDotGreen" />IHRE GESUNDHEIT IM FOKUS</div>
+            <div className="heroBadge"><span className="heroBadgeDot heroBadgeDotGreen" />EHEM. PRAXISGEMEINSCHAFT ALTSTETTEN (PGA)</div>
             <div className="heroBadge heroBadgeRed"><span className="heroBadgeDot heroBadgeDotRed" />NOTFÄLLE AUCH OHNE TERMIN (WALK-IN)</div>
             <div className="heroBadge heroBadgeBlue"><span className="heroBadgeDot heroBadgeDotBlue" />3 MIN. VOM BAHNHOF ALTSTETTEN (BADENERSTRASSE 621)</div>
           </div>
-          <h1 className="heroTitle">Ihr Ärztezentrum &amp; Hausarzt<br className="hideOnMobile" />in <span className="heroTitleAccent">Zürich-Altstetten</span></h1>
-          <p className="heroDesc">Ihr medizinischer Ansprechpartner im Herzen von Zürich Altstetten, nur wenige Gehminuten vom Bahnhof Altstetten entfernt. Umfassende, auf Ihre individuellen Bedürfnisse abgestimmte Erstversorgung mit modernstem Equipment.</p>
+          <h1 className="heroTitle">Ihr Ärztezentrum &amp; Hausarzt<br className="hideOnMobile" />am Bahnhof <span className="heroTitleAccent">Zürich-Altstetten</span></h1>
+          <p className="heroDesc">Ihr medizinischer Ansprechpartner im Herzen von Zürich Altstetten – nur 3 Gehminuten vom Bahnhof Altstetten entfernt (ehemals Praxisgemeinschaft Altstetten / PGA AG). Umfassende Grundversorgung, Notfall Walk-in ohne Voranmeldung, eigenes Praxislabor, Röntgen und EKG an der Badenerstrasse 621.</p>
           <div className="heroBtns">
             <a href={SITE.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btnPrimary heroBtnBook"><CalendarIcon /> Online Termin Buchen</a>
             <a href={`tel:${SITE.phoneTel}`} className="btn btnSecondary heroBtnCall"><PhoneIcon /> {SITE.phone} Anrufen</a>

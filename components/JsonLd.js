@@ -22,9 +22,9 @@ const medicalBusinessSchema = {
   ],
   "url": CANONICAL,
   "mainEntityOfPage": CANONICAL,
-  "logo": `${CANONICAL}/logo.png`,
-  "image": `${CANONICAL}/og-image.jpg`,
-  "description": "Ihre Hausarztpraxis und medizinisches Zentrum an der Badenerstrasse in Zürich-Altstetten (8048). Ihr Doktor und Arzt in der Nähe für Allgemeinmedizin und Notfälle. Samstags geöffnet.",
+  "logo": `${CANONICAL}/images/logo.webp`,
+  "image": `${CANONICAL}/images/og-image.webp`,
+  "description": "Ihre Hausarztpraxis, Walk-in Notfallpraxis & Ärztezentrum am Bahnhof Zürich-Altstetten an der Badenerstrasse 621 (ehemals Praxisgemeinschaft Altstetten / PGA AG). Schnelle Termine, Notfälle ohne Voranmeldung, Praxislabor, digitales Röntgen und EKG.",
   "telephone": "+41 44 244 09 99",
   "email": "info@praxis-altstetten.ch",
   "address": {
@@ -199,6 +199,22 @@ const faqSchema = {
   "@id": `${CANONICAL}/#faq`,
   "mainEntityOfPage": CANONICAL,
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ist die Hausarztpraxis Zürich Altstetten die ehemalige Praxisgemeinschaft Altstetten (PGA)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Die Hausarztpraxis Zürich Altstetten an der Badenerstrasse 621 führt den traditionsreichen Standort der ehemaligen Praxisgemeinschaft Altstetten (PGA AG) mit erweitertem Ärzteteam, modernster medizintechnischer Diagnostik und eigenem Walk-in Notfalldienst fort. Alle Patientendossiers und die vertraute Betreuung bleiben nahtlos erhalten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Können auch Patientinnen und Patienten aus Schlieren oder Zürich-West ohne Termin kommen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, selbstverständlich! Unsere Praxis liegt an der Badenerstrasse 621 direkt an der Tramlinie 2 (Haltestelle Lindenplatz oder Freihofstrasse) und nur 3 Minuten vom Bahnhof Altstetten. Patientinnen und Patienten aus Schlieren, Albisrieden, Regensdorf und ganz Zürich-West erreichen uns in wenigen Minuten für dringende Konsultationen ohne Voranmeldung."
+      }
+    },
     {
       "@type": "Question",
       "name": "Nimmt die Praxis Altstetten neue Patienten auf?",

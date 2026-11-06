@@ -28,6 +28,14 @@ const REDIRECT_MAP = [
   // 8. author (e.g. /author/kensy/)
   { test: /^\/author(\/.*)?$/i, dest: '/#team' },
   // 9. doctors & team archives
+  { test: /^\/(doctor|team)\/(dr-)?saskia-rodriguez\/?$/i, dest: '/aerzte/dr-saskia-rodriguez' },
+  { test: /^\/(doctor|team)\/(dipl-arzt-|dr-)?awad-abuawad\/?$/i, dest: '/aerzte/dipl-arzt-awad-abuawad' },
+  { test: /^\/(doctor|team)\/(dr-)?amin-zahran\/?$/i, dest: '/aerzte/dr-amin-zahran' },
+  { test: /^\/(doctor|team)\/(pd-dr-|dr-)?mohammad-kassar\/?$/i, dest: '/aerzte/pd-dr-mohammad-kassar' },
+  { test: /^\/(doctor|team)\/(dr-)?jamil-alsaaydeh\/?$/i, dest: '/aerzte/dr-jamil-alsaaydeh' },
+  { test: /^\/(doctor|team)\/(dr-)?christos-bachtsetzis\/?$/i, dest: '/aerzte/dr-christos-bachtsetzis' },
+  { test: /^\/(doctor|team)\/(dr-)?(dimitrios-)?patsavoudis\/?$/i, dest: '/aerzte/dr-dimitrios-patsavoudis' },
+  { test: /^\/team\/([a-zA-Z0-9_-]+)\/?$/i, dest: (m) => `/aerzte/${m[1].toLowerCase()}` },
   { test: /^\/hausaerzte-zuerich-altstetten(\/.*)?$/i, dest: '/#team' },
   { test: /^\/doctor(\/.*)?$/i, dest: '/#team' },
   { test: /^\/team\/?$/i, dest: '/#team' },

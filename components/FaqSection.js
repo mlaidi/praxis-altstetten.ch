@@ -6,8 +6,16 @@ import FadeIn from '@/components/FadeIn';
 
 const FAQS = [
   {
+    q: "Ist die Hausarztpraxis Zürich Altstetten die ehemalige Praxisgemeinschaft Altstetten (PGA)?",
+    a: "Ja. Die Hausarztpraxis Zürich Altstetten an der Badenerstrasse 621 führt den traditionsreichen Standort der ehemaligen Praxisgemeinschaft Altstetten (PGA AG) mit erweitertem Ärzteteam, modernster medizintechnischer Diagnostik und eigenem Walk-in Notfalldienst fort. Alle Patientendossiers und die vertraute Betreuung bleiben nahtlos erhalten."
+  },
+  {
     q: "Kann ich ohne Termin in die Hausarztpraxis Altstetten kommen (Walk-in Praxis)?",
     a: "Ja! Für Notfälle, akute Erkrankungen, Schmerzen und dringende Anliegen empfangen wir Sie während unserer Öffnungszeiten als Walk-in Praxis auch ohne vorherige Terminvereinbarung. Kommen Sie einfach an die Badenerstrasse 621, nur wenige Gehminuten vom Bahnhof Zürich-Altstetten. Notfälle werden priorisiert behandelt. Für planbare Routinekontrollen oder Check-ups können Sie jederzeit bequem online oder telefonisch einen Termin buchen."
+  },
+  {
+    q: "Können auch Patientinnen und Patienten aus Schlieren oder Zürich-West ohne Termin kommen?",
+    a: "Ja, selbstverständlich! Unsere Praxis liegt an der Badenerstrasse 621 direkt an der Tramlinie 2 (Haltestelle Lindenplatz oder Freihofstrasse) und nur 3 Minuten vom Bahnhof Altstetten. Patientinnen und Patienten aus Schlieren, Albisrieden, Regensdorf und ganz Zürich-West erreichen uns in wenigen Minuten für dringende Konsultationen ohne Voranmeldung."
   },
   {
     q: "Nimmt die Praxis aktuell neue Patientinnen und Patienten auf?",
@@ -15,15 +23,15 @@ const FAQS = [
   },
   {
     q: "Welche Sprachen sprechen die Ärzte in der Praxis Altstetten?",
-    a: "Unser internationales Team betreut Sie mehrsprachig: Deutsch, Englisch (English speaking doctor / GP), Spanisch (Español), Arabisch (Arabisch sprechende Ärzte / Arabic speaking), Französisch und Rumänisch. Internationale Patientinnen und Patienten fühlen sich bei uns bestens verstanden und betreut."
+    a: "Unser internationales Team betreut Sie mehrsprachig: Deutsch, Englisch (English speaking doctor / GP), Spanisch (médico que habla español), Arabisch (طبيب عربي / Arabic speaking), Französisch, Griechisch, Rumänisch und Russisch. Internationale Patientinnen und Patienten fühlen sich bei uns bestens verstanden und betreut."
   },
   {
     q: "Wie erreiche ich die Arztpraxis Altstetten vom Bahnhof und welche Quartiere werden betreut?",
-    a: "Die Hausarztpraxis Zürich Altstetten befindet sich an der Badenerstrasse 621 (8048 Zürich), nur wenige Gehminuten vom Bahnhof Zürich-Altstetten entfernt. Dank der zentralen Lage sind wir schnell erreichbar aus allen Quartieren: Albisrieden, Grünau, Schlieren, Hardau, Lindenplatz und ganz Zürich West."
+    a: "Die Hausarztpraxis Zürich Altstetten befindet sich an der Badenerstrasse 621 (8048 Zürich), nur 3 Gehminuten vom Bahnhof Zürich-Altstetten entfernt. Dank der zentralen Lage sind wir schnell erreichbar aus allen Quartieren: Albisrieden, Grünau, Schlieren, Hardau, Lindenplatz und ganz Zürich West."
   },
   {
     q: "Bieten Sie Eiseninfusionen, Laboruntersuchungen und Röntgen direkt in der Praxis an?",
-    a: "Ja, wir verfügen über ein eigenes Praxislabor (Blut- und Entzündungswerte in wenigen Minuten), digitales Röntgen, EKG, Lungenfunktionstests (Spirometrie) sowie Infusionstherapien (Eiseninfusion, Vitamin-Infusionen, NAD+, PRP-Therapie). Kein Umweg ins Spital – alles direkt in unserer Praxis in Zürich Altstetten."
+    a: "Ja, wir verfügen über ein eigenes Praxislabor (Blut- und Entzündungswerte in wenigen Minuten), digitales Röntgen, EKG, Lungenfunktionstests (Spirometrie) sowie ein spezialisiertes Eisenzentrum für gezielte Infusionstherapien (Eiseninfusion, Vitamin-Infusionen, NAD+, PRP-Therapie). Kein Umweg ins Spital – alles direkt in unserer Praxis in Zürich Altstetten."
   },
   {
     q: "Welche diagnostischen Abklärungen sind direkt in der Praxis möglich?",

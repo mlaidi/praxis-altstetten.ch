@@ -220,6 +220,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/team/:slug',
+        destination: '/aerzte/:slug',
+        permanent: true,
+      },
+      {
+        source: '/doctor/:slug',
+        destination: '/aerzte/:slug',
+        permanent: true,
+      },
+      {
         source: '/team',
         destination: '/#team',
         permanent: true,
@@ -230,7 +240,12 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/doctor/:path*',
+        source: '/doctor',
+        destination: '/#team',
+        permanent: true,
+      },
+      {
+        source: '/doctor/',
         destination: '/#team',
         permanent: true,
       },
