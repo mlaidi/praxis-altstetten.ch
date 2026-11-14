@@ -622,3 +622,4 @@ export default async function DoctorPage({ params }) {
     </>
   );
 }
+
